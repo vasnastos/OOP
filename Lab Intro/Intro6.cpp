@@ -1,16 +1,19 @@
 #include <iostream>
-#include <random> //--> mt19937 random generator
-#include <chrono>
-#include <iomanip>
+#include <random>   //--> mt19937 random generator
+#include <chrono>   //--> for better randomness
+#include <iomanip>  //--> to set precision of decimal numbers
 
 using namespace std;
 
 int main()
 {
+    //creation of random generator 
     auto seed = chrono::high_resolution_clock::now().time_since_epoch().count();
     mt19937 gen(seed);
     uniform_real_distribution<> dist(0, 150);
 
+
+    
     double distances[5];
     
     for(int i=0;i<5;i++)
