@@ -1,3 +1,3 @@
 # OOP(2021-2022)
 
-**Online Compiler**:[https://godbolt.org/](https://godbolt.org/)
+**Online Editor**:[https://godbolt.org/](https://godbolt.org/)
