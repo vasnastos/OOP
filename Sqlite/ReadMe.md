@@ -12,4 +12,5 @@
   * Αποσυμπίεση στον δίσκο C: **C://sqlite-amalgamation-3360000
   * Εκτέλεση του εκτελέσιμου αρχείου sqlite3.exe
   ![SQlite3 Exe](Read_Me(resources)/sqlite3_exe.png)
+  
   * Δημιουργία μεταβλητής περιβάλλοντος για την sqlite
