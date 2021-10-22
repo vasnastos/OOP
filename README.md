@@ -3,7 +3,7 @@
 **Online Editor**:[https://godbolt.org/](https://godbolt.org/)
 ---
 
-## Course 1
+## Lesson 1
 * Pointers
 * References
 * Structs 
