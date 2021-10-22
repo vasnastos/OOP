@@ -15,3 +15,25 @@
   ![SQlite3 Exe](Read_Me(resources)/sqlite3_exe.png)
   
   * Δημιουργία μεταβλητής περιβάλλοντος για την sqlite
+  
+  A)
+  ![Svar1](Read_Me(resources)/svars1.png)
+
+  B)
+  ![Svar2](Read_Me(resources)/svars2.png)
+
+  C)
+  ![Svar3](Read_Me(resources)/svars3.png)
+
+
+  * Εγκατάσταση του db_browser:[here](https://download.sqlitebrowser.org/DB.Browser.for.SQLite-3.12.2-win64.mHP )
+
+  **Παράδειγμα χρήσης**
+
+  * Κώδικας:[sqlite](sqlite_connectivity.cpp)
+  
+  * Εκτέλεση
+   ```
+     g++ sqlite_connectivity.cpp -l sqlite3 -o sqlite_out
+
+     sqlite_out.exe|./sqlite_out.out
