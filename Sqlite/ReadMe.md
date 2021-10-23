@@ -3,6 +3,7 @@
   * sudo apt update
   * sudo apt-get install sqlite3 libsqlite3-dev
   * sudo apt install sqlitebrowser
+  
   ![db browser](Read_Me(resources)/db_broswer.png)
 
 ---
