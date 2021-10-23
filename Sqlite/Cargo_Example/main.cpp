@@ -25,7 +25,7 @@ int main()
     for(int i=1;i<=5;i++)
     {
         destination=destinations.at(dest_genarator(mt));
-        cargos.emplace_back(Cargo(i,destination,weight_genarator(mt),bool(frag(mt))));
+        cargos.emplace_back(Cargo(i,destination," ",weight_genarator(mt),bool(frag(mt))));
     }
 
     for(auto &cargo:cargos)

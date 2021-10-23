@@ -3,6 +3,7 @@
 // ---------- Cargo  --------------| 
 //     -id:int                     |
 //     -destination:String         |
+//     -description:String         |
 //     -weight:double              |
 //     -fragile:bool               |
 // ..............................  |
@@ -15,7 +16,8 @@
 class Cargo
 {
     public:
-        Cargo(int cid,std::string c_destination,double c_weight,bool c_fragile);
+        Cargo(int cid,std::string c_destination,std::string c_description,double c_weight,bool c_fragile);
+        Cargo();
         ~Cargo() {}
         void set_weight(double w);
         double get_weight()const;
@@ -25,6 +27,7 @@ class Cargo
     private:
         int id;
         std::string destination;
+        std::string description;
         double weight;
         bool fragile;
 
