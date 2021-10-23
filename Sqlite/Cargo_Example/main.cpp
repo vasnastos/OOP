@@ -33,8 +33,10 @@ int main()
         cargo.show();
         cargo.make_safe();
     }
+    std::cout<<"*****************************************"<<std::endl<<std::endl;
     for(auto &cargo:cargos)
     {
         cargo.show();
     }
+    return EXIT_SUCCESS;
 }

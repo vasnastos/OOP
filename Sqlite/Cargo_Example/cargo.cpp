@@ -2,7 +2,6 @@
 
 Cargo::Cargo(int cid,std::string c_destination,double c_weight,bool c_fragile):id(cid),destination(c_destination),weight(c_weight),fragile(c_fragile) {}
 
-Cargo::~Cargo() {}
 
 void Cargo::set_weight(double w)
 {
@@ -20,7 +19,9 @@ bool Cargo::make_safe()
     {
         this->fragile=true;
         this->weight+=5.0;
+        return true;
     }
+    return false;
 }
 
 void Cargo::show()
