@@ -16,10 +16,15 @@ double Cargo::get_weight()const
 
 bool Cargo::make_safe()
 {
-
+    if(!this->fragile)
+    {
+        this->fragile=true;
+        this->weight+=5.0;
+    }
 }
 
 void Cargo::show()
 {
-    
+    std::cout<<std::boolalpha;
+    std::cout<<this->id<<" "<<this->destination<<" "<<this->weight<<" "<<this->fragile<<std::endl;
 }
