@@ -1,3 +1,3 @@
 ## Installations 
-* sqlite:[](https://github.com/vasnastos/OOP/tree/main/Sqlite)
+* sqlite:[here](https://github.com/vasnastos/OOP/tree/main/Sqlite)
 * WxWidgets:[]()
