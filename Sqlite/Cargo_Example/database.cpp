@@ -151,3 +151,30 @@ Cargo database::search_by_id(int id)
     sqlite3_close(this->db);
     return Cargo();
 }
+
+void database::delete_cargo(int id)
+{
+    std::string sql="DELETE FROM CARGO WHERE ID=?";
+    sqlite3_stmt *q=nullptr;
+    int res=sqlite3_open(this->name.c_str(),&this->db);
+    if(res!=SQLITE_OK)
+    {
+        std::string message=sqlite3_errmsg(this->db);
+        sqlite3_close(this->db);
+        throw message;
+    }
+    res=sqlite3_prepare_v2(this->db,sql.c_str(),-1,&q,nullptr);
+    if(res!=SQLITE_OK)
+    {
+        std::string message=sqlite3_errmsg(this->db);
+        sqlite3_close(this->db);
+        throw message;
+    }
+    sqlite3_bind_int(q,1,id);
+    res=sqlite3_step(q);
+    if(res==SQLITE_ROW)
+    {
+        std::cout<<"Record with id:"<<id<<"deleted"<<std::endl;
+    }
+    sqlite3_close(this->db);
+}

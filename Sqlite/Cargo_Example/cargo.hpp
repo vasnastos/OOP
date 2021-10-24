@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 // ---------- Cargo  --------------| 
 //     -id:int                     |
@@ -20,9 +21,18 @@ class Cargo
         Cargo();
         ~Cargo() {}
         void set_weight(double w);
+        void set_destination(std::string c_destination);
+        void set_description(std::string c_description);
+        int get_id()const;
+        std::string get_destination()const;
+        std::string get_description()const;
+        double get_weight()const;
+        bool get_fragile()const;
         double get_weight()const;
         bool make_safe();
         void show();
+        std::vector <std::string> to_table_view();
+        friend std::ostream &operator<<(std::ostream &os,const Cargo &c);
 
     private:
         int id;
@@ -32,3 +42,5 @@ class Cargo
         bool fragile;
 
 };
+
+std::string bool2String(bool val);
