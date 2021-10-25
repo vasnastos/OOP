@@ -78,6 +78,12 @@ std::ostream &operator<<(std::ostream &os,const Cargo &c)
     return os;
 }
 
+Cargo::operator std::string()const
+{
+    std::stringstream ss;
+    ss<<this->id<<","<<this->destination<<","<<this->description<<","<<this->weight<<","<<bool2String(this->fragile)<<std::endl;
+    return ss.str();
+}
 
 std::string bool2String(bool val)
 {

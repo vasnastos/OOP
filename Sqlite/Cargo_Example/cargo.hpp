@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <sstream>
 
 // ---------- Cargo  --------------| 
 //     -id:int                     |
@@ -31,6 +32,7 @@ class Cargo
         double get_weight()const;
         bool make_safe();
         void show();
+        operator std::string()const;
         std::vector <std::string> to_table_view();
         friend std::ostream &operator<<(std::ostream &os,const Cargo &c);
 

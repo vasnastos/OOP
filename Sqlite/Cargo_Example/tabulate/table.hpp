@@ -32,7 +32,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE  OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 #pragma once
-#include <tabulate/table_internal.hpp>
+#include "table_internal.hpp"
 
 #if __cplusplus >= 201703L
 #include <string_view>
@@ -43,8 +43,8 @@ using std::variant;
 using std::visit;
 using std::string_view;
 #else
-#include <tabulate/string_view_lite.hpp>
-#include <tabulate/variant_lite.hpp>
+#include "string_view_lite.hpp"
+#include "variant_lite.hpp"
 using nonstd::get_if;
 using nonstd::holds_alternative;
 using nonstd::variant;

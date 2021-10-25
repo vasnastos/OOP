@@ -32,8 +32,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE  OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 #pragma once
-#include <tabulate/color.hpp>
-#include <tabulate/font_style.hpp>
+#include "color.hpp"
+#include "font_style.hpp"
 #include <utility>
 #include <vector>
 

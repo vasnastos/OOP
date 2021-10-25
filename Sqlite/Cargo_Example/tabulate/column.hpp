@@ -38,8 +38,8 @@ SOFTWARE.
 #include <memory>
 #include <optional>
 #include <string>
-#include <tabulate/cell.hpp>
-#include <tabulate/column_format.hpp>
+#include "cell.hpp"
+#include "column_format.hpp"
 #include <vector>
 #ifdef max
 #undef max

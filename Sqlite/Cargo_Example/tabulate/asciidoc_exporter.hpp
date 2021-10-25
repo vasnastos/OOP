@@ -36,7 +36,7 @@ SOFTWARE.
 #include <optional>
 #include <sstream>
 #include <string>
-#include <tabulate/exporter.hpp>
+#include "exporter.hpp"
 
 namespace tabulate {
 

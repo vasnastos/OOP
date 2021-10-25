@@ -21,6 +21,8 @@ database::database(std::string n):name(n)
     sqlite3_close(this->db);
 }
 
+std::string database::get_database_name()const {return this->name;}
+
 void database::insert_cargo(int i,std::string destination,std::string description,double w,bool f)
 {
     std::string sql="INSERT INTO CARGO(ID,DESTINATION,DESCRIPTION,WEIGHT,FRAGILE) VALUES(?,?,?,?,?)";
