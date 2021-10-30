@@ -3,6 +3,7 @@
 #include <map>
 #include <algorithm>
 #include "horse.hpp"
+#include "bet.hpp"
 #ifdef linux
 #include <bits/stdc++.h>
 #endif

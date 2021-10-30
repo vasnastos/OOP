@@ -1,0 +1,3 @@
+* Εκτέλεση κυρίως προγράμματος
+    -g++ horse.cpp racing.cpp bet.cpp -o horse_racing
+    -horse_racing or ./horse_racing(Linux)
