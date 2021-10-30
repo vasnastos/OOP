@@ -16,17 +16,14 @@ class racing
         std::map <int,std::string> horse_names;
         std::vector <std::pair<int,int>> ranking;
         int rounds;
+        int *positions;
 
     public:
         racing(int h=0,int rounds=0);
         racing(std::vector <std::string> &names,int rnds);
-        ~racing() {}
-        void print_race();
-        void print_ranking();
-        void game_started();
-        void game_automatically_executed();
-        void set_rounds(int number_of_rounds);
-        void set_horses(int number_of_horses);
+        ~racing();
+        void race();
+        void draw_race();
 };
 
 void press_any_key();
