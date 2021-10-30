@@ -49,6 +49,10 @@
   * header file:[horse.hpp](horse.hpp)
   * source file:[horse.cpp](horse.cpp)
 
+* Κλάση racing
+  * header file:[racing.hpp](racing.hpp)
+  * source file:[racing.cpp](racing.cpp)
+
 * Παραγωγή τυχαίων τιμών
   *  [random values](Random/random1.cpp)
 
