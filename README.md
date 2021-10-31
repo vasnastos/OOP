@@ -8,7 +8,7 @@
 * References:[pass_by_value_and_reference](Lesson_1/Value_Reference_pass)
 * Structs:[Structs](Lesson_1/Structs) 
 * Classes:[Classes](Lesson_1/Classes)
-* Assigmment_1:[assignment_1](Assignment_1)
+* Sqlite:[sqlite](https://github.com/vasnastos/OOP/tree/main/Sqlite)
 
 ## Εργασίες
   * Assigmment_1:
