@@ -9,3 +9,8 @@
 * Structs:[Structs](Lesson_1/Structs) 
 * Classes:[Classes](Lesson_1/Classes)
 * Assigmment_1:[assignment_1](Assignment_1)
+
+## Εργασίες
+  * Assigmment_1:
+    * Εκφώνηση:[here](https://github.com/chgogos/oop/blob/master/2021f_project1/2021f_oop_prj1.pdf)
+    * Βοηθητικά κομμάτια κώδικα:[assignment_1](Assignment_1)
