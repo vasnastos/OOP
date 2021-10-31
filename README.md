@@ -7,6 +7,4 @@
 * References:[pass_by_value_and_reference](Lesson_1/Value_Reference_pass)
 * Structs:[Structs](Lesson_1/Structs) 
 * Classes:[Classes](Lesson_1/Classes)
-* File Handling:[]() 
-* Fmt:[]()
 * Assigmment_1:[assignment_1](Assignment_1)
