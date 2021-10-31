@@ -1,7 +1,7 @@
 # OOP(2021-2022)
 
-* **Online Editor**:[https://godbolt.org/](https://godbolt.org/)
-* Κεντρική σελίδα μαθήματος:[https://github.com/chgogos/oop](https://github.com/chgogos/oop)
+* **Online Editor:**[https://godbolt.org/](https://godbolt.org/)
+* **Κεντρική σελίδα μαθήματος:**[https://github.com/chgogos/oop](https://github.com/chgogos/oop)
 
 ## Σχετικά
 * Pointers:[pointers](Lesson_1/Pointers)
