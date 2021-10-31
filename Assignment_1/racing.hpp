@@ -19,11 +19,12 @@ class racing
 
     public:
         racing(int h=0,int rounds=0);
-        racing(std::vector <std::string> &names,int rnds);
+        racing(int horse_number,std::vector <std::string> &names,int rnds);
         ~racing();
         void race();
         void auto_race();
         void draw_race();
+        void print_ranks();
 };
 
 void press_any_key();

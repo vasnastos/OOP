@@ -14,6 +14,8 @@ horse::horse(int h_id,string h_name):id(h_id),name(h_name)
 
 std::string horse::get_name()const {return this->name;}
 
+int horse::get_id()const {return this->id;}
+
 bool horse::move_forward(int step,double random_factor)
 {
     if(step==1)

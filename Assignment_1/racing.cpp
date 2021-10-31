@@ -17,17 +17,16 @@ racing::racing(int h,int rounds):rounds(rounds)
     }
 }
 
-racing::racing(std::vector <std::string> &names,int rnds)
+racing::racing(int horse_number,std::vector <std::string> &names,int rnds)
 {
     this->horses.clear();
     int id=1;
-    auto rf=std::uniform_int_distribution<int>(0,100);
-    for(auto &name:names)
+    auto random_name=uniform_int_distribution<int>(0,names.size()-1);
+    string name;
+    for(int i=0;i<horse_number;i++)
     {
-        this->horses.emplace_back(horse(id,name));
-        this->horse_names[id]=name;
-        rank[id]=-1;
-        id++;
+        name=names.at(random_name(mt1));
+        this->horses.emplace_back(i+1,name);
     }
     this->rounds=rnds;
     this->positions=new int[names.size()];
@@ -45,12 +44,19 @@ void racing::race()
     bool can_be_moved;
     std::uniform_real_distribution <double> move_factor(0.0,100.0);
     this->draw_race(); press_any_key();
+    int rank=1;
     for(int i=1;i<=rounds_will_be_executed;i++)
     {
         for(int j=0,t=this->horses.size();j<t;j++)
         {
             can_be_moved=this->horses[j].move_forward(this->positions[i],move_factor(mt1));
-            if(this->positions[j]==this->rounds) continue;
+            if(this->positions[j]==this->rounds) 
+            {
+                if(find_if(this->ranking.begin(),this->ranking.end(),[&](std::pair <int,int> &p) {return p.first==this->horses[j].get_id();})!=this->ranking.end()) continue;
+                this->ranking.emplace_back(std::pair<int,int>(this->horses[j].get_id(),rank));
+                rank++;
+                continue;
+            }
             if(can_be_moved)
             {
                 positions[j]++;
@@ -77,8 +83,12 @@ void racing::auto_race()
         move_forward=move_factor(mt1);
         for(int j=0,t=this->horses.size();j<t;j++)
         {
-            can_be_moved=this->horses[i].move_forward(this->positions[i],move_factor(mt1));
-            if(this->positions[j]==this->rounds) continue;
+            can_be_moved=this->horses[i].move_forward(this->positions[j],move_factor(mt1));
+            if(this->positions[j]==this->rounds)
+            {
+                
+                continue;
+            }
             if(can_be_moved)
             {
                 positions[j]++;
@@ -105,6 +115,15 @@ void racing::draw_race()
              cout<<".";
         }   
         cout<<"|"<<endl;
+    }
+}
+
+void racing::print_ranks()
+{
+    sort(this->ranking.begin(),this->ranking.end(),[](pair <int,int> &p1,pair <int,int> &p2) {return p1.first<p2.first;});
+    for(auto &rank:this->ranking)
+    {
+        cout<<rank.first<<"."<<find_if(horses.begin(),horses.end(),[&](const horse &h) {return h.get_id()==rank.second;})->get_name()<<endl;
     }
 }
 

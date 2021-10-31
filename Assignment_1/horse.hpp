@@ -19,4 +19,5 @@ class horse
         ~horse() {}
         bool move_forward(int step,double random_factor);
         string get_name()const;
+        int get_id()const;
 };
