@@ -71,7 +71,7 @@
   * [catch.hpp](catch.hpp)
 
 * Πρότυπο Εργασίας
-    * [template](Assignment_template.zip)
+    * Πρότυπο Εργασίας:[template](Assignment_Τemplate.zip)
     * Αρχείο μεταγλώττισης:[compilation.txt](Assignment_Template/compilation.txt)
     * Αρχείο αποτελεσμάτων:[results.docx](Assignment_Template/)
 
