@@ -9,6 +9,7 @@
 * Structs:[Structs](Lesson_1/Structs) 
 * Classes:[Classes](Lesson_1/Classes)
 * Sqlite:[sqlite](https://github.com/vasnastos/OOP/tree/main/Sqlite)
+* wxWidgets:[WxWidgets](WxWidgets/)
 
 ## Εργασίες
   * Assigmment_1:
