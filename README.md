@@ -59,4 +59,9 @@
 ## Εργασίες
   * Assigmment_1:
     * [Εκφώνηση](https://github.com/chgogos/oop/blob/master/2021f_project1/2021f_oop_prj1.pdf)
-    * [Βοηθητικά τμήματα κώδικα](Assignment_1)
+    * **Βοηθητικά τμήματα κώδικα**
+      * [horse.hpp](Assignment_1/OOP_EXTRA/horse.hpp)
+      * [horse.cpp](Assignment_1/OOP_EXTRA/horse.cpp)
+      * [horse unit testing](Assignment_1/OOP_EXTRA/tests.cpp)
+      * [racing.hpp](Assignment_1/OOP_EXTRA/racing.hpp)
+      * [racing.cpp](Assignment_1/OOP_EXTRA/racing.cpp) 

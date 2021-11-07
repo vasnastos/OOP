@@ -9,9 +9,11 @@ racing::racing(int h,int rounds):rounds(rounds)
         auto random_value=std::uniform_int_distribution<int>(50,100);
         for(int i=1;i<=h;i++)
         {
-            this->horses.emplace_back(horse(i,"horse_"+std::to_string(i),random_value(mt1),random_value(mt1),random_value(mt1)));
-            this->horse_names[i]="horse_"+std::to_string(i);
-            rank[i]=-1;
+            horse a_horse=horse(i,"horse_"+std::to_string(i),random_value(mt1),random_value(mt1),random_value(mt1));
+            this->horses.emplace_back(a_horse);
+            // this->horse_names[i]="horse_"+std::to_string(i);
+            this->ranking.empace_back(pair<horse,int>{a_horse,-1});
+            // rank[i]=-1;
         }
         this->positions=new int[h];
     }
@@ -125,7 +127,7 @@ void racing::print_ranks()
     sort(this->ranking.begin(),this->ranking.end(),[](pair <int,int> &p1,pair <int,int> &p2) {return p1.first<p2.first;});
     for(auto &rank:this->ranking)
     {
-        cout<<rank.first<<"."<<find_if(horses.begin(),horses.end(),[&](const horse &h) {return h.get_id()==rank.second;})->get_name()<<endl;
+        cout<<find_if(horses.begin(),horses.end(),[&](const horse &h) {return h.get_id()==rank.second;})->get_name()<<"->"<<(std::find())<<endl;
     }
 }
 
