@@ -5,7 +5,7 @@
 * **Online Editor:**[https://godbolt.org/](https://godbolt.org/)
 * **Κεντρική σελίδα μαθήματος:**[https://github.com/chgogos/oop](https://github.com/chgogos/oop)
 
-### Μάθημα 1
+## Μάθημα 1
 
 * **Pointers**
   * [pointers1](Lesson_1/Pointers/pointers1.cpp)
@@ -23,13 +23,13 @@
 * [word counter](Lesson_1/Word_Counter/word_counter.cpp)
 * [string](Lesson_1/string.cpp)
 
-### Μάθημα 2
+## Μάθημα 2
 
 * **Structs**
     * [struct1.cpp](Lesson_2/Structs/struct1.cpp)
     * [struct2.cpp](Lesson_2/Structs/struct2.cpp)
     * [struct3.cpp](Lesson_2/Structs/struct3.cpp)
-  
+
 * **Vectors**
   * [shuffle](Lesson_2/Vectors/vector1.cpp)
   * [vector methods](Lesson_2/Vectors/vector2.cpp)
