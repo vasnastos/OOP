@@ -20,6 +20,7 @@
     * [struct1.cpp](Lesson_2/Structs/struct1.cpp)
     * [struct2.cpp](Lesson_2/Structs/struct2.cpp)
     * [struct3.cpp](Lesson_2/Structs/struct3.cpp)
+  
 * **Vectors**
   * [shuffle](Lesson_2/Vectors/vector1.cpp)
   * [vector methods](Lesson_2/Vectors/vector2.cpp)
@@ -29,6 +30,7 @@
   * [vector shuffle](Lesson_2/Vectors/vector6.cpp)
   * [vector iterators](Lesson_2/Vectors/vector7.cpp)
   * [vector with pairs(2)](Lesson_2/Vectors/vector8.cpp)
+  
 * **Maps**
   * [map methods](Lesson_2/map1.cpp)
 
