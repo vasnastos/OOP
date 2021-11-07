@@ -48,7 +48,6 @@
   * [random2](Lesson_2/Random/random2.cpp)
   * [random3](Lesson_2/Random/random3.cpp)
 
-* [random_values](Lesson_2/Random)
 * [command line arguments](Lesson_2/command_line_arguments.cpp)
 
 ## Αλλες Αναφορές
