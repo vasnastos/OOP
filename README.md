@@ -32,4 +32,4 @@
 ## Εργασίες
   * Assigmment_1:
     * [Εκφώνηση](https://github.com/chgogos/oop/blob/master/2021f_project1/2021f_oop_prj1.pdf)
-    * [Βοηθητικά κομμάτια κώδικα](Assignment_1)
+    * [Βοηθητικά τμήματα κώδικα](Assignment_1)
