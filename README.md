@@ -34,7 +34,7 @@
 * **Maps**
   * [map methods](Lesson_2/map1.cpp)
   
-* Randomness
+* **Randomness**
   * [random1](Lesson_2/Random/random1.cpp)
   * [random2](Lesson_2/Random/random2.cpp)
   * [random3](Lesson_2/Random/random3.cpp)
