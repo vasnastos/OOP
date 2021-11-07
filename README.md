@@ -18,11 +18,11 @@
 ### Μάθημα 2
 
 * [random_values](Lesson_2/Random)
-* Structs
+* **Structs**
     * [struct1.cpp](Lesson_2/struct1.cpp)
     * [struct2.cpp](Lesson_2/struct2.cpp)
     * [struct3.cpp](Lesson_2/struct3.cpp)
-* Vectors
+* **Vectors**
   * [shuffle](Lesson_2/vector1.cpp)
   * [vector methods](Lesson_2/vector2.cpp)
   * [vector sort](Lesson_2/vector3.cpp)
