@@ -17,7 +17,7 @@
 
 ### Μάθημα 2
 
-* Random Values:[random_values](Lesson_2/Random)
+* [random_values](Lesson_2/Random)
 * Structs
     * [struct1.cpp](Lesson_2/struct1.cpp)
     * [struct2.cpp](Lesson_2/struct2.cpp)
@@ -29,8 +29,7 @@
   * [vector with pairs](Lesson_2/vector4.cpp)
 
  
-
 ## Εργασίες
   * Assigmment_1:
-    * Εκφώνηση:[here](https://github.com/chgogos/oop/blob/master/2021f_project1/2021f_oop_prj1.pdf)
-    * Βοηθητικά κομμάτια κώδικα:[assignment_1](Assignment_1)
+    * [Εκφώνηση](https://github.com/chgogos/oop/blob/master/2021f_project1/2021f_oop_prj1.pdf)
+    * [Βοηθητικά κομμάτια κώδικα](Assignment_1)
