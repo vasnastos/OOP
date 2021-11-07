@@ -23,8 +23,10 @@ racing::racing(int horse_number,std::vector <std::string> &names,int rnds)
     int id=1;
     auto random_name=uniform_int_distribution<int>(0,names.size()-1);
     string name;
+    auto seed=steady_clock::now().time_since_epoch().count();
     for(int i=0;i<horse_number;i++)
     {
+        shuffle(names.begin(),names.end(),default_random_engine(seed));
         name=names.at(random_name(mt1));
         this->horses.emplace_back(i+1,name);
     }
