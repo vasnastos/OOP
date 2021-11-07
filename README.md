@@ -7,8 +7,17 @@
 
 ### Μάθημα 1
 
-* [pointers](Lesson_1/Pointers)
-* [references](Lesson_1/Value_Reference_pass)
+* **Pointers**
+  * [pointers1](Lesson_1/Pointers/pointers1.cpp)
+  * [pointers2](Lesson_1/Pointers/pointers2.cpp)
+  * [pointers3](Lesson_1/Pointers/pointers3.cpp)
+  
+* **References**
+  * [pass_by_reference_1](Lesson_1/References/pass_by_reference1.cpp)
+  * [pass_by_reference_2](Lesson_1/References/pass_by_reference2.cpp)
+  * [pass_by_reference_3](Lesson_1/References/pass_by_reference3.cpp)
+  * [pass_by_value](Lesson_1/References/pass_by_value1.cpp)
+   
 * [structs](Lesson_1/Structs) 
 * [classes](Lesson_1/Classes)
 * [word counter](Lesson_1/Word_Counter/word_counter.cpp)
