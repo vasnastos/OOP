@@ -1,10 +1,9 @@
 # OOP(2021-2022)
 
-* **Online Editor:**[https://godbolt.org/](https://godbolt.org/)
-* **Κεντρική σελίδα μαθήματος:**[https://github.com/chgogos/oop](https://github.com/chgogos/oop)
-
 ## Σχετικά
 
+* **Online Editor:**[https://godbolt.org/](https://godbolt.org/)
+* **Κεντρική σελίδα μαθήματος:**[https://github.com/chgogos/oop](https://github.com/chgogos/oop)
 
 ### Μάθημα 1
 
@@ -18,6 +17,7 @@
 ### Μάθημα 2
 
 * [random_values](Lesson_2/Random)
+* [command line arguments](Lesson_2/Ra)
 * **Structs**
     * [struct1.cpp](Lesson_2/struct1.cpp)
     * [struct2.cpp](Lesson_2/struct2.cpp)
@@ -26,7 +26,7 @@
   * [shuffle](Lesson_2/vector1.cpp)
   * [vector methods](Lesson_2/vector2.cpp)
   * [vector sort](Lesson_2/vector3.cpp)
-  * [vector with pairs](Lesson_2/vector4.cpp)
+  * [vector with pairs](Lesson_2/command_line_arguments.cpp)
 
  
 ## Εργασίες
