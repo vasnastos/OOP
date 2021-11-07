@@ -19,14 +19,14 @@
 * [random_values](Lesson_2/Random)
 * [command line arguments](Lesson_2/Ra)
 * **Structs**
-    * [struct1.cpp](Lesson_2/struct1.cpp)
-    * [struct2.cpp](Lesson_2/struct2.cpp)
-    * [struct3.cpp](Lesson_2/struct3.cpp)
+    * [struct1.cpp](Lesson_2/Structs/struct1.cpp)
+    * [struct2.cpp](Lesson_2/Structs/struct2.cpp)
+    * [struct3.cpp](Lesson_2/Structs/struct3.cpp)
 * **Vectors**
-  * [shuffle](Lesson_2/vector1.cpp)
-  * [vector methods](Lesson_2/vector2.cpp)
-  * [vector sort](Lesson_2/vector3.cpp)
-  * [vector with pairs](Lesson_2/command_line_arguments.cpp)
+  * [shuffle](Lesson_2/Vectors/vector1.cpp)
+  * [vector methods](Lesson_2/Vectors/vector2.cpp)
+  * [vector sort](Lesson_2/Vectors/vector3.cpp)
+  * [vector with pairs](Lesson_2/Vectors/command_line_arguments.cpp)
 
  
 ## Εργασίες
