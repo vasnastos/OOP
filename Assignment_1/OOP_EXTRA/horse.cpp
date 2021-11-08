@@ -11,6 +11,7 @@ bool horse::move_forward(int step,double r)
 {
     if(step==1) 
     {
+        // return startup_speed>r;
         if(this->startup_speed>r)
         {
             return true;

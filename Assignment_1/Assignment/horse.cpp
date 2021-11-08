@@ -16,6 +16,10 @@ std::string horse::get_name()const {return this->name;}
 
 int horse::get_id()const {return this->id;}
 
+bool horse::operator==(const horse &h)const{
+    return this->id==h.id;
+}
+
 bool horse::move_forward(int step,double random_factor)
 {
     if(step==1)

@@ -65,3 +65,4 @@
       * [horse unit testing](Assignment_1/OOP_EXTRA/tests.cpp)
       * [racing.hpp](Assignment_1/OOP_EXTRA/racing.hpp)
       * [racing.cpp](Assignment_1/OOP_EXTRA/racing.cpp) 
+    *  [Πρότυπο Εργασίας](Assignment_1/Assignment_Template.zip)

@@ -9,11 +9,8 @@ racing::racing(int h,int rounds):rounds(rounds)
         auto random_value=std::uniform_int_distribution<int>(50,100);
         for(int i=1;i<=h;i++)
         {
-            horse a_horse=horse(i,"horse_"+std::to_string(i),random_value(mt1),random_value(mt1),random_value(mt1));
+            horse a_horse(i,"horse_"+std::to_string(i),random_value(mt1),random_value(mt1),random_value(mt1));
             this->horses.emplace_back(a_horse);
-            // this->horse_names[i]="horse_"+std::to_string(i);
-            this->ranking.empace_back(pair<horse,int>{a_horse,-1});
-            // rank[i]=-1;
         }
         this->positions=new int[h];
     }
@@ -30,7 +27,7 @@ racing::racing(int horse_number,std::vector <std::string> &names,int rnds)
     {
         shuffle(names.begin(),names.end(),default_random_engine(seed));
         name=names.at(random_name(mt1));
-        this->horses.emplace_back(i+1,name);
+        this->horses.emplace_back(horse(i+1,name));
     }
     this->rounds=rnds;
     this->positions=new int[names.size()];
@@ -56,8 +53,8 @@ void racing::race()
             can_be_moved=this->horses[j].move_forward(this->positions[i],move_factor(mt1));
             if(this->positions[j]==this->rounds) 
             {
-                if(find_if(this->ranking.begin(),this->ranking.end(),[&](std::pair <int,int> &p) {return p.first==this->horses[j].get_id();})!=this->ranking.end()) continue;
-                this->ranking.emplace_back(std::pair<int,int>(this->horses[j].get_id(),rank));
+                if(find_if(this->ranking.begin(),this->ranking.end(),[&](std::pair <horse,int> &p) {return p.first==this->horses[j];})!=this->ranking.end()) continue;
+                this->ranking.emplace_back(std::pair<horse,int>(this->horses[j],rank));
                 rank++;
                 continue;
             }
@@ -69,6 +66,7 @@ void racing::race()
         this->draw_race();
         press_any_key();
     }
+    this->print_ranks();
 }
 
 void racing::auto_race()
@@ -80,17 +78,19 @@ void racing::auto_race()
     }
     bool can_be_moved;
     std::uniform_real_distribution <double> move_factor(0,100.0);
-    double move_forward;
     this->draw_race();  this_thread::sleep_for(seconds(2)); cout<<endl;
+    int rank=1;
     for(int i=1;i<=steps_will_be_executed;i++)
     {
-        move_forward=move_factor(mt1);
+        // move_forward=move_factor(mt1);
         for(int j=0,t=this->horses.size();j<t;j++)
         {
-            can_be_moved=this->horses[i].move_forward(this->positions[j],move_factor(mt1));
+            can_be_moved=this->horses[j].move_forward(this->positions[j],move_factor(mt1));
             if(this->positions[j]==this->rounds)
             {
-                
+                if(find_if(this->ranking.begin(),this->ranking.end(),[&](std::pair <horse,int> &p) {return p.first==this->horses[j];})!=this->ranking.end()) continue;
+                this->ranking.emplace_back(std::pair<horse,int>(this->horses[j],rank));
+                rank++;
                 continue;
             }
             if(can_be_moved)
@@ -102,6 +102,7 @@ void racing::auto_race()
         this_thread::sleep_for(seconds(2));
         cout<<endl;
     }
+    this->print_ranks();
 }
 
 void racing::draw_race()
@@ -124,10 +125,19 @@ void racing::draw_race()
 
 void racing::print_ranks()
 {
-    sort(this->ranking.begin(),this->ranking.end(),[](pair <int,int> &p1,pair <int,int> &p2) {return p1.first<p2.first;});
+    std::cout<<"RANKINGS"<<std::endl;
+    std::cout<<"*******************"<<std::endl;
+    sort(this->ranking.begin(),this->ranking.end(),[](pair <horse,int> &p1,pair <horse,int> &p2) {return p1.second<p2.second;});
     for(auto &rank:this->ranking)
     {
-        cout<<find_if(horses.begin(),horses.end(),[&](const horse &h) {return h.get_id()==rank.second;})->get_name()<<"->"<<(std::find())<<endl;
+        cout<<rank.first.get_name()<<"->"<<(rank.second==INT_MAX?"DNF":to_string(rank.second))<<endl;
+    }
+    for(auto &h:this->horses)
+    {
+        if(std::find_if(this->ranking.begin(),this->ranking.end(),[&](std::pair <horse,int> &p) {return p.first==h;})==this->ranking.end())
+        {
+           std::cout<<h.get_name()<<"->DNF"<<std::endl; 
+        }
     }
 }
 
@@ -138,7 +148,7 @@ void press_any_key()
     system("pause");
     #else
     cout<<"Press any key....";
-    cin.get();
+    getchar();
     #endif
     cout<<endl<<endl;
 }

@@ -29,8 +29,9 @@ void draw_race(vector <horse> &horses,int *positions,int rounds)
 
 void press_any_key()
 {
+    // system("pause");
     cout<<"Press Any Key....";
-    cin.get();
+    getchar();
     cout<<endl<<endl;
 }
 

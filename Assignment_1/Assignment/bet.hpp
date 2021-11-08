@@ -1,5 +1,4 @@
 #include <iostream>
-#include "racing.hpp"
 
 class Bet
 {

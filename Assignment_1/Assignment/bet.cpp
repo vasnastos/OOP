@@ -9,5 +9,3 @@ void Bet::place_bet(double amount_of_bet)
 {
     this->temporary_amount;
 }
-
-void Bet::calculate_profitability()
