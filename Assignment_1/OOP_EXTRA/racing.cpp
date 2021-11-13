@@ -6,11 +6,10 @@ Racing::Racing(int number_of_horses,int number_of_rounds):n_horses(number_of_hor
 {
     auto random_value=uniform_int_distribution<int>(50,100);
     vector <string> names{"Blitz","Bolt","Goliath","Hercules","Rogue","Danger","Raider","Storm","Nitro","Hulk"};
-    auto random_index=uniform_int_distribution<int>(0,names.size()-1);
+    shuffle(names.begin(),names.end(),default_random_engine(chrono::steady_clock::now().time_since_epoch().count()));
     for(int i=0;i<this->n_horses;i++)
     {
-        shuffle(names.begin(),names.end(),default_random_engine(chrono::steady_clock::now().time_since_epoch().count()));
-        horses.push_back(horse(i+1,names[random_index(mt)],random_value(mt),random_value(mt),random_value(mt)));
+        horses.push_back(horse(i+1,names[i],random_value(mt),random_value(mt),random_value(mt)));
         position.push_back(0);
     }
 }
