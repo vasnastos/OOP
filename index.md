@@ -1,8 +1,8 @@
 # Αντικειμενοστραφής Προγραμματισμός
 ## Εξάμηνο 3ο(2021-2022)
-### Ιστοσελίδα Μαθήματος:[](https://chgogos.github.io/oop/)
+### Ιστοσελίδα Μαθήματος:[:globe_with_meridians:](https://chgogos.github.io/oop/)
 
-<u>NASTOS VASILEIOS-ARTA</u>
+<u>NASTOS VASILEIOS-ARTA:copyright:2021</u>
 
 * ## Ενισχυτικά 
 
@@ -65,7 +65,7 @@
         
  * ## ΕΡΓΑΣΙΕΣ 
 
-    <iframe style="width:80%; height:auto;" src="Read_Me(resources)/2021f_oop_prj1.pdf"></iframe>  
+    <iframe style="width:80%; height:750px;" src="Read_Me(resources)/2021f_oop_prj1.pdf"></iframe>  
     
     * **Σχετικά τμήματα κώδικα**
     
