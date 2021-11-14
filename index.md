@@ -49,7 +49,8 @@
     
     * Ενισχυτικό 3 
       
-      **[ΠΑΡΟΥΣΙΑΣΗ]**(https://github.com/vasnastos/OOP/blob/main/Lesson_3/OOP_3.pdf)
+      [**ΠΑΡΟΥΣΙΑΣΗ**:spiral_notepad:](https://github.com/vasnastos/OOP/blob/main/Lesson_3/OOP_3.pdf)
+      
         | **ΑΣΚΗΣΗ** |                               **ΛΥΣΗ**                                              |
         |------------|-------------------------------------------------------------------------------------|
         |  ΑΣΚ_1     | [:paperclips:](https://github.com/vasnastos/OOP/blob/main/Lesson_3/exercise1.cpp)   |
