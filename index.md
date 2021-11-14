@@ -6,6 +6,7 @@
 * ## Ενισχυτικά 
 
   * Ενυσχιτικό 1
+
     **Δείκτες**
       * [pointers 1](https://github.com/vasnastos/OOP/blob/main/Lesson_1/Pointers/pointers1.cpp)
       * [pointers 2](https://github.com/vasnastos/OOP/blob/main/Lesson_1/Pointers/pointers2.cpp)
@@ -22,6 +23,7 @@
       * [strings 2](https://github.com/vasnastos/OOP/blob/main/Lesson_1/Word_Counter/word_counter.cpp)
     
    * Ενισχυτικό 2
+   
      **Δομές(Structs)** 
       * [structs1](https://github.com/vasnastos/OOP/blob/main/Lesson_2/Structs/struct1.cpp)
       * [structs2](https://github.com/vasnastos/OOP/blob/main/Lesson_2/Structs/struct2.cpp)
