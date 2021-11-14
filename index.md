@@ -1,13 +1,8 @@
 # Αντικειμενοστραφής Προγραμματισμός
 ## Εξάμηνο 3ο(2021-2022)
+### Ιστοσελίδα Μαθήματος:[](https://chgogos.github.io/oop/)
 
-
-* Online Editor
-<html>
-<div data-pym-src="https://www.jdoodle.com/embed/v0/41Tz">
-<script src=”https://www.jdoodle.com/assets/jdoodle-pym.min.js” type=”text/javascript”></script>
-</div>
-</html>
+<u>NASTOS VASILEIOS-ARTA</u>
 
 * ## Ενισχυτικά 
 
@@ -68,6 +63,11 @@
         |  ΑΣΚ_6     | [**:paperclips:**](https://github.com/vasnastos/OOP/blob/main/Lesson_3/exercise6.cpp)   |
         |  ΑΣΚ_7     | [**:paperclips:**](https://github.com/vasnastos/OOP/blob/main/Lesson_3/exercise7.cpp)   |
         
- * ## ΕΡΓΑΣΙΕΣ    
+ * ## ΕΡΓΑΣΙΕΣ 
+
+    <iframe style="width:80%; height:auto;" src="Read_Me(resources)/2021f_oop_prj1.pdf"></iframe>  
+    
+    * **Σχετικά τμήματα κώδικα**
+    
         
  * ## ΟΔΗΓΙΕΣ ΕΓΚΑΤΑΣΤΑΣΗΣ
