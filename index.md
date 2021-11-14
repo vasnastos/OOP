@@ -58,13 +58,13 @@
       
         | **ΑΣΚΗΣΗ** |                               **ΛΥΣΗ**                                              |
         |------------|-------------------------------------------------------------------------------------|
-        |  ΑΣΚ_1     | [:paperclips:](https://github.com/vasnastos/OOP/blob/main/Lesson_3/exercise1.cpp)   |
-        |  AΣΚ_2     | [:paperclips:](https://github.com/vasnastos/OOP/blob/main/Lesson_3/exercise2.cpp)   |
-        |  ΑΣΚ_3     | [:paperclips:](https://github.com/vasnastos/OOP/blob/main/Lesson_3/exercise3.cpp)   |
-        |  ΑΣΚ_4     | [:paperclips:](https://github.com/vasnastos/OOP/blob/main/Lesson_3/exercise4.cpp)   |
-        |  ΑΣΚ_5     | [:paperclips:](https://github.com/vasnastos/OOP/blob/main/Lesson_3/exercise5.cpp)   |
-        |  ΑΣΚ_6     | [:paperclips:](https://github.com/vasnastos/OOP/blob/main/Lesson_3/exercise6.cpp)   |
-        |  ΑΣΚ_7     | [:paperclips:](https://github.com/vasnastos/OOP/blob/main/Lesson_3/exercise7.cpp)   |
+        |  ΑΣΚ_1     | [**:paperclips:**](https://github.com/vasnastos/OOP/blob/main/Lesson_3/exercise1.cpp)   |
+        |  AΣΚ_2     | [**:paperclips:**](https://github.com/vasnastos/OOP/blob/main/Lesson_3/exercise2.cpp)   |
+        |  ΑΣΚ_3     | [**:paperclips:**](https://github.com/vasnastos/OOP/blob/main/Lesson_3/exercise3.cpp)   |
+        |  ΑΣΚ_4     | [**:paperclips:**](https://github.com/vasnastos/OOP/blob/main/Lesson_3/exercise4.cpp)   |
+        |  ΑΣΚ_5     | [**:paperclips:**](https://github.com/vasnastos/OOP/blob/main/Lesson_3/exercise5.cpp)   |
+        |  ΑΣΚ_6     | [**:paperclips:**](https://github.com/vasnastos/OOP/blob/main/Lesson_3/exercise6.cpp)   |
+        |  ΑΣΚ_7     | [**:paperclips:**](https://github.com/vasnastos/OOP/blob/main/Lesson_3/exercise7.cpp)   |
         
  * ## ΕΡΓΑΣΙΕΣ    
         
