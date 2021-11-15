@@ -6,7 +6,7 @@
   font-size:17px;
   font-weight:bold;
  }
-<style>
+</style>
 </head>
   
 # Αντικειμενοστραφής Προγραμματισμός
