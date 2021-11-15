@@ -1,9 +1,14 @@
+<html>
+<head>
 <style>
   table{
    text-align:center;
+  font-size:17px;
+  font-weight:bold;
  }
 <style>
-
+</head>
+  
 # Αντικειμενοστραφής Προγραμματισμός
 ## Εξάμηνο 3ο(2021-2022)
 ### Ιστοσελίδα Μαθήματος:[:globe_with_meridians:](https://chgogos.github.io/oop/)
@@ -79,3 +84,6 @@
     
         
  * ## ΟΔΗΓΙΕΣ ΕΓΚΑΤΑΣΤΑΣΗΣ
+
+  
+ </html>
