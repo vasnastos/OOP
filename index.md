@@ -23,22 +23,25 @@
       |[pointers 2](https://github.com/vasnastos/OOP/blob/main/Lesson_1/Pointers/pointers2.cpp)|
       |[pointers 3](https://github.com/vasnastos/OOP/blob/main/Lesson_1/Pointers/pointers3.cpp)|
     
-    **Αναφορές**
-      * [reference 1](https://github.com/vasnastos/OOP/blob/main/Lesson_1/References/pass_by_reference1.cpp)
-      * [reference 2](https://github.com/vasnastos/OOP/blob/main/Lesson_1/References/pass_by_reference2.cpp)
-      * [reference 3](https://github.com/vasnastos/OOP/blob/main/Lesson_1/References/pass_by_reference3.cpp)
-      * [pass_by_value 1](https://github.com/vasnastos/OOP/blob/main/Lesson_1/References/pass_by_value1.cpp)
+    |                                     **Αναφορές**                                                    |
+    |-----------------------------------------------------------------------------------------------------|
+    |[reference 1](https://github.com/vasnastos/OOP/blob/main/Lesson_1/References/pass_by_reference1.cpp) |
+    |[reference 2](https://github.com/vasnastos/OOP/blob/main/Lesson_1/References/pass_by_reference2.cpp) |
+    |[reference 3](https://github.com/vasnastos/OOP/blob/main/Lesson_1/References/pass_by_reference3.cpp) |
+    |[pass_by_value 1](https://github.com/vasnastos/OOP/blob/main/Lesson_1/References/pass_by_value1.cpp) | 
      
-     **Αλφαριθμητικά**
-      * [strings 1](https://github.com/vasnastos/OOP/blob/main/Lesson_1/string.cpp)
-      * [strings 2](https://github.com/vasnastos/OOP/blob/main/Lesson_1/Word_Counter/word_counter.cpp)
+    |                                   **Αλφαριθμητικά**                                             |
+    |-------------------------------------------------------------------------------------------------|
+    |  [strings 1](https://github.com/vasnastos/OOP/blob/main/Lesson_1/string.cpp)                    |
+    |  [strings 2](https://github.com/vasnastos/OOP/blob/main/Lesson_1/Word_Counter/word_counter.cpp) |
     
    * Ενισχυτικό 2
    
-     **Δομές(Structs)** 
-      * [structs1](https://github.com/vasnastos/OOP/blob/main/Lesson_2/Structs/struct1.cpp)
-      * [structs2](https://github.com/vasnastos/OOP/blob/main/Lesson_2/Structs/struct2.cpp)
-      * [structs3](https://github.com/vasnastos/OOP/blob/main/Lesson_2/Structs/struct3.cpp)
+     |                              **Δομές(Structs)**                                      |
+     |--------------------------------------------------------------------------------------|
+     |  [structs1](https://github.com/vasnastos/OOP/blob/main/Lesson_2/Structs/struct1.cpp) |
+     |  [structs2](https://github.com/vasnastos/OOP/blob/main/Lesson_2/Structs/struct2.cpp) |
+     |  [structs3](https://github.com/vasnastos/OOP/blob/main/Lesson_2/Structs/struct3.cpp) |
      
      **Διανύσματα(Vectors)**
        * [shuffle](https://github.com/vasnastos/OOP/blob/main/Lesson_2/Vectors/vector1.cpp)
