@@ -15,7 +15,7 @@
 
 * ## Ενισχυτικά 
 
-  * Ενισχυτικό 1
+  * ### Ενισχυτικό 1
   
       |                                     **Δείκτες**                                        |
       |----------------------------------------------------------------------------------------|
@@ -35,7 +35,7 @@
     |  [strings 1](https://github.com/vasnastos/OOP/blob/main/Lesson_1/string.cpp)                    |
     |  [strings 2](https://github.com/vasnastos/OOP/blob/main/Lesson_1/Word_Counter/word_counter.cpp) |
     
-   * Ενισχυτικό 2
+   * ### Ενισχυτικό 2
    
      |                              **Δομές(Structs)**                                      |
      |--------------------------------------------------------------------------------------|
@@ -62,7 +62,7 @@
      |   [random3](https://github.com/vasnastos/OOP/blob/main/Lesson_2/Random/random3.cpp)    |
      |   [cla](https://github.com/vasnastos/OOP/blob/main/Lesson_2/command_line_arguments.cpp)|
     
-    * Ενισχυτικό 3 
+    * ### Ενισχυτικό 3 
       
       [**ΠΑΡΟΥΣΙΑΣΗ**:spiral_notepad:](https://github.com/vasnastos/OOP/blob/main/Lesson_3/OOP_3.pdf)
       
@@ -81,7 +81,12 @@
     <iframe style="width:80%; height:750px;" src="Read_Me(resources)/2021f_oop_prj1.pdf"></iframe>  
     
     * **Σχετικά τμήματα κώδικα**
-    
+      * [horse.hpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_EXTRA/horse.hpp)
+      * [horse.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_EXTRA/horse.cpp)
+      * [racing.hpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_EXTRA/racing.hpp)
+      * [racing.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_EXTRA/racing.cpp)
+      * [main.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_EXTRA/main.cpp)
+      * [tests.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_EXTRA/tests.cpp)
         
  * ## ΟΔΗΓΙΕΣ ΕΓΚΑΤΑΣΤΑΣΗΣ
 
