@@ -5,6 +5,11 @@
   font-size:17px;
   font-weight:bold;
  }
+  tr:hover
+  {
+    font-size:18px;
+    background-color:green;
+  }
 </style>
 </head>
   
