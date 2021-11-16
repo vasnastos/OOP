@@ -17,9 +17,14 @@
 </head>
   
 # Αντικειμενοστραφής Προγραμματισμός
-## Εξάμηνο 3ο(2021-2022)
-### Ιστοσελίδα Μαθήματος:[:globe_with_meridians:](https://chgogos.github.io/oop/)
+
+**Εξάμηνο 3ο(2021-2022)**
+
+**Ιστοσελίδα Μαθήματος:[:globe_with_meridians:](https://chgogos.github.io/oop/)**
+
 <u>NASTOS VASILEIOS-ARTA:copyright:2021</u>
+
+Τελευταία ενημέρωση:16/11/2021
 
 * ## Ενισχυτικά 
 
