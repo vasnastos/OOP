@@ -80,7 +80,8 @@
 
     <iframe style="width:80%; height:750px;" src="Read_Me(resources)/2021f_oop_prj1.pdf"></iframe>  
     
-    * **Σχετικά τμήματα κώδικα**
+    **Σχετικά τμήματα κώδικα**
+      
       * [horse.hpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_EXTRA/horse.hpp)
       * [horse.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_EXTRA/horse.cpp)
       * [racing.hpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_EXTRA/racing.hpp)
