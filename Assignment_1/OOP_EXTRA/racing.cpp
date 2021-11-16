@@ -2,6 +2,18 @@
 
 mt19937 mt(chrono::steady_clock::now().time_since_epoch().count());
 
+void press_enter()
+{
+    cout<<"Press [Enter] to continue....";
+    cin.get();
+}
+
+void interrupt()
+{
+    this_thread::sleep_for(seconds(2));
+    cout<<endl;
+}
+
 Racing::Racing(int number_of_horses,int number_of_rounds):n_horses(number_of_horses),rounds(number_of_rounds)
 {
     auto random_value=uniform_int_distribution<int>(50,100);
@@ -12,9 +24,71 @@ Racing::Racing(int number_of_horses,int number_of_rounds):n_horses(number_of_hor
         horses.push_back(horse(i+1,names[i],random_value(mt),random_value(mt),random_value(mt)));
         position.push_back(0);
     }
+    // position
+    // 5 loops->{2,1,3,5,4}
+    // 1.position.push_back(2)-->i:0  value:2
+    // 2.position.push_back(1)-->i:1  value:1
+    // 3.position.push_back(3)-->i:2  value:3
+    // 4.position.push_back(5)-->i:3  value:5
+    // 5.position.push_back(4)-->i:4  value:4
 }
 
 Racing::~Racing() {}
+
+void Racing::race()
+{
+    mt19937 gen(steady_clock::now().time_since_epoch().count());
+    const int steps_will_be_made=this->rounds * 2;
+    auto rand_real=uniform_real_distribution<double>(0,100);
+    bool can_be_moved;
+    this->drawing();
+    press_enter();
+    for(int i=0;i<steps_will_be_made;i++)
+    {
+        for(int j=0;j<this->horses.size();j++)
+        {
+            if(this->position[j]==this->rounds-1)
+            {
+                continue;
+            }
+            can_be_moved=this->horses[j].move_forward(this->position[j],rand_real(gen));
+            if(can_be_moved)
+            {
+                this->position[j]++;
+            }
+        }
+        this->drawing();
+        press_enter();
+    }
+}
+
+void Racing::auto_race()
+{
+    mt19937 gen(steady_clock::now().time_since_epoch().count());
+    const int steps_will_be_made=this->rounds * 2;
+    auto rand_real=uniform_real_distribution<double>(0,100);
+    bool can_be_moved;
+    this->drawing();
+    interrupt();
+    for(int i=0;i<steps_will_be_made;i++)
+    {
+        for(int j=0;j<this->horses.size();j++)
+        {
+            if(this->position[j]==this->rounds-1)
+            {
+                continue;
+            }
+            can_be_moved=this->horses[j].move_forward(this->position[j],rand_real(gen));
+            if(can_be_moved)
+            {
+                this->position[j]++;
+            }
+        }
+        this->drawing();
+        interrupt();
+    }
+}
+
 
 void Racing::drawing()
 {
@@ -27,7 +101,8 @@ void Racing::drawing()
             {
                 cout<<i;
             }
-            cout<<".";
+            else
+                cout<<".";
         }
         cout<<"|"<<endl;
     }
