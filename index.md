@@ -9,6 +9,8 @@
   {
     font-size:18px;
     background-color:green;
+    color:blue;
+    text-decoration:underline;
   }
 </style>
 </head>
