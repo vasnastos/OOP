@@ -43,33 +43,31 @@
      |  [structs2](https://github.com/vasnastos/OOP/blob/main/Lesson_2/Structs/struct2.cpp) |
      |  [structs3](https://github.com/vasnastos/OOP/blob/main/Lesson_2/Structs/struct3.cpp) |
      
-     **Διανύσματα(Vectors)**
-       * [shuffle](https://github.com/vasnastos/OOP/blob/main/Lesson_2/Vectors/vector1.cpp)
-       * [vector methods](https://github.com/vasnastos/OOP/blob/main/Lesson_2/Vectors/vector2.cpp)
-       * [vector sort](https://github.com/vasnastos/OOP/blob/main/Lesson_2/Vectors/vector3.cpp)
-       * [vector with pairs](https://github.com/vasnastos/OOP/blob/main/Lesson_2/Vectors/vector4.cpp)
-       * [vector methods](https://github.com/vasnastos/OOP/blob/main/Lesson_2/Vectors/vector5.cpp)
-       * [vector shuffle](https://github.com/vasnastos/OOP/blob/main/Lesson_2/Vectors/vector6.cpp)
-       * [vector iterators](https://github.com/vasnastos/OOP/blob/main/Lesson_2/Vectors/vector7.cpp)
-       * [vector with pairs(2)](https://github.com/vasnastos/OOP/blob/main/Lesson_2/Vectors/vector8.cpp)
-      
-     **Λεξικά(Maps)**
-        * [map1](https://github.com/vasnastos/OOP/blob/main/Lesson_2/Maps/map1.cpp)
+     |                              **Containers**                                                      |
+     |--------------------------------------------------------------------------------------------------|
+     |   [shuffle](https://github.com/vasnastos/OOP/blob/main/Lesson_2/Vectors/vector1.cpp)             |
+     |   [vector methods](https://github.com/vasnastos/OOP/blob/main/Lesson_2/Vectors/vector2.cpp)      |
+     |   [vector sort](https://github.com/vasnastos/OOP/blob/main/Lesson_2/Vectors/vector3.cpp)         |
+     |   [vector with pairs](https://github.com/vasnastos/OOP/blob/main/Lesson_2/Vectors/vector4.cpp)   |
+     |   [vector methods](https://github.com/vasnastos/OOP/blob/main/Lesson_2/Vectors/vector5.cpp)      |
+     |   [vector shuffle](https://github.com/vasnastos/OOP/blob/main/Lesson_2/Vectors/vector6.cpp)      |
+     |   [vector iterators](https://github.com/vasnastos/OOP/blob/main/Lesson_2/Vectors/vector7.cpp)    |
+     |   [vector with pairs(2)](https://github.com/vasnastos/OOP/blob/main/Lesson_2/Vectors/vector8.cpp)|
+     |   [map1](https://github.com/vasnastos/OOP/blob/main/Lesson_2/Maps/map1.cpp)                      |
      
-     **Τυχαιότητα**
-        * [random1](https://github.com/vasnastos/OOP/blob/main/Lesson_2/Random/random1.cpp)
-        * [random2](https://github.com/vasnastos/OOP/blob/main/Lesson_2/Random/random2.cpp)
-        * [random3](https://github.com/vasnastos/OOP/blob/main/Lesson_2/Random/random3.cpp)
-     
-     **Ορίσματα Γραμμής εντολών**
-        * [cla](https://github.com/vasnastos/OOP/blob/main/Lesson_2/command_line_arguments.cpp)
+     |                                **Τυχαιότητα-Ορίσματα Γραμμής εντολών**                 |
+     |----------------------------------------------------------------------------------------|
+     |   [random1](https://github.com/vasnastos/OOP/blob/main/Lesson_2/Random/random1.cpp)    |
+     |   [random2](https://github.com/vasnastos/OOP/blob/main/Lesson_2/Random/random2.cpp)    |
+     |   [random3](https://github.com/vasnastos/OOP/blob/main/Lesson_2/Random/random3.cpp)    |
+     |   [cla](https://github.com/vasnastos/OOP/blob/main/Lesson_2/command_line_arguments.cpp)|
     
     * Ενισχυτικό 3 
       
       [**ΠΑΡΟΥΣΙΑΣΗ**:spiral_notepad:](https://github.com/vasnastos/OOP/blob/main/Lesson_3/OOP_3.pdf)
       
-        | **ΑΣΚΗΣΗ** |                               **ΛΥΣΗ**                                              |
-        |------------|-------------------------------------------------------------------------------------|
+        | **ΑΣΚΗΣΗ** |                               **ΛΥΣΗ**                                                  |
+        |------------|-----------------------------------------------------------------------------------------|
         |  ΑΣΚ_1     | [**:paperclips:**](https://github.com/vasnastos/OOP/blob/main/Lesson_3/exercise1.cpp)   |
         |  AΣΚ_2     | [**:paperclips:**](https://github.com/vasnastos/OOP/blob/main/Lesson_3/exercise2.cpp)   |
         |  ΑΣΚ_3     | [**:paperclips:**](https://github.com/vasnastos/OOP/blob/main/Lesson_3/exercise3.cpp)   |
