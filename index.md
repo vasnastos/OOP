@@ -30,7 +30,7 @@
 
 * ## Ενισχυτικά 
 
-  * ### Ενισχυτικό 1
+  * ### Ενισχυτικό 1(30/10/21)
   
       |                                     **Δείκτες**                                        |
       |----------------------------------------------------------------------------------------|
@@ -50,7 +50,7 @@
     |  [strings 1](https://github.com/vasnastos/OOP/blob/main/Lesson_1/string.cpp)                    |
     |  [strings 2](https://github.com/vasnastos/OOP/blob/main/Lesson_1/Word_Counter/word_counter.cpp) |
     
-   * ### Ενισχυτικό 2
+   * ### Ενισχυτικό 2(07/11/21)
    
      |                              **Δομές(Structs)**                                      |
      |--------------------------------------------------------------------------------------|
@@ -77,7 +77,7 @@
      |   [random3](https://github.com/vasnastos/OOP/blob/main/Lesson_2/Random/random3.cpp)    |
      |   [cla](https://github.com/vasnastos/OOP/blob/main/Lesson_2/command_line_arguments.cpp)|
     
-    * ### Ενισχυτικό 3 
+    * ### Ενισχυτικό 3(13/11/21) 
       
       [**ΠΑΡΟΥΣΙΑΣΗ**:spiral_notepad:](https://github.com/vasnastos/OOP/blob/main/Lesson_3/OOP_3.pdf)
       
@@ -103,7 +103,15 @@
       * [racing.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_EXTRA/racing.cpp)
       * [main.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_EXTRA/horse_race.cpp)
       * [tests.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_EXTRA/tests.cpp)
-        
+      
+    **Τμήματα κώδικα(17/11/21)**
+      * [horse.hpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_ASSIGN_17_11/horse.hpp)
+      * [horse.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_ASSIGN_17_11/horse.cpp)
+      * [racing.hpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_ASSIGN_17_11/racing.hpp)
+      * [racing.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_ASSIGN_17_11/racing.cpp)
+      * [main.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_ASSIGN_17_11/racing.cpp)
+      * [tests.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_ASSIGN_17_11/test_class.cpp)  
+      
  * ## ΟΔΗΓΙΕΣ ΕΓΚΑΤΑΣΤΑΣΗΣ
 
   
