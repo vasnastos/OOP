@@ -37,4 +37,6 @@
    ```
      g++ sqlite_connectivity.cpp -l sqlite3 -o sqlite_out
 
-     sqlite_out.exe|./sqlite_out.out
+     Windows:sqlite_out.exe
+     
+     Linux:./sqlite_out.out
