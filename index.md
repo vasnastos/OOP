@@ -92,7 +92,9 @@
         |  ΑΣΚ_7     | [**:paperclips:**](https://github.com/vasnastos/OOP/blob/main/Lesson_3/exercise7.cpp)   |
         
   * ## ΕΡΓΑΣΙΕΣ 
+
     * **Εργασία 1**
+   
         <iframe style="width:80%; height:750px;" src="Read_Me(resources)/2021f_oop_prj1.pdf"></iframe>  
 
         **Σχετικά τμήματα κώδικα**
