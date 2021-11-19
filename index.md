@@ -112,7 +112,7 @@
          * [horse.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_ASSIGN_17_11/horse.cpp)
          * [racing.hpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_ASSIGN_17_11/racing.hpp)
          * [racing.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_ASSIGN_17_11/racing.cpp)
-         * [main.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_ASSIGN_17_11/racing.cpp)
+         * [horse_race.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_ASSIGN_17_11/horse_race.cpp)
          * [tests.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_ASSIGN_17_11/test_class.cpp)  
       
  * ## ΟΔΗΓΙΕΣ ΕΓΚΑΤΑΣΤΑΣΗΣ
