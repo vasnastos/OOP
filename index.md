@@ -97,15 +97,6 @@
    
         <iframe style="width:80%; height:750px;" src="Read_Me(resources)/2021f_oop_prj1.pdf"></iframe>  
 
-        **Σχετικά τμήματα κώδικα**
-
-         * [horse.hpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_EXTRA/horse.hpp)
-         * [horse.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_EXTRA/horse.cpp)
-         * [racing.hpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_EXTRA/racing.hpp)
-         * [racing.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_EXTRA/racing.cpp)
-         * [main.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_EXTRA/horse_race.cpp)
-         * [tests.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_EXTRA/tests.cpp)
-
         **Τμήματα κώδικα(17/11/21)**
         
          * [horse.hpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_ASSIGN_17_11/horse.hpp)
@@ -114,6 +105,16 @@
          * [racing.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_ASSIGN_17_11/racing.cpp)
          * [horse_race.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_ASSIGN_17_11/horse_race.cpp)
          * [tests.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_ASSIGN_17_11/test_class.cpp)  
+         
+        ** Τμήματα Κώδικα(20/11/21) **
+         * [horse.hpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_ΕΧΤΡΑ/horse.hpp)
+         * [horse.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_ΕΧΤΡΑ/horse.cpp)
+         * [racing.hpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_ΕΧΤΡΑ/racing.hpp)
+         * [racing.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_ΕΧΤΡΑ/racing.cpp)
+         * [horse_race.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_ΕΧΤΡΑ/horse_race.cpp)
+         * [tests.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_ΕΧΤΡΑ/test_class.cpp)
+         * [horse_race_bet.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/OOP_EXTRA/horse_race_bet.cpp)  
+        
       
  * ## ΟΔΗΓΙΕΣ ΕΓΚΑΤΑΣΤΑΣΗΣ
       * [sqlite](sqlite.md)
