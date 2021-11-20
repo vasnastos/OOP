@@ -5,7 +5,7 @@
 * **Online Editor:**[https://godbolt.org/](https://godbolt.org/)
 * **Κεντρική σελίδα μαθήματος:**[https://github.com/chgogos/oop](https://github.com/chgogos/oop)
 
-## Μάθημα 1
+## ΕΝΙΣΧΥΤΙΚΟ 1
 
 * **Pointers**
   * [pointers1](Lesson_1/Pointers/pointers1.cpp)
@@ -23,7 +23,7 @@
 * [word counter](Lesson_1/Word_Counter/word_counter.cpp)
 * [string](Lesson_1/string.cpp)
 
-## Μάθημα 2
+## ΕΝΙΣΧΥΤΙΚΟ 2
 
 * **Structs**
     * [struct1.cpp](Lesson_2/Structs/struct1.cpp)
@@ -51,18 +51,25 @@
 * **Other Resources**
   * [command line arguments](Lesson_2/command_line_arguments.cpp)
 
+## ΕΝΙΣΧΥΤΙΚΟ 3
+  * [horse.hpp](ASSIGNMENT_1/../Assignment_1/OOP_ASSIGN_17_11/horse.hpp)
+  * [horse.cpp](ASSIGNMENT_1/../Assignment_1/OOP_ASSIGN_17_11/horse.cpp)
+  * [racing.hpp](ASSIGNMENT_1/../Assignment_1/OOP_ASSIGN_17_11/racing.hpp)
+  * [racing.cpp](ASSIGNMENT_1/../Assignment_1/OOP_ASSIGN_17_11/racing.cpp)
+  * [horse_race.cpp](ASSIGNMENT_1/../Assignment_1/OOP_ASSIGN_17_11/horse_race.cpp)
+  * [tests.cpp](ASSIGNMENT_1/../Assignment_1/OOP_ASSIGN_17_11/tests.cpp)
+
+## ΕΝΙΣΧΥΤΙΚΟ 4
+  * [horse.hpp](ASSIGNMENT_1/../Assignment_1/OOP_ΕΧΤΡΑ/horse.hpp)
+  * [horse.cpp](ASSIGNMENT_1/../Assignment_1/OOP_ΕΧΤΡΑ/horse.cpp)
+  * [racing.hpp](ASSIGNMENT_1/../Assignment_1/OOP_ΕΧΤΡΑ/racing.hpp)
+  * [racing.cpp](ASSIGNMENT_1/../Assignment_1/OOP_ΕΧΤΡΑ/racing.cpp)
+  * [horse_race.cpp](ASSIGNMENT_1/../Assignment_1/OOP_ΕΧΤΡΑ/horse_race.cpp)
+  * [tests.cpp](ASSIGNMENT_1/../Assignment_1/OOP_EXTRA/tests.cpp)
+  * [race_bet.cpp](ASSIGNMENT_1/../Assignment_1/OOP_EXTRA/horse_race_bet.cpp)
+
 ## Αλλες Αναφορές
 
 * Sqlite:[sqlite](https://github.com/vasnastos/OOP/tree/main/Sqlite)
 * wxWidgets:[WxWidgets](WxWidgets/) 
 
-## Εργασίες
-  * Assigmment_1:
-    * [Εκφώνηση](https://github.com/chgogos/oop/blob/master/2021f_project1/2021f_oop_prj1.pdf)
-    * **Βοηθητικά τμήματα κώδικα**
-      * [horse.hpp](Assignment_1/OOP_EXTRA/horse.hpp)
-      * [horse.cpp](Assignment_1/OOP_EXTRA/horse.cpp)
-      * [horse unit testing](Assignment_1/OOP_EXTRA/tests.cpp)
-      * [racing.hpp](Assignment_1/OOP_EXTRA/racing.hpp)
-      * [racing.cpp](Assignment_1/OOP_EXTRA/racing.cpp) 
-    *  [Πρότυπο Εργασίας](Assignment_1/Assignment_Template.zip)
