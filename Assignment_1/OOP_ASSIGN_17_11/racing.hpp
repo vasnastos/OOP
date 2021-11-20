@@ -8,8 +8,6 @@
 using namespace std;
 using namespace std::chrono;
 
-
-
 class Racing
 {
    private:
@@ -25,4 +23,8 @@ class Racing
       void auto_race();
       void drawing();
       void display_standings();
+      void display_horses();
+
+      vector <horse> get_horses()const;
+      vector <pair <horse,int>> get_standings()const;
 };

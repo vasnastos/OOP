@@ -1,0 +1,9 @@
+//Main Κώδικας
+g++ horse.cpp racing.cpp horse_race.cpp -o race -std=c++11
+race.exe
+linux:./race.out
+
+//Μεταγλώττιση tests
+g++ horse.cpp test_class.cpp -o tests -std=c++11
+tests
+linux:./tests.out

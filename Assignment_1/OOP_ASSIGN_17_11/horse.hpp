@@ -16,4 +16,6 @@ class horse
         ~horse();
         bool move_forward(int step,double r);
         string get_name();
+        bool operator==(const horse &h)const;
+        friend ostream &operator<<(ostream &os,const horse &h);
 };

@@ -39,3 +39,13 @@ string horse::get_name()
 {
     return this->name;
 }
+
+bool horse::operator==(const horse &h)const
+{
+    return this->id==h.id;
+}
+
+ostream &operator<<(ostream &os,const horse &h)
+{
+    return os<<"[Name:"<<h.name<<", Startup Speed:"<<h.startup_speed<<", Power:"<<h.power<<", Stamina:"<<h.stamina<<"]";
+}

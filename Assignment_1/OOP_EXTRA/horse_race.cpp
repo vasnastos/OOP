@@ -3,6 +3,10 @@
 
 int main(int argc,char **argv)
 {
+   // argc-->1
+   // argv[0]-->"./horse_race"
+   // argv[1]-->"6"
+   // argv[2]-->"12"
    int number_of_horses=4;
    int number_of_rounds=10;
    if(argc==3)
@@ -11,7 +15,6 @@ int main(int argc,char **argv)
       number_of_rounds=atoi(argv[2]);
    }
    Racing rc(number_of_horses,number_of_rounds);
-   // rc.race();
-   rc.auto_race();
+   rc.race();
    return EXIT_SUCCESS;
 }

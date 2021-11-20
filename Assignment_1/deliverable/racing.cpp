@@ -1,5 +1,5 @@
 #include "racing.hpp"
-#define DNF -1000
+#define DNF 99
 
 mt19937 mt(chrono::steady_clock::now().time_since_epoch().count());
 
@@ -15,25 +15,29 @@ void interrupt()
     cout<<endl;
 }
 
-Racing::Racing(int number_of_horses,int number_of_rounds):n_horses(number_of_horses),rounds(number_of_rounds)
+Racing::Racing(int number_of_horses,int number_of_rounds)
 {
+    if(number_of_horses>10)
+    {
+        cerr<<"Invallid number of horses("<<number_of_horses<<")"<<endl;
+        exit(EXIT_FAILURE);
+    }
+
+    if(number_of_rounds>20)
+    {
+        cerr<<"Invallid number of rounds("<<number_of_rounds<<")"<<endl;
+        exit(EXIT_FAILURE);
+    }
+    this->n_horses=number_of_horses;
+    this->rounds=number_of_rounds;
     auto random_value=uniform_int_distribution<int>(50,100);
     vector <string> names{"Blitz","Bolt","Goliath","Hercules","Rogue","Danger","Raider","Storm","Nitro","Hulk"};
     shuffle(names.begin(),names.end(),default_random_engine(chrono::steady_clock::now().time_since_epoch().count()));
     for(int i=0;i<this->n_horses;i++)
     {
-        horse a_horse(i+1,names[i],random_value(mt),random_value(mt),random_value(mt));
-        horses.push_back(a_horse);
+        horses.push_back(horse(i+1,names[i],random_value(mt),random_value(mt),random_value(mt)));
         position.push_back(0);
-        standings.push_back(make_pair(a_horse,DNF));
     }
-    // position
-    // 5 loops->{2,1,3,5,4}
-    // 1.position.push_back(2)-->i:0  value:2
-    // 2.position.push_back(1)-->i:1  value:1
-    // 3.position.push_back(3)-->i:2  value:3
-    // 4.position.push_back(5)-->i:3  value:5
-    // 5.position.push_back(4)-->i:4  value:4
 }
 
 Racing::~Racing() {}
@@ -53,9 +57,9 @@ void Racing::race()
         {
             if(this->position[j]==this->rounds-1)
             {
-                if(this->standings[j].second==DNF)
+                if(find_if(standings.begin(),standings.end(),[&](pair <horse,int> &p) {return p.first==this->horses[j];})==standings.end())
                 {
-                    this->standings[j].second=rank;
+                    standings.emplace_back(pair<horse,int>(horses[j],rank));
                     rank++;
                 }
                 continue;
@@ -68,6 +72,13 @@ void Racing::race()
         }
         this->drawing();
         press_enter();
+    }
+    for(auto &h:this->horses)
+    {
+        if(find_if(standings.begin(),standings.end(),[&](pair <horse,int> &p) {return p.first==h;})==standings.end())
+        {
+            this->standings.emplace_back(pair<horse,int>(h,DNF));
+        }
     }
 }
 
@@ -117,30 +128,32 @@ void Racing::drawing()
     }
 }
 
-void Racing::display_standings()
-{
-    cout<<"====== Standings ======="<<endl;
-    for(int i=0;i<this->standings.size();i++)
-    {
-        cout<<this->standings[i].first.get_name()<<"->"<<this->standings[i].second<<endl;
-    }
-    cout<<endl;
-}
-
 void Racing::display_horses()
 {
+    cout<<"======= Horses ========"<<endl;
     for(auto &h:this->horses)
     {
-        cout<<h<<endl;
+        cout<<string(h)<<endl;
     }
+    cout<<endl<<endl;
 }
 
-vector <horse> Racing::get_horses()const
+void Racing::display_standings()
+{
+    cout<<"======= Standings ========"<<endl;
+    for(auto &display:this->standings)
+    {
+        cout<<(display.second!=DNF?to_string(display.second):"DNF")<<"."<<std::string(display.first)<<endl;
+    }
+    cout<<endl<<endl;
+}
+
+vector <horse> Racing::get_horses()
 {
     return this->horses;
 }
 
-vector <pair <horse,int>> Racing::get_standings()const
+vector <pair <horse,int>> Racing::get_standings()
 {
     return this->standings;
 }

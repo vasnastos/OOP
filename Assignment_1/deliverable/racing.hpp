@@ -24,7 +24,8 @@ class Racing
       void race();
       void auto_race();
       void drawing();
-      void reset_race();
       void display_standings();
+      void display_horses();
       vector <horse> get_horses();
+      vector <pair<horse,int>> get_standings();
 };

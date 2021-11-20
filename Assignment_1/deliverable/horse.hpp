@@ -1,4 +1,6 @@
 #include <iostream>
+#include <sstream>
+
 
 using namespace std;
 
@@ -15,6 +17,6 @@ class horse
         horse(int h_id,string h_name,int h_startup_speed,int h_power,int h_stamina);
         ~horse();
         bool move_forward(int step,double r);
-        string get_name();
-        friend ostream &operator<<(ostream &os,const horse &h);
+        bool operator==(const horse &h)const;
+        operator string()const;
 };

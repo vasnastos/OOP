@@ -35,13 +35,14 @@ bool horse::move_forward(int step,double r)
     return false;
 }
 
-string horse::get_name()
+bool horse::operator==(const horse &h)const
 {
-    return this->name;
+    return this->id==h.id;
 }
 
-ostream &operator<<(ostream &os,const horse &h)
+horse::operator string()const
 {
-    os<<"[ Name:"<<h.name<<" Startup Speed:"<<h.startup_speed<<" Power:"<<h.power<<" Stamina:"<<h.stamina<<"]";
-    return os;
+    stringstream ss;
+    ss<<"["<<this->name<<", Startup Speed:"<<this->startup_speed<<", Power:"<<this->power<<", Stamina:"<<this->stamina<<"]";
+    return ss.str();
 }
