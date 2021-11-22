@@ -73,7 +73,7 @@ Select horse:7
 |..4.......|\
 |5.........|\
 |.6........|\
-|..7.......|\
+|..7.......|
 
 |.0........|\
 |..1.......|\
@@ -82,7 +82,7 @@ Select horse:7
 |...4......|\
 |.5........|\
 |.6........|\
-|...7......|\
+|...7......|
 
 |..0.......|\
 |..1.......|\
@@ -91,7 +91,7 @@ Select horse:7
 |....4.....|\
 |.5........|\
 |.6........|\
-|....7.....|\
+|....7.....|
 
 |...0......|\
 |...1......|\
@@ -100,7 +100,7 @@ Select horse:7
 |.....4....|\
 |..5.......|\
 |..6.......|\
-|....7.....|\
+|....7.....|
 
 |...0......|\
 |...1......|\
@@ -109,7 +109,7 @@ Select horse:7
 |.....4....|\
 |..5.......|\
 |...6......|\
-|.....7....|\
+|.....7....|
 
 |...0......|\
 |....1.....|\
@@ -118,7 +118,7 @@ Select horse:7
 |......4...|\
 |...5......|\
 |....6.....|\
-|......7...|\
+|......7...|
 
 |....0.....|\
 |....1.....|\
@@ -127,7 +127,7 @@ Select horse:7
 |.......4..|\
 |....5.....|\
 |.....6....|\
-|.......7..|\
+|.......7..|
 
 |....0.....|\
 |....1.....|\
@@ -136,7 +136,7 @@ Select horse:7
 |........4.|\
 |....5.....|\
 |......6...|\
-|.......7..|\
+|.......7..|
 
 |.....0....|\
 |....1.....|\
@@ -145,7 +145,7 @@ Select horse:7
 |.........4|\
 |.....5....|\
 |.......6..|\
-|........7.|\
+|........7.|
 
 |......0...|\
 |....1.....|\
@@ -163,7 +163,7 @@ Select horse:7
 |.........4|\
 |.......5..|\
 |.........6|\
-|.........7|\
+|.........7|
 
 |.......0..|\
 |.....1....|\
@@ -172,7 +172,7 @@ Select horse:7
 |.........4|\
 |........5.|\
 |.........6|\
-|.........7|\
+|.........7|
 
 |........0.|\
 |......1...|\
@@ -181,7 +181,7 @@ Select horse:7
 |.........4|\
 |.........5|\
 |.........6|\
-|.........7|\
+|.........7|
 
 |........0.|\
 |.......1..|\
@@ -190,7 +190,7 @@ Select horse:7
 |.........4|\
 |.........5|\
 |.........6|\
-|.........7|\
+|.........7|
 
 |.........0|\
 |.......1..|\
@@ -208,7 +208,7 @@ Select horse:7
 |.........4|\
 |.........5|\
 |.........6|\
-|.........7|\
+|.........7|
 
 |.........0|\
 |.........1|\
@@ -217,9 +217,9 @@ Select horse:7
 |.........4|\
 |.........5|\
 |.........6|\
-|.........7|\
+|.........7|
 
-======= Standings ========
+======= Standings ========\
 1.[Danger, Startup Speed:99, Power:82, Stamina:96]\
 2.[Hercules, Startup Speed:90, Power:83, Stamina:83]\
 3.[Bolt, Startup Speed:82, Power:92, Stamina:75]\
@@ -227,7 +227,7 @@ Select horse:7
 5.[Raider, Startup Speed:62, Power:96, Stamina:50]\
 6.[Nitro, Startup Speed:65, Power:53, Stamina:97]\
 7.[Rogue, Startup Speed:86, Power:57, Stamina:100]\
-8.[Goliath, Startup Speed:80, Power:53, Stamina:94]\
+8.[Goliath, Startup Speed:80, Power:53, Stamina:94]
 
 
 
@@ -845,7 +845,7 @@ Select horse:1\
 5.[Nitro, Startup Speed:73, Power:72, Stamina:77]\
 6.[Danger, Startup Speed:94, Power:50, Stamina:63]\
 7.[Hercules, Startup Speed:90, Power:66, Stamina:62]\
-8.[Bolt, Startup Speed:80, Power:52, Stamina:71]\
+8.[Bolt, Startup Speed:80, Power:52, Stamina:71]
 
 
 
@@ -853,10 +853,10 @@ Select horse:1\
 *User's amount:390\
 *User's winning bets:1\
 *User's no money loss bets:2\
-*User's money loss bets:1\
+*User's money loss bets:1
 
 ===== User's Next Choice =====\
-Do you want to continue to the next race(yes/no):no\
+Do you want to continue to the next race(yes/no):no
 
 
 ===== User's Summary =====\
@@ -865,4 +865,4 @@ Money Amount:390\
 Horse:Bolt Bet Amount:100.000000 Bet_Status:Money Back\
 Horse:Nitro Bet Amount:50.000000 Bet_Status:Money Back\
 Horse:Hulk Bet Amount:10.000000 Bet_Status:Losing\
-Horse:Hulk Bet Amount:100.000000 Bet_Status:Winning\
+Horse:Hulk Bet Amount:100.000000 Bet_Status:Winning
