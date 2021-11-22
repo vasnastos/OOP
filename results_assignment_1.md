@@ -462,7 +462,7 @@ DNF.[Rogue, Startup Speed:69, Power:53, Stamina:67]
 *User's money loss bets:0
 
 ===== User's Next Choice =====\
-Do you want to continue to the next race(yes/no):yes\
+Do you want to continue to the next race(yes/no):yes
 
 ==== Place Bet ====\
 Place your bet:10
