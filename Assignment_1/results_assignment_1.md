@@ -1,16 +1,19 @@
 ## Κώδικας επίλυσης 
-    |     ΚΩΔΙΚΑΣ                                                                                         |
-    |-----------------------------------------------------------------------------------------------------|
-    | [horse.hpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/Assignment_Solution/horse.hpp)  |
-    | [horse.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/Assignment_Solution/horse.cpp)  |
-    | [racing.hpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/Assignment_Solution/racing.hpp)|
-    | [racing.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/Assignment_Solution/racing.cpp)|
-    | [bet.hpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/Assignment_Solution/bet.hpp)      |
-    | [bet.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/Assignment_Solution/bet.cpp)      |
-    | [main_b.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/Assignment_Solution/horse_race_b.cpp)|
-    | [main_a.cpp])(https://github.com/vasnastos/OOP/blob/main/Assignment_1/Assignment_Solution/horse_race.cpp)|
-    | [main_tests.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/Assignment_Solution/tests.cpp)|
-    | [results.txt](https://github.com/vasnastos/OOP/blob/main/Assignment_1/Assignment_Solution/results.txt)|
+
+|     ΚΩΔΙΚΑΣ                                                                                               |
+|-----------------------------------------------------------------------------------------------------------|
+| [horse.hpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/Assignment_Solution/horse.hpp)        |
+| [horse.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/Assignment_Solution/horse.cpp)        |
+| [racing.hpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/Assignment_Solution/racing.hpp)      |
+| [racing.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/Assignment_Solution/racing.cpp)      |
+| [bet.hpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/Assignment_Solution/bet.hpp)            |
+| [bet.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/Assignment_Solution/bet.cpp)            |
+| [main_b.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/Assignment_Solution/horse_race_b.cpp)|
+| [main_a.cpp])(https://github.com/vasnastos/OOP/blob/main/Assignment_1/Assignment_Solution/horse_race.cpp) |
+| [main_tests.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_1/Assignment_Solution/tests.cpp)   |
+| [results.txt](https://github.com/vasnastos/OOP/blob/main/Assignment_1/Assignment_Solution/results.txt)    |
+
+
 ## Εντολές μεταγλώττισης
   **Μεταγλώττιση main κώδικα**
    * g++ horse.cpp racing.cpp horse_race.cpp -o race
