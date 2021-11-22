@@ -1,7 +1,14 @@
 <style>
   table {
     font-size:16px;
+  text-align:center;
  }
+  tr:hover
+  {
+    text-decoration:underline;
+    color:blue;
+  font-size:18px;
+  }
 </style>
 
 
