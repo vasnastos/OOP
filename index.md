@@ -117,7 +117,7 @@
         
         :bangbang:[**H βιβλιοθήκη της catch**](https://github.com/vasnastos/OOP/blob/main/Assignment_1/catch.hpp)
         
-        ‼️[**Επίλυση Εργασίας**](results_assignment_1.md )
+        :bangbang:[**Επίλυση Εργασίας**](results_assignment_1.md)
         
       
       
