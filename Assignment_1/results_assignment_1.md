@@ -39,13 +39,21 @@ Place your bet:100
 
 ===== Select Horse =====
 1.[Name:Rogue Startup Speed:86 Power:57 Stamina:100]
+
 2.[Name:Goliath Startup Speed:80 Power:53 Stamina:94]
+
 3.[Name:Nitro Startup Speed:65 Power:53 Stamina:97]
+
 4.[Name:Storm Startup Speed:87 Power:55 Stamina:71]
+
 5.[Name:Danger Startup Speed:99 Power:82 Stamina:96]
+
 6.[Name:Raider Startup Speed:62 Power:96 Stamina:50]
+
 7.[Name:Bolt Startup Speed:82 Power:92 Stamina:75]
+
 8.[Name:Hercules Startup Speed:90 Power:83 Stamina:83]
+
 Select horse:7
 
 |0.........|
