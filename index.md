@@ -122,6 +122,10 @@
     * **Εργασία 2**
        
        <iframe width="90%" height="750px" src="Read_Me(resources)/2021f_oop_prj2.pdf">
+  
+      **Διάγραμμα κλάσεων**
+  
+      ![class_diagram_oop_proj2](oop_proj2.png)
       
  * ## ΟΔΗΓΙΕΣ ΕΓΚΑΤΑΣΤΑΣΗΣ
       * [sqlite](sqlite.md)
