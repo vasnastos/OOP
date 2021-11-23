@@ -125,7 +125,7 @@
   
       **Διάγραμμα κλάσεων**
   
-      ![class_diagram_oop_proj2](oop_proj2.png)
+      ![class_diagram_oop_proj2](Read_Me(resources)/oop_proj2.png)
       
  * ## ΟΔΗΓΙΕΣ ΕΓΚΑΤΑΣΤΑΣΗΣ
       * [sqlite](sqlite.md)
