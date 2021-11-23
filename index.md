@@ -95,7 +95,7 @@
 
     * **Εργασία 1**
    
-        <iframe style="width:80%; height:750px;" src="Read_Me(resources)/2021f_oop_prj1.pdf"></iframe>  
+        <iframe style="width:90%; height:750px;" src="Read_Me(resources)/2021f_oop_prj1.pdf"></iframe>  
 
         **Τμήματα κώδικα(17/11/21)**
         
