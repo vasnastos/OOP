@@ -125,7 +125,7 @@
   
       **Διάγραμμα κλάσεων**
   
-      <img style="width:90%; height:auto;" src="./Read_Me(resources)/uml_proj2.png"/>
+      <img style="width:90%; height:auto;" src="./Read_Me(resources)/uml_proj2.png" alt="We code here"/>
       
  * ## ΟΔΗΓΙΕΣ ΕΓΚΑΤΑΣΤΑΣΗΣ
       * [sqlite](sqlite.md)
