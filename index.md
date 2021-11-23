@@ -119,7 +119,9 @@
         
         :bangbang:[**Επίλυση Εργασίας**](results_assignment_1.md)
         
-      
+    * **Εργασία 2**
+       
+       <iframe width="90%" height="750px" src="Read_Me(resources)/2021f_oop_prj2.pdf">
       
  * ## ΟΔΗΓΙΕΣ ΕΓΚΑΤΑΣΤΑΣΗΣ
       * [sqlite](sqlite.md)
