@@ -125,7 +125,7 @@
   
       **Διάγραμμα κλάσεων**
   
-      ![class_diagram_oop_proj2](Read_Me(resources)/uml_proj2.png)
+      <img width="90%" height="auto" src="(Read_Me(resources)/uml_proj2.png"/>
       
  * ## ΟΔΗΓΙΕΣ ΕΓΚΑΤΑΣΤΑΣΗΣ
       * [sqlite](sqlite.md)
