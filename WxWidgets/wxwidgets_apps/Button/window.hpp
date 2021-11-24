@@ -2,7 +2,6 @@
 #include <wx/menu.h>
 #include <iostream>
 
-
 class window:public wxFrame
 {
     private:
