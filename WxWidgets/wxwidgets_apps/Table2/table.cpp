@@ -26,6 +26,11 @@ employee::operator std::string()const
     return ss.str();
 }
 
+std::string employee::convcsv()const
+{
+    return std::to_string(this->id)+","+this->name+","+std::to_string(this->salary);
+}
+
 bool operator<(const employee &e1,const employee &e2) {
     return e1.salary<e2.salary;
 }
@@ -190,19 +195,23 @@ void window::Sort(wxCommandEvent &event)
 void window::load(wxCommandEvent &event)
 {
     wxFileDialog fd(this,("Open txt file"),"","","TXT files (*.txt)|*.txt",wxFD_OPEN|wxFD_FILE_MUST_EXIST);
-    std::string filename="";
     if(fd.ShowModal()==wxID_CANCEL)
     {
         return;
     }
     wxString s(fd.GetCurrentlySelectedFilename());
-    std::string name=convert2StdString(s);
-    std::fstream fs(name,std::ios::in);
+    std::string filename="";
+    #ifdef __WIN32__
+        filename=s.ToStdString();
+    #elif linux
+        filename=s.ToStdString(wxMBConvUTF8());
+    #endif
+    std::fstream fs(filename,std::ios::in);
     std::string line,word;
     std::vector <std::string> data;
     if(!fs.is_open())
     {
-        wxString mes(name+" does not found");
+        wxString mes(filename+" does not found");
         wxMessageBox(mes,wxT("Error on Opening file"),wxICON_INFORMATION);
     }
     int count=0;
@@ -231,7 +240,30 @@ void window::load(wxCommandEvent &event)
 
 void window::save(wxCommandEvent &event)
 {
-    std::cout<<"Save Action init"<<std::endl;
+    wxFileDialog fd(this,"Save employees file","","","txt files (*.txt)|*.txt",wxFD_SAVE|wxFD_OVERWRITE_PROMPT);
+    if(fd.ShowModal()==wxID_CANCEL)
+    {
+        return;
+    }
+    std::string filename="";
+    wxString s(fd.GetPath());
+    #ifdef __WIN32__
+        filename=s.ToStdString();
+    #elif linux
+        filename=s.ToStdString(wxMBConvUTF8());
+    #endif
+    std::fstream fs(filename,std::ios::out);
+    if(!fs.is_open())
+    {
+        wxMessageBox(filename+" does not open properly","ERROR ON FILE OPENING",wxICON_ERROR);
+        return;
+    }
+    for(auto &employee:this->employees)
+    {
+        fs<<employee.convcsv()<<std::endl;
+    }
+    fs.close();
+    wxMessageBox("Employees file save as:"+filename,"Save File",wxICON_INFORMATION);
 }
 
 void window::quit(wxCommandEvent &event)

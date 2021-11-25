@@ -18,6 +18,7 @@ struct employee
     employee(int e_id,std::string e_name,double e_salary);
     ~employee();
     operator std::string()const;
+    std::string convcsv()const;
 };
 
 class window:public wxFrame
