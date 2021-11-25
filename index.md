@@ -130,4 +130,5 @@
  * ## ΟΔΗΓΙΕΣ ΕΓΚΑΤΑΣΤΑΣΗΣ
       * [sqlite](sqlite.md)
       * [wxwidgets](wxwidgets.md)
+      * [wxwidgets(visual studio)](wxwidgets(visual studio).html)
   
