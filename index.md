@@ -129,4 +129,5 @@
       
  * ## ΟΔΗΓΙΕΣ ΕΓΚΑΤΑΣΤΑΣΗΣ
       * [sqlite](sqlite.md)
+      * [wxwidgets](wxwidgets.md)
   
