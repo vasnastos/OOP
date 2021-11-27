@@ -93,7 +93,12 @@
         |  ΑΣΚ_5     | [**:paperclips:**](https://github.com/vasnastos/OOP/blob/main/Lesson_3/exercise5.cpp)   |
         |  ΑΣΚ_6     | [**:paperclips:**](https://github.com/vasnastos/OOP/blob/main/Lesson_3/exercise6.cpp)   |
         |  ΑΣΚ_7     | [**:paperclips:**](https://github.com/vasnastos/OOP/blob/main/Lesson_3/exercise7.cpp)   |
-        
+  
+  * ## ΟΔΗΓΙΕΣ ΕΓΚΑΤΑΣΤΑΣΗΣ
+      * [sqlite](sqlite.md)
+      * [wxwidgets](wxwidgets.md)
+      * [wxwidgets(visual studio)](wxwidgets(visual studio).html)
+  
   * ## ΕΡΓΑΣΙΕΣ 
 
     * **Εργασία 1**
@@ -139,16 +144,6 @@
 </div>
 
 <script>
-  
-      
- * ## ΟΔΗΓΙΕΣ ΕΓΚΑΤΑΣΤΑΣΗΣ
-      * [sqlite](sqlite.md)
-      * [wxwidgets](wxwidgets.md)
-      * [wxwidgets(visual studio)](wxwidgets(visual studio).html)
-  
-  
-  
-  
   
   
 <!--  Page Scripts  -->
