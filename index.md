@@ -11,7 +11,7 @@
  }
   tr:hover
   {
-    font-size:18px;
+    font-size:15px;
     background-color:#d9d0db;
     color:#161f40;
     text-decoration:underline;
