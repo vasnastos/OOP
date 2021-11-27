@@ -124,7 +124,7 @@
        
        <iframe width="90%" height="750px" src="Read_Me(resources)/2021f_oop_prj2.pdf">
   
-     <h2><b>Διάγραμμα κλάσεων</b></h2>
+     <b>Διάγραμμα κλάσεων</b>
   
      ![we code here](./Read_Me(resources)/uml_proj2.png)
       
