@@ -5,6 +5,7 @@
    text-align:center;
   font-size:17px;
   font-weight:bold;
+  width:80%;
  }
   tr:hover
   {
