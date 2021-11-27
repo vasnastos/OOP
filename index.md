@@ -1,4 +1,6 @@
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <title>Αντικειμενοστραφής Προγραμματισμός</title>
 <style>
   table{
@@ -124,12 +126,52 @@
        
        <iframe width="90%" height="750px" src="Read_Me(resources)/2021f_oop_prj2.pdf">
   
-     <b>Διάγραμμα κλάσεων</b>
+<!--      <b>Διάγραμμα κλάσεων</b>
   
-     ![we code here](./Read_Me(resources)/uml_proj2.png)
+     ![we code here](./Read_Me(resources)/uml_proj2.png) -->
+<img id="myImg" src="img_snow.jpg" alt="Snow" style="width:100%;max-width:300px">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+  
       
  * ## ΟΔΗΓΙΕΣ ΕΓΚΑΤΑΣΤΑΣΗΣ
       * [sqlite](sqlite.md)
       * [wxwidgets](wxwidgets.md)
       * [wxwidgets(visual studio)](wxwidgets(visual studio).html)
+  
+  
+  
+  
+  
+  
+<!--  Page Scripts  -->
+  <script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
   
