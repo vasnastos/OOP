@@ -5,7 +5,7 @@
 <style>
   table{
    text-align:center;
-  font-size:17px;
+  font-size:11px;
   font-weight:bold;
   width:80%;
  }
