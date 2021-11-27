@@ -10,8 +10,8 @@
   tr:hover
   {
     font-size:18px;
-    background-color:green;
-    color:blue;
+    background-color:#d9d0db;
+    color:#161f40;
     text-decoration:underline;
   }
 </style>
@@ -126,7 +126,7 @@
   
       **Διάγραμμα κλάσεων**
   
-      <img style="width:90%; height:auto;" src="./Read_Me(resources)/uml_proj2.png" alt="We code here"/>
+     ![we code here](./Read_Me(resources)/uml_proj2.png)
       
  * ## ΟΔΗΓΙΕΣ ΕΓΚΑΤΑΣΤΑΣΗΣ
       * [sqlite](sqlite.md)
