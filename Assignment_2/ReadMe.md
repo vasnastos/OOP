@@ -24,6 +24,6 @@
 
 **Τμήματα κώδικα**
 
-  * [course.hpp](course.hpp)
-  * [course.cpp](course.cpp)
-  * [Άνοιγμα αρχείου δεδομένων](import_data.cpp)
+  * [course.hpp](27_11_2021_oop_proj_2/course.hpp)
+  * [course.cpp](27_11_2021_oop_proj_2/course.cpp)
+  * [Άνοιγμα αρχείου δεδομένων](27_11_2021_oop_proj_2/main.cpp)
