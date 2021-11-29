@@ -26,4 +26,6 @@
 
   * [course.hpp](27_11_2021_oop_proj_2/course.hpp)
   * [course.cpp](27_11_2021_oop_proj_2/course.cpp)
+  * [student.hpp](27_11_2021_oop_proj_2/student.hpp)
+  * [student.cpp](27_11_2021_oop_proj_2/student.cpp)
   * [Άνοιγμα αρχείου δεδομένων](27_11_2021_oop_proj_2/main.cpp)
