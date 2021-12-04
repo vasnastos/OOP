@@ -132,6 +132,15 @@
     * **Εργασία 2**
        
        <iframe width="90%" height="750px" src="Read_Me(resources)/2021f_oop_prj2.pdf">
+  
+      **Τμήματα Κώδικα**
+  
+        * [student.hpp](https://github.com/vasnastos/OOP/blob/main/Assignment_2/27_11_2021_oop_proj_2/student.hpp)
+        * [student.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_2/27_11_2021_oop_proj_2/student.cpp)
+        * [course.hpp](https://github.com/vasnastos/OOP/blob/main/Assignment_2/27_11_2021_oop_proj_2/course.hpp)
+        * [course.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_2/27_11_2021_oop_proj_2/course.cpp)
+        * [main.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_2/27_11_2021_oop_proj_2/main.cpp)
+      
  
     * ## ΟΔΗΓΙΕΣ ΕΓΚΑΤΑΣΤΑΣΗΣ
       * [sqlite](sqlite.md)
