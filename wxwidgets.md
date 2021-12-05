@@ -46,7 +46,7 @@
     ```
     **Παράδειγμα wxWidgets**
     ---
-    ![minimal output](rm_resources/minimal.png)
+    ![minimal output](https://raw.githubusercontent.com/vasnastos/OOP/main/wxwidgets/rm_resources/minimal.png)
   
   * ## Windows
   
@@ -69,7 +69,7 @@
         > cd demos/minimal
         > minimal.exe
       ```
-      ![minimal image](rm_resources/minimal_WIN.png)
+      ![minimal image](https://raw.githubusercontent.com/vasnastos/OOP/main/wxwidgets/rm_resources/minimal_WIN.png)
     * Ορισμός wxWidgets ως μεταβλητή περιβάλλοντος
       ```
         >set WINWX="PATH_TO_WX";%WINWX%
