@@ -112,3 +112,16 @@
 
 * Linux-MacOS:[https://www.cs.sjsu.edu/~mak/tutorials/InstallwxWidgets.pdf](https://www.cs.sjsu.edu/~mak/tutorials/InstallwxWidgets.pdf)
 * Windows:[https://www.youtube.com/watch?v=tHMGA0jIl3Y](https://www.youtube.com/watch?v=tHMGA0jIl3Y)
+
+
+# Εφαρμογές wxwidgets
+
+    * [παράδειγμα με buttons](./button_demo)
+    * [παράδειμα χειρισμού κειμένου](./image_demo)
+    * [παράδειγμα εικόνων](./image_demo)
+    * [παράδειγμα διαρρύθμισης](./layouts_demo)
+    * [παράδειγμα μενού](./menu_demo)
+    * [παράδειγμα ComboBox](./comboBox_demo)
+    * [παράδειγμα λίστας επιθυμιών](./todolist)
+    * [παραδείγματα πινάκων](./tale_demos)
+    * [εφαρμογή εργαζομένων](./employees_app)
