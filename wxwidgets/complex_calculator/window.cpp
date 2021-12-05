@@ -17,6 +17,7 @@ void window::panel1()
     sz->AddSpacer(5);
     sz->Add(st,0,wxALIGN_CENTER);
     panel->SetSizer(sz);
+    this->sizer->AddSpacer(25);
     this->sizer->Add(panel,0,wxALIGN_CENTER);
 }
 
@@ -26,6 +27,8 @@ void window::panel2()
     this->real2=new wxTextCtrl(panel,wxID_ANY,"",wxDefaultPosition,wxSize(100,20));
     this->imag2=new wxTextCtrl(panel,wxID_ANY,"",wxDefaultPosition,wxSize(100,20));
     wxStaticText *st=new wxStaticText(panel,wxID_ANY,"i",wxDefaultPosition,wxSize(30,20),wxALIGN_LEFT);
+    wxFont f(10,wxFONTFAMILY_SWISS,wxNORMAL,wxBOLD);
+    st->SetFont(f);
     wxBoxSizer *sz=new wxBoxSizer(wxHORIZONTAL);
     sz->AddSpacer(30);
     sz->Add(this->real2,0,wxALIGN_CENTER);
@@ -34,6 +37,7 @@ void window::panel2()
     sz->AddSpacer(5);
     sz->Add(st,0,wxALIGN_LEFT);
     panel->SetSizer(sz);
+    this->sizer->AddSpacer(25);
     this->sizer->Add(panel,0,wxALIGN_CENTER);
 }
 
@@ -57,22 +61,91 @@ void window::panel3()
     bx->AddSpacer(15);
     bx->Add(b4,0,wxALIGN_CENTER);
     panel->SetSizer(bx);
-    this->Add(panel,0,wxALIGN_CENTER);
+    this->sizer->AddSpacer(25);
+    this->sizer->Add(panel,0,wxALIGN_CENTER);
 }
 
-window():wxFrame(nullptr,wxID_ANY,"Complex Calculator",wxDefaultPositionm,wxSize(400,400))
+window::window():wxFrame(nullptr,wxID_ANY,"Complex Calculator",wxDefaultPosition,wxSize(400,400))
 {
     this->sizer=new wxBoxSizer(wxVERTICAL);
     auto size=this->GetSize();
-    wxStaticText *statictext=new wxStaticTExt(this,wxID_ANY,wxT("Complex Number Calculator"),wxDefaultPosition,wxSize(size.GetWidth()*0.9,size.GetHeight()*0.4),wxALIGN_CENTER);
+    wxStaticText *statictext=new wxStaticText(this,wxID_ANY,wxT("Complex Number Calculator"),wxDefaultPosition,wxSize(size.GetWidth()*0.9,40),wxALIGN_CENTER);
     wxFont stfont(13,wxFONTFAMILY_SWISS,wxNORMAL,wxBOLD);
     statictext->SetFont(stfont);
     statictext->SetForegroundColour(wxColor("#4c154f"));
     this->sizer->Add(statictext,0,wxALIGN_CENTER);
     this->panel1();
     this->panel2();
+    this->panel3();
     this->res=new wxTextCtrl(this,wxID_ANY,"",wxDefaultPosition,wxSize(300,50),wxTE_READONLY);
     this->sizer->AddSpacer(30);
-    this->sizer->Add(this->res);
+    this->sizer->Add(this->res,0,wxALIGN_CENTER);
     this->SetSizer(this->sizer);      
+}
+
+void window::add(wxCommandEvent &ev)
+{
+    int real_value=std::stoi(std::string(this->real1->GetValue()));
+    int imag_value=std::stoi(std::string(this->imag1->GetValue()));
+    int real_value2=std::stoi(std::string(this->real2->GetValue()));
+    int imag_value2=std::stoi(std::string(this->imag2->GetValue()));
+    std::complex <double> c(real_value,imag_value);
+    std::complex <double> c1(real_value2,imag_value2);
+    auto c2=c+c1;
+    double r=c2.real();
+    double i=c2.imag();
+    std::string to_stream=std::to_string(r)+std::to_string(i)+"i";
+    this->res->SetValue(to_stream);
+}
+
+void window::sub(wxCommandEvent &event)
+{
+    int real_value=std::stoi(std::string(this->real1->GetValue()));
+    int imag_value=std::stoi(std::string(this->imag1->GetValue()));
+    int real_value2=std::stoi(std::string(this->real2->GetValue()));
+    int imag_value2=std::stoi(std::string(this->imag2->GetValue()));
+    std::complex <double> c(real_value,imag_value);
+    std::complex <double> c1(real_value2,imag_value2);
+    auto c2=c-c1;
+    double r=c2.real();
+    double i=c2.imag();
+    std::string to_stream=std::to_string(r)+std::to_string(i)+"i";
+    this->res->SetValue(to_stream);
+}
+
+void window::mul(wxCommandEvent &event)
+{
+    int real_value=std::stoi(std::string(this->real1->GetValue()));
+    int imag_value=std::stoi(std::string(this->imag1->GetValue()));
+    int real_value2=std::stoi(std::string(this->real2->GetValue()));
+    int imag_value2=std::stoi(std::string(this->imag2->GetValue()));
+    std::complex <double> c(real_value,imag_value);
+    std::complex <double> c1(real_value2,imag_value2);
+    auto c2=c*c1;
+    double r=c2.real();
+    double i=c2.imag();
+    std::string to_stream=std::to_string(r)+std::to_string(i)+"i";
+    this->res->SetValue(to_stream);
+}
+
+void window::div(wxCommandEvent &event)
+{
+    int real_value=std::stoi(std::string(this->real1->GetValue()));
+    int imag_value=std::stoi(std::string(this->imag1->GetValue()));
+    int real_value2=std::stoi(std::string(this->real2->GetValue()));
+    int imag_value2=std::stoi(std::string(this->imag2->GetValue()));
+    std::complex <double> c(real_value,imag_value);
+    std::complex <double> c1(real_value2,imag_value2);
+    double r=c2.real();
+    double i=c2.imag();
+    auto c2=c/c1;
+    std::string to_stream=std::to_string(r)+std::to_string(i)+"i";
+    this->res->SetValue(to_stream);
+}
+
+bool App::OnInit()
+{
+    window *w=new window;
+    w->Show();
+    return true;
 }

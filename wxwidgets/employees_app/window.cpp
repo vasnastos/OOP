@@ -1,8 +1,9 @@
 #include "window.hpp"
-
+#include <locale>
 
 void window::panel1()
 {
+    std::setlocale(LC_ALL,"UTF-8");
     wxPanel *panel=new wxPanel(this,wxID_ANY);
     this->insertbutton=new wxButton(panel,wxID_ANY,wxT("INSERT EMPLOYEE"),wxDefaultPosition,wxSize(150,30));
     this->showbutton=new wxButton(panel,wxID_ANY,wxT("SHOW EMPLOYEES"),wxDefaultPosition,wxSize(150,30));
@@ -54,10 +55,12 @@ void window::popinsert(wxCommandEvent &event)
 
 void window::showemps(wxCommandEvent &event)
 {
-    std::string value="Employees\n=================\n";
+   wxString value=wxT("ΥΠΑΛΛΗΛΟΙ\n=================\n");
     for(int i=0,t=popupWidget::employees.size();i<t;i++)
     {
-        value+=std::to_string(i+1)+"."+std::string(popupWidget::employees.at(i))+"\n";
+        wxString name(wxString::FromUTF8(popupWidget::employees.at(i).name));
+        wxMessageBox(name,wxT("MHNYMA"),wxICON_INFORMATION);
+        value+=wxString(std::to_string(i+1))+"."+name+" "+wxString(std::to_string(popupWidget::employees.at(i).salary))+wxT("\n");
     }
     this->results->SetValue(value);
 }
