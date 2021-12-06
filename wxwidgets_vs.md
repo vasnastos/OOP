@@ -18,8 +18,8 @@
         ![env_vars.png](./vs_wxwidgets_src/enviromental_vars.png)
     
 
-    * Επιλέγω την επεξεργασία νέας μεταβλητής συστήματος.
-        ![add_var.png](./vs_wxwidgets_src/edit_env_var.png)
+    * Επιλέγω την δημιουργία μίας νέας μεταβλητής συστήματος.
+        ![add_var.png](./vs_wxwidgets_src/add_var.png)
     
     * Συμπληρώνω τα πεδία που αντιστοιχουν στο όνομα και στο μονοπάτι της μεταβλητής συστήματος με τον παρακάτω τρόπο.
 
