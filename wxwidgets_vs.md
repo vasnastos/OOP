@@ -35,7 +35,7 @@
 
 :exclamation:Η διαδικασία αυτή διαρκεί περίπου μισή ώρα
 
-7. Έπειτα δημιουργήστε ένα καινούργιο project και συγκεκριμένα ένα Desktop Application Project.
+7. Έπειτα δημιουργήστε ένα καινούργιο project και συγκεκριμένα ένα Console App Project.
 
 8. Στο παράθυρο που ανοίγει εμφανίζεται το solution explorer window καθώς και το property manager window. Στο property manager window κάνετε αριστερό κλίκ στον project property manager και επιλέγεται από τις διαθέσιμες επιλογές την επιλογή properties.
 
