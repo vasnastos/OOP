@@ -1,4 +1,4 @@
-# Εγκατάσταση των wxwidgets και μεταγλώττιση τους με χρ΄ήση του visual studio
+# Μεταγλώττιση των wxwidgets μέσω του Visual Studio 2022
 
 1. Εγκατάσταση Community Edition του visual studio:[Visual studio Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=17)
 
@@ -45,7 +45,7 @@
 
   * Στο Dropdown menu στην επιλογή platform, επιλέξτε All Platforms
 
-    ![all platforms](./vs_wxwidgets_src/allplatforms.png)
+    ![all platforms](./vs_wxwidgets_src/all_platforms.png)
 
   *   Έπειτα από το μενού επιλέγεται Configuration Properties->C/C++->General->Additional Include Directories και αλλάζετε την τιμή του πεδίου Additional Include Directories σε:
 ```
@@ -60,7 +60,7 @@
     ```
         $(WXWIN)\lib\vc_lib
     ```
-    ![linkerw32](./vs_wxwidgets_src/win32linker.png)
+    ![linkerw32](./vs_wxwidgets_src/win32_linker.png)
 
     2. Για Platform: x64
     ```
@@ -68,3 +68,9 @@
     ```
     ![linkerx64](./vs_wxwidgets_src/x64_wx.png)
 
+
+:exclamation:Τα βήματα 7-9 επαναλαμβάνονται κάθε φορά που θέλω να δημιουργήσω ένα project που θα μεταγλωττίζει την βιβλιοθήκη των wxwidgets
+
+## Οδηγίες σε βίντεο
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oR6ErgnfymE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
