@@ -1,6 +1,6 @@
 # Μεταγλώττιση των wxwidgets μέσω του Visual Studio 2022
 
-1. Εγκατάσταση Community Edition του visual studio:[Visual studio Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=17)
+1. Εγκατάσταση Community Edition του visual studio:[Visual Studio Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=17)
 
 2. Λήψη της βιβλιοθήκης wxwidgets:[wxWidgets-3.1.5](https://github.com/wxWidgets/wxWidgets/releases/download/v3.1.5/wxWidgets-3.1.5.zip)
 
@@ -70,6 +70,38 @@
 
 
 :exclamation:Τα βήματα 7-9 επαναλαμβάνονται κάθε φορά που θέλω να δημιουργήσω ένα project που θα μεταγλωττίζει την βιβλιοθήκη των wxwidgets
+
+**:exclamation:Δοκιμάστε να να μεταγλωττίσετε και να εκτελέσετε το παρακάτω τμήμα κώδικα στο project σας.**
+
+```
+    #include <wx\wx.h>
+
+    class Frame:public wxFrame
+    {
+        private:
+            wxStaticText *text;
+        public: 
+            Frame():wxFrame(nullptr,wxID_ANY,wxT("Test"),wxDefaultPosition,wxSize(400,400))
+            {
+                wxBoxSizer *bx=new wxBoxSizer(wxVERTICAL);
+                this->text=new wxStaticText(this,wxID_ANY,wxT("Hello world"),wxDefaultPosition,wxSize(100,100));
+                bx->Add(this->text,0,wxALIGN_CENTER);
+                this->SetSizer(bx);
+            }
+    };
+
+    class App:public wxApp{
+        public:
+            bool OnInit()
+            {
+                Frame *f=new Frame;
+                f->Show(true);
+                return true;
+            }
+    };
+
+    wxIMPLEMENT_APP(App);
+```
 
 ## Οδηγίες σε βίντεο
 
