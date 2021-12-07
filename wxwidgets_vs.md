@@ -29,13 +29,13 @@
 
     ![vs.png](./vs_wxwidgets_src/vs_1.png)
 
-Έπειτα επιλέγεται να κάνω build ολες τις βιβλιοθήκες που είναι διαθέσιμες μέσω των wxwidgets.
+Έπειτα πρέπει εκκινώ την διαδικασία του  build ολες τις βιβλιοθήκες που είναι διαθέσιμες μέσω των wxwidgets.
 
    ![vs.png](./vs_wxwidgets_src/vs_build.png)
 
 :exclamation:Η διαδικασία αυτή διαρκεί περίπου μισή ώρα
 
-7. Έπειτα δημιουργήστε ένα καινούργιο project και συγκεκριμένα ένα Console App Project. 
+7. Έπειτα δημιουργώ ένα καινούργιο project και συγκεκριμένα ένα Desktop App Project. 
 :exclamation:Τα αρχεία που υπάρχουν στο project τα διαγράφετε.
 
 8. Στο παράθυρο που ανοίγει εμφανίζεται το solution explorer window καθώς και το property manager window. Στο property manager window κάνετε αριστερό κλίκ στον project property manager και επιλέγεται από τις διαθέσιμες επιλογές την επιλογή properties.
@@ -107,6 +107,8 @@
 :point_right:Αποτέλεσμα
 
 ![vs view](./vs_wxwidgets_src/vs_view.png)
+
+**[Αλλαγή κωδικοποιήσης command line σε utf8](utf_8_encoding.md)** 
 
 ## Οδηγίες σε βίντεο
 
