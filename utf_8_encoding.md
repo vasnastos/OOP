@@ -7,7 +7,7 @@
 </style>
 
 
-##  Αλλαγή κωδικοποιησης στην γραμμή εντολών σε κωδιδικοποίηση utf8.
+##  Αλλαγή κωδικοποιησης στην γραμμή εντολών σε κωδικοποίηση utf8.
 
 1. Αριστερό κλίκ στο project και επιλέξτε properties.
     <img src="./vs_wxwidgets_src/encoding/project_properties.png"/>
