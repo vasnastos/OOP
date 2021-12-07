@@ -22,6 +22,7 @@
     /utf-8
 ```
 
-**:exclamation:Βήμα 2 και 3**
+<u style="font-weight:bold; font-size:15px;">Βήμα 2 και 3</u>
+
 
 ![utf8vs.png](./vs_wxwidgets_src/encoding/add_encode.png)
