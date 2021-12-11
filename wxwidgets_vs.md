@@ -75,7 +75,7 @@
 **:exclamation:Δοκιμάστε να να μεταγλωττίσετε και να εκτελέσετε το παρακάτω τμήμα κώδικα στο project σας.**
 
 ```
-    #include <wx\wx.h>
+    #include <wx/wx.h>
 
     class Frame:public wxFrame
     {
