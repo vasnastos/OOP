@@ -101,11 +101,12 @@
             }
     };
 
-    wxIMPLEMENT_APP_NO_APP(App);
+    wxIMPLEMENT_APP_NO_MAIN(App);
     int main(int argc,char **argv)
     {
         wxEntry(argc,argv);
     }
+
 ```
 
 :point_right:Αποτέλεσμα
