@@ -50,7 +50,7 @@
 
   *   Έπειτα από το μενού επιλέγεται Configuration Properties->C/C++->General->Additional Include Directories και αλλάζετε την τιμή του πεδίου Additional Include Directories σε:
 ```
-    $(WXWIN)/include/mscv;$(WXWIN)/include
+    $(WXWIN)/include/msvc;$(WXWIN)/include
 ```
 
 ![additional directories](./vs_wxwidgets_src/additional_directories.png)
@@ -101,7 +101,11 @@
             }
     };
 
-    wxIMPLEMENT_APP(App);
+    wxIMPLEMENT_APP_NO_APP(App);
+    int main(int argc,char **argv)
+    {
+        wxEntry(argc,argv);
+    }
 ```
 
 :point_right:Αποτέλεσμα
