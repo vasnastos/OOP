@@ -28,7 +28,7 @@
 
 <u>NASTOS VASILEIOS-ARTA:copyright:2021</u>
 
-Τελευταία ενημέρωση:04/12/2021
+Τελευταία ενημέρωση:11/12/2021
 
 ---
 
@@ -100,6 +100,39 @@
      
      * ### Ενισχυτικό 5(27/11/21)
         [Ασκήσης επανάληψης σε σχέση με την πρόοδο](presentation.md)
+
+     * ### Ενισχυτικό 6(08/12/21)
+        [Φυλλάδιο ερωτήσεων επανάληψης σχετικά με την πρόοδο](https://github.com/vasnastos/OOP/blob/main/Lesson_6/oop_proodos.pdf)
+    * ### Ενισχυτικό 7(12/11/21)
+
+        * Κατασκευη παραθύρου με χρήσητου framework των wxwidgets
+        ```
+        #include <wx/wx.h>
+
+class Frame:public wxFrame{
+    public:
+        Frame():wxFrame(nullptr,wxID_ANY,wxT("Hello world app"),wxDefaultPosition,wxSize(500,500))
+        {
+            wxStaticText *text=new wxStaticText(this,wxID_ANY,wxT("Hello world"),wxDefaultPosition,wxSize(200,40));
+            wxBoxSizer *bx=new wxBoxSizer(wxVERTICAL);
+            bx->AddSpacer(20);
+            bx->Add(text,0,wxALIGN_CENTER);
+            this->SetSizer(bx);
+        }
+};
+
+class App:public wxApp{
+    public:
+        bool OnInit()
+        {
+            Frame *f=new Frame;
+            f->Show();
+            return true;
+        }
+};
+
+wxIMPLEMENT_APP(App);
+        ```
      
   * ## ΕΡΓΑΣΙΕΣ 
 
@@ -145,7 +178,7 @@
     * ## ΟΔΗΓΙΕΣ ΕΓΚΑΤΑΣΤΑΣΗΣ
       * [sqlite](sqlite.md)
       * [wxwidgets](wxwidgets.md)
-      * [wxwidgets(visual studio)](wxwidgets(visual studio).html)
+      * [wxwidgets(visual studio)](wxwidgets_vs.md)
   
 
   
