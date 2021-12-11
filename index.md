@@ -109,27 +109,27 @@
         ```
         #include <wx/wx.h>
 
-class Frame:public wxFrame{
-    public:
-        Frame():wxFrame(nullptr,wxID_ANY,wxT("Hello world app"),wxDefaultPosition,wxSize(500,500))
-        {
-            wxStaticText *text=new wxStaticText(this,wxID_ANY,wxT("Hello world"),wxDefaultPosition,wxSize(200,40));
-            wxBoxSizer *bx=new wxBoxSizer(wxVERTICAL);
-            bx->AddSpacer(20);
-            bx->Add(text,0,wxALIGN_CENTER);
-            this->SetSizer(bx);
-        }
-};
+        class Frame:public wxFrame{
+            public:
+                Frame():wxFrame(nullptr,wxID_ANY,wxT("Hello world app"),wxDefaultPosition,wxSize(500,500))
+                {
+                    wxStaticText *text=new wxStaticText(this,wxID_ANY,wxT("Hello world"),wxDefaultPosition,wxSize(200,40));
+                    wxBoxSizer *bx=new wxBoxSizer(wxVERTICAL);
+                    bx->AddSpacer(20);
+                    bx->Add(text,0,wxALIGN_CENTER);
+                    this->SetSizer(bx);
+                }
+        };
 
-class App:public wxApp{
-    public:
-        bool OnInit()
-        {
-            Frame *f=new Frame;
-            f->Show();
-            return true;
-        }
-};
+        class App:public wxApp{
+            public:
+                bool OnInit()
+                {
+                    Frame *f=new Frame;
+                    f->Show();
+                    return true;
+                }
+        };
 
 wxIMPLEMENT_APP(App);
         ```
