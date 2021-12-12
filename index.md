@@ -11,10 +11,16 @@
  }
   tr:hover
   {
-    font-size:15px;
+    font-size:13px;
     background-color:#d9d0db;
     color:#161f40;
     text-decoration:underline;
+  }
+
+  .ico
+  {
+     width:50px;
+     height:50px;
   }
   
 </style>
@@ -28,7 +34,7 @@
 
 <u>NASTOS VASILEIOS-ARTA:copyright:2021</u>
 
-Τελευταία ενημέρωση:11/12/2021
+Τελευταία ενημέρωση:12/12/2021
 
 ---
 
@@ -246,7 +252,7 @@
         * [Management.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_2/oop_proj_2/management.cpp)
         * [main.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_2/oop_proj_2/main.cpp)
       
-      Project Εργασίας στο Visual Studio:[https://github.com/vasnastos/OOP/blob/main/Assignment_2/oop_proj_2/oop_proj_2.zip](https://github.com/vasnastos/OOP/blob/main/Assignment_2/oop_proj_2/oop_proj_2.zip)
+      Project Εργασίας στο Visual Studio:<a href="https://github.com/vasnastos/OOP/blob/main/Assignment_2/oop_proj_2/oop_proj_2.zip"><img class="ico" src="./Read_Me(resources)/msvc.jpg"/></a>
       
  
     * ## ΟΔΗΓΙΕΣ ΕΓΚΑΤΑΣΤΑΣΗΣ
