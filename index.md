@@ -252,7 +252,7 @@
         * [Management.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_2/oop_proj_2/management.cpp)
         * [main.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_2/oop_proj_2/main.cpp)
       
-      Project Εργασίας στο Visual Studio:<a href="https://github.com/vasnastos/OOP/blob/main/Assignment_2/oop_proj_2/oop_proj_2.zip"><img class="ico" src="./Read_Me(resources)/msvc.jpg"/></a>
+      Project Εργασίας στο Visual Studio:<a href="https://github.com/vasnastos/OOP/raw/main/Assignment_2/oop_proj_2/oop_proj_2.zip"><img class="ico" src="./Read_Me(resources)/msvc.jpg"/></a>
       
  
     * ## ΟΔΗΓΙΕΣ ΕΓΚΑΤΑΣΤΑΣΗΣ
