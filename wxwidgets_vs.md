@@ -33,10 +33,7 @@
 
    ![vs.png](./vs_wxwidgets_src/vs_build.png)
 
-:exclamation:Η διαδικασία αυτή διαρκεί περίπου μισή ώρα
-
-7. Έπειτα δημιουργώ ένα καινούργιο project και συγκεκριμένα ένα Empty Project. 
-:exclamation:Τα αρχεία που υπάρχουν στο project τα διαγράφετε.
+7. Έπειτα δημιουργώ ένα καινούργιο project και συγκεκριμένα ένα Empty Project.
 
 8. Στο παράθυρο που ανοίγει εμφανίζεται το solution explorer window καθώς και το property manager window. Στο property manager window κάνετε αριστερό κλίκ στον project property manager και επιλέγεται από τις διαθέσιμες επιλογές την επιλογή properties.
 
