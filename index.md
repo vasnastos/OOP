@@ -110,7 +110,14 @@
      * ### Ενισχυτικό 6(08/12/21)
         [Φυλλάδιο ερωτήσεων επανάληψης σχετικά με την πρόοδο](https://github.com/vasnastos/OOP/blob/main/Lesson_6/oop_proodos.pdf)
     * ### Ενισχυτικό 7(12/11/21)
+        * [employees example](https://github.com/vasnastos/OOP/blob/main/Lesson_7/employees.cpp)
 
+        * [find algorithm example](https://github.com/vasnastos/OOP/blob/main/Lesson_7/find_explaination.cpp)
+
+        * [erase from vector example](https://github.com/vasnastos/OOP/blob/main/Lesson_7/erase_explaination.cpp)
+
+        * [algorithms example](https://github.com/vasnastos/OOP/blob/main/Lesson_7/algorithms.cpp)
+        
         * Κατασκευη παραθύρου με χρήσητου framework των wxwidgets
         ```
             #include <wx/wx.h>
@@ -139,11 +146,6 @@
 
             wxIMPLEMENT_APP(App);
         ```
-      * [employees example](https://github.com/vasnastos/OOP/blob/main/Lesson_7/employees.cpp)
-      * [find algorithm example](https://github.com/vasnastos/OOP/blob/main/Lesson_7/find_explaination.cpp)
-      * [erase from vector example](https://github.com/vasnastos/OOP/blob/main/Lesson_7/erase_explaination.cpp)
-      * [algorithms example](https://github.com/vasnastos/OOP/blob/main/Lesson_7/algorithms.cpp)
-
   * ## ΕΡΓΑΣΙΕΣ 
 
     * **Εργασία 1**
