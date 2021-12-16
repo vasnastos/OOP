@@ -139,7 +139,11 @@
 
             wxIMPLEMENT_APP(App);
         ```
-     
+      * [employees example](https://github.com/vasnastos/OOP/blob/main/Lesson_7/employees.cpp)
+      * [find algorithm example](https://github.com/vasnastos/OOP/blob/main/Lesson_7/find_explaination.cpp)
+      * [erase from vector example](https://github.com/vasnastos/OOP/blob/main/Lesson_7/erase_explaination.cpp)
+      * [algorithms example](https://github.com/vasnastos/OOP/blob/main/Lesson_7/algorithms.cpp)
+
   * ## ΕΡΓΑΣΙΕΣ 
 
     * **Εργασία 1**
