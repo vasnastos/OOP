@@ -39,7 +39,18 @@ bool Student::is_valid_for_enroll(const Course &c)
     return std::find(this->courses.begin(),this->courses.end(),c)==this->courses.end() && c.get_semester()<=this->semester && c.get_credits()<=this->credits_left;
 }
 
+void Student::display()
+{
+    cout<<*this<<endl;
+    cout<<"=== ΜΑΘΗΜΑΤΑ ==="<<endl;
+    for(auto &c:this->courses)
+    {
+        cout<<c<<endl;
+    }
+}
+
 ostream& operator<<(ostream& os, const Student& s)
 {
-    return os << s.id << " " << s.fullname << " " << s.semester << " " << s.credits;
+    os << s.id << " " << s.fullname << " " << s.semester << " " << s.credits;
+    return os;
 }

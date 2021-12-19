@@ -89,7 +89,6 @@ void Management::load_sample()
             {
 
                 auto itr=find_if(this->courses.begin(),this->courses.end(),[&](const Course &c) {return c.get_code()==data[i];});
-                cout<<itr->get_code()<<endl;
                 student_itr->add_course(*itr);
             }
         }
@@ -97,55 +96,27 @@ void Management::load_sample()
     fs.close();
 }
 
-void Management::enroll()
-{
-    for(auto &s:this->students)
-    {
-        vector <Course> lessons_can_be_taken;
-        for(auto &c:this->courses)
-        {
-            if(s.is_valid_for_enroll(c))
-            {
-                lessons_can_be_taken.push_back(c);
-            }
-        }
-        cout<<"Student["<<s<<"] can enroll at::"<<endl;
-        for(auto &c:lessons_can_be_taken)
-        {
-            cout<<c<<endl;
-        }
-    }
-}
 
 void Management::display_students()
 {
-	std::cout << "=== ΦΟΙΤΗΤΕΣ ===" << std::endl;
+	std::cout <<endl <<"=== ΦΟΙΤΗΤΕΣ ===" << std::endl;
 	for (auto& student : this->students)
 	{
-		std::cout << student << std::endl;
+		student.display();
+        cout<<endl;
 	}
 }
 
-void Management::display()
+vector <Student> Management::get_students()const
 {
-    vector <Course> courses;
-    for(auto &s:this->students)
-    {
-        cout<<s<<endl;
-        cout<<"=== Course ==="<<endl;
-        courses=s.get_courses();
-        for(auto &s:courses)
-        {
-            cout<<s<<endl;
-        }
-        cout<<endl<<endl;
-    }
+    return this->students;
 }
 
 void Management::display_courses()
 {
-    for(auto &x:this->courses)
+    vector <Course> courses;
+    for(auto &course:this->courses)
     {
-        cout<<x<<endl;
+        cout<<course<<endl;
     }
 }

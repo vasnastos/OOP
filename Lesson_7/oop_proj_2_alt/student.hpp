@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <vector>
+#include <algorithm>
 #include "course.hpp"
 using namespace std;
 
@@ -25,4 +26,5 @@ public:
     int get_credits()const;
     bool is_valid_for_enroll(const Course &c);
     vector <Course> get_courses()const;
+    void display();
 };

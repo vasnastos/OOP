@@ -22,6 +22,5 @@ public:
     void load_sample();
     void display_courses();
 	void display_students();
-    void enroll();
-    void display();
+	vector <Student> get_students()const;
 };
