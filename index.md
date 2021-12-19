@@ -34,7 +34,7 @@
 
 <u>NASTOS VASILEIOS-ARTA:copyright:2021</u>
 
-Τελευταία ενημέρωση:12/12/2021
+Τελευταία ενημέρωση:19/12/2021
 
 ---
 
@@ -117,7 +117,7 @@
         * [erase from vector example](https://github.com/vasnastos/OOP/blob/main/Lesson_7/erase_explaination.cpp)
 
         * [algorithms example](https://github.com/vasnastos/OOP/blob/main/Lesson_7/algorithms.cpp)
-        
+
         * Κατασκευη παραθύρου με χρήσητου framework των wxwidgets
         ```
             #include <wx/wx.h>
@@ -243,7 +243,7 @@
         Ρ4_E9,8,ΝΑΝΟΗΛΕΚΤΡΟΝΙΚΕΣ ΔΙΑΤΑΞΕΙΣ,5
         Ρ4_E10,8,ΟΠΤΟΗΛΕΚΤΡΟΝΙΚΗ,5
         Ρ5_E11,8,ΤΗΛΕΠΙΚΟΙΝΩΝΙΑΚΑ ΔΙΚΤΥΑ,5
-        Ρ5_E12,8,ΑΝΑΛΥΣΗ & ΠΡΟΣΟΜΟΙΩΣΗ ΔΙΚΤΥΩΝ,5
+        Ρ5_E12,8,ΑΝΑΛΥΣΗ & ΠΡΟΣΟ9ΜΟΙΩΣΗ ΔΙΚΤΥΩΝ,5
         Ρ5_E13,8,ΔΙΑΧΕΙΡΙΣΗ ΔΙΚΤΥΩΝ,5
       ```
 
