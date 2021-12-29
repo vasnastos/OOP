@@ -4,6 +4,11 @@
         width:80%;
         height:40%;
     }
+    .ico
+    {
+        width:90px;
+        height:50px;
+    }
 </style>
 
 
@@ -18,9 +23,11 @@
 * [Management.hpp](https://raw.githubusercontent.com/vasnastos/OOP/main/Assignment_2/Solution/Source_Files/management.hpp)
 * [Management.cpp](https://raw.githubusercontent.com/vasnastos/OOP/main/Assignment_2/Solution/Source_Files/management.cpp)
 * [main.cpp](https://raw.githubusercontent.com/vasnastos/OOP/main/Assignment_2/Solution/Source_Files/main.cpp)
-* **Project στο visual studio:**<a href="https://github.com/vasnastos/OOP/raw/main/Assignment_2/Solution/oop_proj_2_sol.zip"><img src="./Read_Me(resources)/msvc.jpg" width="90px" height="50px"/></a>
+* **Project στο visual studio:**<a href="https://github.com/vasnastos/OOP/raw/main/Assignment_2/Solution/oop_proj_2_sol.zip"><img class="ico" src="./Read_Me(resources)/msvc.jpg"/></a>
 
 ### ΠΑΡΑΔΕΙΓΜΑΤΑ ΕΚΤΕΛΕΣΗΣ
+
+<br>
 
 **ΕΡΩΤΗΜΑ 1**
     <img class="ricons" src="https://raw.githubusercontent.com/vasnastos/OOP/main/Assignment_2/Solution/results/erotima_1.png"/><br><br><br>
