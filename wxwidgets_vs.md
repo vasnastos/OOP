@@ -1,7 +1,7 @@
 <style>
     img
     {
-        width:80%;
+        width:87%;
     }
 </style>
 
