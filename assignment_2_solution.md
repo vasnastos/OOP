@@ -23,19 +23,19 @@
 * [Management.hpp](https://raw.githubusercontent.com/vasnastos/OOP/main/Assignment_2/Solution/Source_Files/management.hpp)
 * [Management.cpp](https://raw.githubusercontent.com/vasnastos/OOP/main/Assignment_2/Solution/Source_Files/management.cpp)
 * [main.cpp](https://raw.githubusercontent.com/vasnastos/OOP/main/Assignment_2/Solution/Source_Files/main.cpp)
-* **Project στο visual studio:**<a href="https://github.com/vasnastos/OOP/raw/main/Assignment_2/Solution/oop_proj_2_sol.zip"><img class="ico" src="./Read_Me(resources)/msvc.jpg"/></a>
+* <b>Project στο visual studio:</b><a href="https://github.com/vasnastos/OOP/raw/main/Assignment_2/Solution/oop_proj_2_sol.zip"><img class="ico" src="./Read_Me(resources)/msvc.jpg"/></a>
 
 ### ΠΑΡΑΔΕΙΓΜΑΤΑ ΕΚΤΕΛΕΣΗΣ
 
 <br>
 
-**ΕΡΩΤΗΜΑ 1**
+<u><b>ΕΡΩΤΗΜΑ 1</b></u><br>
     <img class="ricons" src="https://raw.githubusercontent.com/vasnastos/OOP/main/Assignment_2/Solution/results/erotima_1.png"/><br><br><br>
-**ΕΡΩΤΗΜΑ 2**
+<u><b>ΕΡΩΤΗΜΑ 2</b></u><br>
     <img class="ricons" src="https://raw.githubusercontent.com/vasnastos/OOP/main/Assignment_2/Solution/results/erwtima_2.png"/><br><br><br>
-**ΕΡΩΤΗΜΑ 3**
+<u><b>ΕΡΩΤΗΜΑ 3</b></u><br>
     <img class="ricons" src="https://raw.githubusercontent.com/vasnastos/OOP/main/Assignment_2/Solution/results/erwtima_3.png"/><br><br><br>
-**ΕΡΩΤΗΜΑ 4**
+<u><b>ΕΡΩΤΗΜΑ 4</b></u><br>
     <img class="ricons" src="https://raw.githubusercontent.com/vasnastos/OOP/main/Assignment_2/Solution/results/erwtima_4.png"/><br><br><br>
-**ΕΡΩΤΗΜΑ 5**
+<u><b>ΕΡΩΤΗΜΑ 5</b></u><br>
     <img class="ricons" src="https://raw.githubusercontent.com/vasnastos/OOP/main/Assignment_2/Solution/results/erwtima_5.png"/><br>
