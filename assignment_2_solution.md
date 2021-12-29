@@ -23,7 +23,8 @@
 * [Management.hpp](https://raw.githubusercontent.com/vasnastos/OOP/main/Assignment_2/Solution/Source_Files/management.hpp)
 * [Management.cpp](https://raw.githubusercontent.com/vasnastos/OOP/main/Assignment_2/Solution/Source_Files/management.cpp)
 * [main.cpp](https://raw.githubusercontent.com/vasnastos/OOP/main/Assignment_2/Solution/Source_Files/main.cpp)
-* <b>Project στο visual studio:</b><a href="https://github.com/vasnastos/OOP/raw/main/Assignment_2/Solution/oop_proj_2_sol.zip"><img class="ico" src="./Read_Me(resources)/msvc.jpg"/></a>
+
+* [Project στο Visual studio](https://github.com/vasnastos/OOP/raw/main/Assignment_2/Solution/oop_proj_2_sol.zip) 
 
 ### ΠΑΡΑΔΕΙΓΜΑΤΑ ΕΚΤΕΛΕΣΗΣ
 
