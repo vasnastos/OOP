@@ -1,3 +1,11 @@
+<style>
+    img
+    {
+        width:80%;
+    }
+</style>
+
+
 # Μεταγλώττιση των wxwidgets μέσω του Visual Studio 2022
 
 1. Εγκατάσταση Community Edition του visual studio:[Visual Studio Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=17)
@@ -50,7 +58,7 @@
     $(WXWIN)\include\msvc;$(WXWIN)\include
 ```
 
-![additional directories](./vs_wxwidgets_src/additional_directories.png)
+   ![additional directories](./vs_wxwidgets_src/additional_directories.png)
 
   * Τέλος από το μενού επιλέγεται Configuration Properties->Linker->General->Additional Library Directories και αλλάζουμε την τιμη του σε:
   
@@ -106,11 +114,10 @@
 
 ```
 
-:point_right:Αποτέλεσμα
+10.Αποτέλεσμα
 
-![vs view](./vs_wxwidgets_src/vs_view.png)
-
-**[Αλλαγή κωδικοποιήσης command line σε utf8](utf_8_encoding.md)** 
+  ![vs view](./vs_wxwidgets_src/vs_view.png)
+ 
 
 ## Οδηγίες σε βίντεο
 
