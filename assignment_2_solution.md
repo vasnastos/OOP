@@ -23,9 +23,9 @@
 ### ΠΑΡΑΔΕΙΓΜΑΤΑ ΕΚΤΕΛΕΣΗΣ
 
 **ΕΡΩΤΗΜΑ 1**
-    <img class="ricons" src="https://raw.githubusercontent.com/vasnastos/OOP/main/Assignment_2/Solution/results/erotima_1.png"/><br>
+    <img class="ricons" src="https://raw.githubusercontent.com/vasnastos/OOP/main/Assignment_2/Solution/results/erotima_1.png"/><br><br><br>
 **ΕΡΩΤΗΜΑ 2**
-    <img class="ricons" src="https://raw.githubusercontent.com/vasnastos/OOP/main/Assignment_2/Solution/results/erwtima_2.png"/><br>
+    <img class="ricons" src="https://raw.githubusercontent.com/vasnastos/OOP/main/Assignment_2/Solution/results/erwtima_2.png"/><br><br><br>
 **ΕΡΩΤΗΜΑ 3**
     <img class="ricons" src="https://raw.githubusercontent.com/vasnastos/OOP/main/Assignment_2/Solution/results/erwtima_3.png"/><br>
 **ΕΡΩΤΗΜΑ 4**
