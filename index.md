@@ -476,7 +476,10 @@
       
       **Έκδοση 1 με υλοποιημένη την εισαγωγή φοιτητών:**<a href="https://github.com/vasnastos/OOP/raw/main/Assignment_2/vs_projects/oop_proj_2_v1.zip"><img class="ico" src="./Read_Me(resources)/msvc.jpg"/></a>
       **Έκδοση 2 με υλοποιημένη την δήλωση μαθήματος:**<a href="https://github.com/vasnastos/OOP/raw/main/Assignment_2/vs_projects/oop_proj_2_v2.zip"><img class="ico" src="./Read_Me(resources)/msvc.jpg"/></a>
-      **Έκδοση 3 με υλοποιημένο το GUI:**<a href="https://github.com/vasnastos/OOP/raw/main/Assignment_2/vs_projects/oop_proj_2_v3.zip"><img class="ico" src="./Read_Me(resources)/msvc.jpg"/></a>      
+      **Έκδοση 3 με υλοποιημένο το GUI:**<a href="https://github.com/vasnastos/OOP/raw/main/Assignment_2/vs_projects/oop_proj_2_v3.zip"><img class="ico" src="./Read_Me(resources)/msvc.jpg"/></a>   
+
+      :bangbang:[**Επίλυση Εργασίας**](assignment_2_solution.md)
+         
  
     * ## ΟΔΗΓΙΕΣ ΕΓΚΑΤΑΣΤΑΣΗΣ
       * [sqlite](sqlite.md)
