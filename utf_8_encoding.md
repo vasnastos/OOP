@@ -1,8 +1,8 @@
 <style>
     img
     {
-        width:100%;
-        height:520px;
+        width:90%;
+        
     }
 </style>
 
