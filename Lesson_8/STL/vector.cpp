@@ -41,4 +41,15 @@ int main()
 
     //Μέτρηση αριθμών που διαιρούνται με το τρία
     cout<<"Divide by 3-:"<<count_if(numbers.begin(),numbers.end(),[](int &a) {return a%3==0;})<<endl;
+
+    // Εμφάνιση όλων των αριθμών 
+    cout<<endl;
+    for_each(numbers.begin(),numbers.end(),[](int &num) {cout<<num<<endl;});
+
+    // Διαγραφή στοιχείων που διαιρούνται με το τρια
+    auto itr=remove_if(numbers.begin(),numbers.end(),[](const int &a) {return a%3==0;});
+    numbers.erase(itr,numbers.end());
+    cout<<endl;
+    for_each(numbers.begin(),numbers.end(),[](int &num) {cout<<num<<endl;});
+
 }
