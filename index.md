@@ -487,7 +487,10 @@
       **Έκδοση 3 με υλοποιημένο το GUI:**<a href="https://github.com/vasnastos/OOP/raw/main/Assignment_2/vs_projects/oop_proj_2_v3.zip"><img class="ico" src="./Read_Me(resources)/msvc.jpg"/></a>   
 
       :bangbang:[**Επίλυση Εργασίας**](assignment_2_solution.md)
-         
+
+    * Εργασία 3
+
+      <iframe width="90%" height="750px" src="Read_Me(resources)/oop_prj3.pdf"></iframe>
  
     * ## ΟΔΗΓΙΕΣ ΕΓΚΑΤΑΣΤΑΣΗΣ
       * [sqlite](sqlite.md)
