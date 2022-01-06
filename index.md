@@ -361,6 +361,13 @@
               wxEntry(argc, argv);
             }
         ```
+    * ### Ενισχυτικό 8
+
+      1. Παραδείγματα STL:[stl.md](stl.md)
+      2. [inheritance1.cpp](https://github.com/vasnastos/OOP/blob/main/Lesson_8/inheritance1.cpp)
+      3. [inherictance2.cpp](https://github.com/vasnastos/OOP/blob/main/Lesson_8/inheritance2.cpp)
+      3. [template1.cpp]()
+      4. [template2.cpp]()
 
   * ## ΕΡΓΑΣΙΕΣ 
 
