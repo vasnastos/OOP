@@ -1,0 +1,147 @@
+#include "vending_machine.hpp"
+#ifdef _WIN32
+#include <windows.h>
+#endif
+
+// https://stackoverflow.com/questions/997946/how-to-get-current-time-and-date-in-c
+const std::string currentDateTime() {
+    time_t     now = time(0);
+    struct tm  tstruct;
+    char       buf[80];
+    tstruct = *localtime(&now);
+    // Visit http://en.cppreference.com/w/cpp/chrono/c/strftime
+    // for more information about date/time format
+    strftime(buf, sizeof(buf), "%Y-%m-%d.%X", &tstruct);
+
+    return buf;
+}
+
+
+VendingMachine::VendingMachine(vector <double> &available_coin_types):paying_amount(0.0)
+{
+    this->products.push_back(Product("Kαφές",1.5,10));
+    this->products.push_back(Product("Σοκολάτα",2.1,10));
+    this->products.push_back(Product("Γάλα",0.3,20));  
+    for(int i=0,t=available_coin_types.size();i<t;i++)
+    {
+        this->coins.insert(make_pair(i+1,available_coin_types.at(i)));
+        this->coin_buffer[available_coin_types.at(i)]=0;
+    }
+}
+
+void VendingMachine::reset_coin_buffer()
+{
+    for(auto &cb:this->coin_buffer)
+    {
+        cb.second=0;
+    }
+}
+
+
+void VendingMachine::reset_payout()
+{
+    this->paying_amount=0.0;
+}
+
+void VendingMachine::payout(string product,bool has_milk)
+{
+    this->reset_coin_buffer();
+    this->reset_payout();
+    vector <Product>::iterator pr_itr=this->products.end();
+    vector <Product>::iterator milk=this->products.end();
+    if(!has_milk)
+    {
+        pr_itr=find_if(this->products.begin(),this->products.end(),[&](const Product &p) {return p.get_title()==product;});
+    }
+    else 
+    {
+        pr_itr=find_if(this->products.begin(),this->products.end(),[&](const Product &p) {return p.get_title()==product;});
+        milk=find_if(this->products.begin(),this->products.end(),[&](const Product &p) {return p.get_title()=="Γάλα";});
+    }
+    bool cancel_order=false;
+
+    if(pr_itr->get_quantity()==0)
+    {
+        cerr<<"Το προιόν:"<<pr_itr->get_title()<<" δεν είναι διαθέσιμο"<<endl;
+        cancel_order=true;
+    }
+    if(has_milk)
+    {
+        if(milk->get_quantity()==0)
+        {
+            cerr<<"Το προιόν:"<<milk->get_title()<<" δεν είναι διαθέσιμο"<<endl;
+            cancel_order=true;
+        }
+    }
+    if(cancel_order)
+    {
+        cerr<<"Παρακαλώ επιλέξτε ένα διαφορετικό προιόν η ανεφοδιάστε την μηχανή"<<endl;
+        return;
+    }
+
+    this->paying_amount=pr_itr->get_price();
+    if(has_milk)
+    {
+        this->paying_amount+=milk->get_price();
+    }
+
+    double pay_view=0.0;
+    while(pay_view<this->paying_amount)
+    {
+        #ifdef _WIN32
+        SetConsoleOutputCP(65001);
+        #endif
+        int money_choice;
+        cout<<"1. 10 λεπτά"<<endl;
+        cout<<"2. 20 λεπτά"<<endl;
+        cout<<"3. 50 λεπτά"<<endl;
+        cout<<"4. 1 ευρώ"<<endl;
+        cout<<"5. 2 ευρώ"<<endl;
+        cout<<"6. 5 ευρώ"<<endl;
+        cout<<"7. 10 ευρώ"<<endl;
+        cout<<"-1 Ακύρωση Παραγγελίας"<<endl;
+        cout<<"Διάλεξε ποσό:";
+        cin>>money_choice;
+        if(money_choice==-1)
+        {
+            cancel_order=true;
+            break;
+        }
+        pay_view+=this->coins[money_choice];
+    }
+    if(cancel_order)
+    {
+        cout<<"Ακύρωση παραγγελίας"<<endl;
+        cout<<"Προιόν:"<<pr_itr->get_title()<<(has_milk?" με γάλα":"")<<endl;
+        cout<<"Επιστροφή στον Χρήστη"<<endl;
+        cout<<"============"<<endl;
+        for(auto &cb:this->coin_buffer)
+        {
+            if(cb.second!=0)
+            cout<<"Νόμισμα:"<<cb.first<<"  Ποσότητα:"<<cb.second<<endl;
+        }
+    }
+    else{
+        pr_itr->reduce_quantity();
+        if(milk!=this->products.end())
+        {
+            milk->reduce_quantity();
+        }
+        this->machine_memory.push_back("ΠΑΡΡΑΓΕΛΙΑ:"+currentDateTime()+"\nΠΡΟΙΟΝ:"+pr_itr->get_title()+(has_milk?"με Γάλα":"")+"\n"+"ΠΟΣΟ:"+to_string(pay_view)+"\nΡΕΣΤΑ:"+to_string(pay_view-this->paying_amount));
+    }
+}
+
+void VendingMachine::change(double pay_amount)
+{
+
+}
+
+void VendingMachine::refill()
+{
+
+}
+
+std::ostream &operator<<(ostream &os,const VendingMachine &vm)
+{
+    
+}
