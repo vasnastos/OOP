@@ -490,7 +490,7 @@
 
     * Εργασία 3
 
-      <iframe width="90%" height="750px" src="Read_Me(resources)/oop_prj3.pdf"></iframe>
+      <iframe width="90%" height="750px" src="Read_Me(resources)/2021f_oop_prj3.pdf"></iframe>
  
     * ## ΟΔΗΓΙΕΣ ΕΓΚΑΤΑΣΤΑΣΗΣ
       * [sqlite](sqlite.md)
