@@ -46,3 +46,11 @@ int Product::get_quantity()const
 {
     return this->quantity;
 }
+
+ostream &operator<<(ostream &os,const Product &p)
+{
+    os<<"ΠΡΟΙΟΝ:"<<p.getname()<<endl;
+    os<<"ΠΟΣΟ:"<<p.price<<endl;
+    os<<"ΠΟΣΟΤΗΤΑ:"<<p.quantity<<endl;
+    return os;
+}

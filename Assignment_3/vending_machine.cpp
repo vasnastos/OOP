@@ -2,6 +2,7 @@
 #ifdef _WIN32
 #include <windows.h>
 #endif
+#include <cassert>
 
 // https://stackoverflow.com/questions/997946/how-to-get-current-time-and-date-in-c
 const std::string currentDateTime() {
@@ -11,7 +12,7 @@ const std::string currentDateTime() {
     tstruct = *localtime(&now);
     // Visit http://en.cppreference.com/w/cpp/chrono/c/strftime
     // for more information about date/time format
-    strftime(buf, sizeof(buf), "%Y-%m-%d.%X", &tstruct);
+    strftime(buf, sizeof(buf), "%Y-%m-%d   %X", &tstruct);
 
     return buf;
 }
@@ -104,14 +105,15 @@ void VendingMachine::payout(string product,bool has_milk)
             break;
         }
         pay_view+=this->coins[money_choice];
-        cout<<"Υπολειπόμενο ποσό:"<<(this->paying_amount-pay_view)<<endl;
+        this->coin_buffer[this->coins[money_choice]]++;
+        cout<<endl<<"Υπολειπόμενο ποσό:"<<(this->paying_amount-pay_view>0?this->paying_amount-pay_view:0)<<endl;
         system("pause");
     }
     if(cancel_order)
     {
         cout<<endl;
         cout<<"Ακύρωση παραγγελίας"<<endl;
-        cout<<"Προιόν:"<<pr_itr->get_title()<<(has_milk?" με γάλα":"")<<endl;
+        cout<<"Προιόν:"<<pr_itr->getname()<<(has_milk?" με Γάλα":"")<<endl;
         cout<<"Επιστροφή στον Χρήστη"<<endl;
         cout<<"============"<<endl;
         for(auto &cb:this->coin_buffer)
@@ -127,7 +129,7 @@ void VendingMachine::payout(string product,bool has_milk)
         {
             milk->reduce_quantity();
         }
-        this->machine_memory.push_back("ΠΑΡΡΑΓΕΛΙΑ:"+currentDateTime()+"\nΠΡΟΙΟΝ:"+pr_itr->getname()+(has_milk?"με Γάλα":"")+"\n"+"ΠΟΣΟ:"+to_string(pay_view)+"\nΡΕΣΤΑ:"+to_string(pay_view-this->paying_amount));
+        this->machine_memory.push_back("ΠΑΡΡΑΓΕΛΙΑ:"+currentDateTime()+"\nΠΡΟΙΟΝ:"+pr_itr->getname()+(has_milk?"με Γάλα":"")+"\n"+"ΚΟΣΤΟΣ:"+to_string(this->paying_amount)+"\nΠΟΣΟ ΠΛΗΡΩΜΗΣ:"+to_string(pay_view)+"\nΡΕΣΤΑ:"+to_string(pay_view-this->paying_amount));
         system("cls");
         cout<<endl<<"=== ΑΠΟΔΕΙΞΗ ==="<<endl;
         cout<<pr_itr->description()<<endl;
@@ -141,27 +143,13 @@ void VendingMachine::payout(string product,bool has_milk)
     }
 }
 
-void VendingMachine::change(double pay_amount)
+void VendingMachine::refill()
 {
 
 }
 
-void VendingMachine::refill()
+void VendingMachine::change(double pay_amount)
 {
-    fstream fs;
-    string line,word;
-    vector <string> data;
-    fs.open("refill.txt",std::ios::in);
-    while(getline(fs,line))
-    {
-        stringstream ss(line);
-        while(getline(ss,word,':'))
-        {
-            data.push_back(word);
-        }
-        if(data.size()!=2) continue;
-        auto product=find_if(this->products.begin(),this->products.end(0))
-    }
 }
 
 std::ostream &operator<<(ostream &os,const VendingMachine &vm)

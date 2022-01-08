@@ -33,7 +33,6 @@ int main()
     int selection;
     string product;
     bool has_milk;
-    bool exit_flag=false;
     while(true)
     {
         selection=menu();
