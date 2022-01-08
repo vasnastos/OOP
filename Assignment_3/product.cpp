@@ -1,6 +1,13 @@
 #include "product.hpp"
 
-Product::Product(string atitle,double aprice,int quantity):title(atitle),price(aprice),quantity(aquantity) {}
+map <string,string> product_names
+{
+    {"coffee","Καφές"},
+    {"Chocolate","Σοκολάτα"},
+    {"Milk","Γάλα"}
+};
+
+Product::Product(string atitle,double aprice,int aquantity):title(atitle),price(aprice),quantity(aquantity) {}
 
 void Product::reduce_quantity()
 {
@@ -15,6 +22,19 @@ void Product::set_quantity(int new_quantity)
 string Product::get_title()const
 {
     return this->title;
+}
+
+string Product::description()const
+{
+    stringstream ss;
+    ss<<"ΠΡΟΙΟΝ:"<<product_names[this->title]<<endl;
+    ss<<"ΠΟΟΣΟ:"<<this->price<<endl;
+    return ss.str();
+}
+
+string Product::getname()const
+{
+    return product_names[this->title];
 }
 
 double Product::get_price()const

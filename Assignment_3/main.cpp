@@ -6,6 +6,7 @@
 
 int menu()
 {
+    system("cls");
     #ifdef _WIN32
     SetConsoleOutputCP(65001);
     #endif
@@ -26,24 +27,42 @@ int main()
 {
     vector <double> coins={0.1,0.2,0.5,1.0,2.0,5.0,10.0};
     VendingMachine vm(coins);
+    #ifdef _WIN32
+    SetConsoleOutputCP(65001);
+    #endif
     int selection;
+    string product;
+    bool has_milk;
+    bool exit_flag=false;
     while(true)
     {
         selection=menu();
         switch(selection)
         {
             case 1:
+                product="Coffee";
+                has_milk=false;
                 break;
             case 2:
+                product="Coffee";
+                has_milk=true;
                 break;
             case 3:
+                product="Chocolate";
+                has_milk=false;
                 break;
             case 4:
+                product="Chocolate";
+                has_milk=true;
                 break;
             case 5:
+                vm.refill();
                 break;
             case -1:
+                cout<<vm<<endl;
+                exit(EXIT_SUCCESS);
                 break;
         }
+        vm.payout(product,has_milk);
     }
 }

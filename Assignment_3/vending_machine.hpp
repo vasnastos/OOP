@@ -2,6 +2,8 @@
 #include <vector>
 #include <map>
 #include <string>
+#include <ctime>
+#include <algorithm>
 #include "product.hpp"
 using namespace std;
 

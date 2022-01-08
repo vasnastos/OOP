@@ -1,7 +1,12 @@
 #include <iostream>
+#include <map>
+#include <sstream>
 
 
 using namespace std;
+
+
+
 
 class Product
 {
@@ -10,10 +15,12 @@ class Product
         double price;
         int quantity;
     public:
-        Product(string atitle,double aprice,int quantity);
+        Product(string atitle,double aprice,int aquantity);
         void set_quantity(int new_quantity);
         void reduce_quantity();
         string get_title()const;
+        string getname()const;
+        string description()const;
         double get_price()const;
         int get_quantity()const;
 };

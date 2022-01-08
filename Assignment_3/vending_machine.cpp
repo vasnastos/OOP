@@ -19,9 +19,9 @@ const std::string currentDateTime() {
 
 VendingMachine::VendingMachine(vector <double> &available_coin_types):paying_amount(0.0)
 {
-    this->products.push_back(Product("Kαφές",1.5,10));
-    this->products.push_back(Product("Σοκολάτα",2.1,10));
-    this->products.push_back(Product("Γάλα",0.3,20));  
+    this->products.push_back(Product("Coffee",1.5,10));
+    this->products.push_back(Product("Chocolate",2.1,10));
+    this->products.push_back(Product("Milk",0.3,20));  
     for(int i=0,t=available_coin_types.size();i<t;i++)
     {
         this->coins.insert(make_pair(i+1,available_coin_types.at(i)));
@@ -47,16 +47,11 @@ void VendingMachine::payout(string product,bool has_milk)
 {
     this->reset_coin_buffer();
     this->reset_payout();
-    vector <Product>::iterator pr_itr=this->products.end();
+    vector <Product>::iterator pr_itr=find_if(this->products.begin(),this->products.end(),[&](const Product &p) {return p.get_title()==product;});;
     vector <Product>::iterator milk=this->products.end();
-    if(!has_milk)
+    if(has_milk)
     {
-        pr_itr=find_if(this->products.begin(),this->products.end(),[&](const Product &p) {return p.get_title()==product;});
-    }
-    else 
-    {
-        pr_itr=find_if(this->products.begin(),this->products.end(),[&](const Product &p) {return p.get_title()==product;});
-        milk=find_if(this->products.begin(),this->products.end(),[&](const Product &p) {return p.get_title()=="Γάλα";});
+        milk=find_if(this->products.begin(),this->products.end(),[&](const Product &p) {return p.get_title()=="Milk";});
     }
     bool cancel_order=false;
 
@@ -76,6 +71,7 @@ void VendingMachine::payout(string product,bool has_milk)
     if(cancel_order)
     {
         cerr<<"Παρακαλώ επιλέξτε ένα διαφορετικό προιόν η ανεφοδιάστε την μηχανή"<<endl;
+        system("pause");
         return;
     }
 
@@ -84,10 +80,10 @@ void VendingMachine::payout(string product,bool has_milk)
     {
         this->paying_amount+=milk->get_price();
     }
-
     double pay_view=0.0;
     while(pay_view<this->paying_amount)
     {
+        system("cls");
         #ifdef _WIN32
         SetConsoleOutputCP(65001);
         #endif
@@ -108,9 +104,12 @@ void VendingMachine::payout(string product,bool has_milk)
             break;
         }
         pay_view+=this->coins[money_choice];
+        cout<<"Υπολειπόμενο ποσό:"<<(this->paying_amount-pay_view)<<endl;
+        system("pause");
     }
     if(cancel_order)
     {
+        cout<<endl;
         cout<<"Ακύρωση παραγγελίας"<<endl;
         cout<<"Προιόν:"<<pr_itr->get_title()<<(has_milk?" με γάλα":"")<<endl;
         cout<<"Επιστροφή στον Χρήστη"<<endl;
@@ -120,14 +119,25 @@ void VendingMachine::payout(string product,bool has_milk)
             if(cb.second!=0)
             cout<<"Νόμισμα:"<<cb.first<<"  Ποσότητα:"<<cb.second<<endl;
         }
+        system("pause");
     }
     else{
         pr_itr->reduce_quantity();
-        if(milk!=this->products.end())
+        if(has_milk)
         {
             milk->reduce_quantity();
         }
-        this->machine_memory.push_back("ΠΑΡΡΑΓΕΛΙΑ:"+currentDateTime()+"\nΠΡΟΙΟΝ:"+pr_itr->get_title()+(has_milk?"με Γάλα":"")+"\n"+"ΠΟΣΟ:"+to_string(pay_view)+"\nΡΕΣΤΑ:"+to_string(pay_view-this->paying_amount));
+        this->machine_memory.push_back("ΠΑΡΡΑΓΕΛΙΑ:"+currentDateTime()+"\nΠΡΟΙΟΝ:"+pr_itr->getname()+(has_milk?"με Γάλα":"")+"\n"+"ΠΟΣΟ:"+to_string(pay_view)+"\nΡΕΣΤΑ:"+to_string(pay_view-this->paying_amount));
+        system("cls");
+        cout<<endl<<"=== ΑΠΟΔΕΙΞΗ ==="<<endl;
+        cout<<pr_itr->description()<<endl;
+        if(has_milk)
+        cout<<milk->description()<<endl;
+        cout<<"================"<<endl;
+        cout<<"ΣΥΟΝΟΛΙΚΟ ΠΟΣΟ:"<<this->paying_amount<<endl;
+        cout<<"ΠΟΣΟ ΠΟΥ ΔΙΑΤΕΘΗΚΕ:"<<pay_view<<endl;
+        cout<<"ΡΕΣΤΑ:"<<pay_view-this->paying_amount<<endl;
+        system("pause");
     }
 }
 
@@ -143,5 +153,5 @@ void VendingMachine::refill()
 
 std::ostream &operator<<(ostream &os,const VendingMachine &vm)
 {
-    
+    return os;
 }
