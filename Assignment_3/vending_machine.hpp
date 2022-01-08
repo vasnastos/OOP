@@ -4,6 +4,7 @@
 #include <string>
 #include <ctime>
 #include <algorithm>
+#include <fstream>
 #include "product.hpp"
 using namespace std;
 

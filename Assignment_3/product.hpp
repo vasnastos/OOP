@@ -23,4 +23,5 @@ class Product
         string description()const;
         double get_price()const;
         int get_quantity()const;
+        friend ostream &operator<<(ostream &os)
 };

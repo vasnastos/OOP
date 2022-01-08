@@ -148,7 +148,20 @@ void VendingMachine::change(double pay_amount)
 
 void VendingMachine::refill()
 {
-
+    fstream fs;
+    string line,word;
+    vector <string> data;
+    fs.open("refill.txt",std::ios::in);
+    while(getline(fs,line))
+    {
+        stringstream ss(line);
+        while(getline(ss,word,':'))
+        {
+            data.push_back(word);
+        }
+        if(data.size()!=2) continue;
+        auto product=find_if(this->products.begin(),this->products.end(0))
+    }
 }
 
 std::ostream &operator<<(ostream &os,const VendingMachine &vm)

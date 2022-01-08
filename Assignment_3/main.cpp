@@ -19,7 +19,7 @@ int menu()
     cout<<"-1. Έξοδος"<<endl;
     cout<<"Διάλεξε ρόφημα:";
     cin>>choice;
-    system("pause");
+    cout<<endl<<endl;
     return choice;
 }   
 
@@ -42,18 +42,22 @@ int main()
             case 1:
                 product="Coffee";
                 has_milk=false;
+                vm.payout(product,has_milk);
                 break;
             case 2:
                 product="Coffee";
                 has_milk=true;
+                vm.payout(product,has_milk);
                 break;
             case 3:
                 product="Chocolate";
                 has_milk=false;
+                vm.payout(product,has_milk);
                 break;
             case 4:
                 product="Chocolate";
                 has_milk=true;
+                vm.payout(product,has_milk);
                 break;
             case 5:
                 vm.refill();
@@ -63,6 +67,6 @@ int main()
                 exit(EXIT_SUCCESS);
                 break;
         }
-        vm.payout(product,has_milk);
+        
     }
 }

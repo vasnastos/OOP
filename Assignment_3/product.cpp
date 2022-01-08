@@ -2,7 +2,7 @@
 
 map <string,string> product_names
 {
-    {"coffee","Καφές"},
+    {"Coffee","Καφές"},
     {"Chocolate","Σοκολάτα"},
     {"Milk","Γάλα"}
 };
