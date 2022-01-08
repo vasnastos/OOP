@@ -56,6 +56,7 @@
           $ cd build
           $ cd msw
           $ mingw32-make -f makefile.gcc SHELL=CMD.EXE SHARED=1 UNICODE=1 BUILD=release clean
+          $ mingw32-make -f makefile.gcc SHELL=CMD.EXE SHARED=1 UNICODE=1 BUILD=release
        ```
     * Μεταγλώττιση παραδειγμάτων στον φάκελο samples και demos
        ```
