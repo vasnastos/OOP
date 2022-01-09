@@ -60,7 +60,7 @@
         * Υποθέτωντας ότι η νέα πόρτα που προσπαθεί να ανοίξει ο χρήστης απαιτεί επίπεδο πρόσβασης 7, ενημερώστε τον χρήστη αν άνοιξε η πόρτα η όχι.
         * Επαναλάβετε τα 2 τελευταία βήματα εως ότου ανοίξει η πόρτα
 
-ΛΥΣΗ:
+ΛΥΣΗ:[map.cpp](https://github.com/vasnastos/OOP/blob/main/Lesson_8/STL/map.cpp)
 
 * Κατασκευάστε ένα διάνυσμα το οποίο θα περιέχει αντικείμενα τύπου Item. 
     0. Εισάγεται τα ακόλουθα αντικείμενα 
@@ -77,4 +77,4 @@
     
     ![stl](Read_Me(resources)/uml_stl.png)
 
-ΛΥΣΗ:
+ΛΥΣΗ:[vector_shopping_list.cpp](https://github.com/vasnastos/OOP/blob/main/Lesson_8/STL/vector_shooping_list.cpp)
