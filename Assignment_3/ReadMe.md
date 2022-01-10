@@ -48,3 +48,14 @@
 
 
 Προαιρετικά: Κατασκευάστε γραφική διεπαφή για την εφαρμογή
+
+
+**ΤΜΗΜΑΤΑ ΚΩΔΙΚΑ**
+<br>
+
+* [product.hpp](product.hpp)
+* [product.cpp](product.cpp)
+* [vending_machine.hpp](vending_machine.hpp)
+* [vending_machine.cpp](vending_machine.cpp)
+* [main.cpp](main.cpp)
+* [Προτύπο τεχνικής αναφοράς](ΑΝΤΙΚΕΙΜΕΝΟΣΤΡΑΦΗΣ ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ ΠΡΟΤΥΠΟ ΕΡΓΑΣΙΑΣ.docx)
