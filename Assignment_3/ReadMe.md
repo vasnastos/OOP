@@ -58,4 +58,4 @@
 * [vending_machine.hpp](vending_machine.hpp)
 * [vending_machine.cpp](vending_machine.cpp)
 * [main.cpp](main.cpp)
-* [Προτύπο τεχνικής αναφοράς](ΑΝΤΙΚΕΙΜΕΝΟΣΤΡΑΦΗΣ ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ ΠΡΟΤΥΠΟ ΕΡΓΑΣΙΑΣ.docx)
+* [Προτύπο_τεχνικής_αναφοράς](ΑΝΤΙΚΕΙΜΕΝΟΣΤΡΑΦΗΣ ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ ΠΡΟΤΥΠΟ ΕΡΓΑΣΙΑΣ.docx)
