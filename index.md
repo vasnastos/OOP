@@ -97,13 +97,19 @@
       
   [**ΠΑΡΟΥΣΙΑΣΗ**:spiral_notepad:](https://github.com/vasnastos/OOP/blob/main/Lesson_3/OOP_3.pdf)
       
-  :heavy_check_mark:[**:paperclips:**](https://github.com/vasnastos/OOP/blob/main/Lesson_3/exercise1.cpp) 
-  :heavy_check_mark:[**:paperclips:**](https://github.com/vasnastos/OOP/blob/main/Lesson_3/exercise2.cpp)   
-  :heavy_check_mark:[**:paperclips:**](https://github.com/vasnastos/OOP/blob/main/Lesson_3/exercise3.cpp)   
-  :heavy_check_mark:[**:paperclips:**](https://github.com/vasnastos/OOP/blob/main/Lesson_3/exercise4.cpp) 
-  :heavy_check_mark:[**:paperclips:**](https://github.com/vasnastos/OOP/blob/main/Lesson_3/exercise5.cpp)  
-  :heavy_check_mark:[**:paperclips:**](https://github.com/vasnastos/OOP/blob/main/Lesson_3/exercise6.cpp) 
-  :heavy_check_mark:[**:paperclips:**](https://github.com/vasnastos/OOP/blob/main/Lesson_3/exercise7.cpp)  
+  :heavy_check_mark:[ΑΣΚΗΣΗ 1](https://github.com/vasnastos/OOP/blob/main/Lesson_3/exercise1.cpp) 
+
+  :heavy_check_mark:[ΑΣΚΗΣΗ 2](https://github.com/vasnastos/OOP/blob/main/Lesson_3/exercise2.cpp)   
+
+  :heavy_check_mark:[ΑΣΚΗΣΗ 3](https://github.com/vasnastos/OOP/blob/main/Lesson_3/exercise3.cpp)   
+
+  :heavy_check_mark:[ΑΣΚΗΣΗ 4](https://github.com/vasnastos/OOP/blob/main/Lesson_3/exercise4.cpp)
+
+  :heavy_check_mark:[ΑΣΚΗΣΗ 5](https://github.com/vasnastos/OOP/blob/main/Lesson_3/exercise5.cpp)  
+
+  :heavy_check_mark:[ΑΣΚΗΣΗ 6](https://github.com/vasnastos/OOP/blob/main/Lesson_3/exercise6.cpp) 
+
+  :heavy_check_mark:[ΑΣΚΗΣΗ 7](https://github.com/vasnastos/OOP/blob/main/Lesson_3/exercise7.cpp)  
      
 ### Ενισχυτικό 4(20/11/21)
   :heavy_check_mark:Σχετικά με την εργασία:bangbang: Δείτε στο τμήμα **ΕΡΓΑΣΙΕΣ**->Εργασία 1
@@ -130,7 +136,7 @@
  :heavy_check_mark:[lambdas combine with vector](https://github.com/vasnastos/OOP/blob/main/Lesson_7/lambdas_combine_with_vectors.cpp)
 
 
-:heavy_check_mark:Κατασκευη παραθύρου με χρήση του framework των wxwidgets
+:pushpin:Κατασκευη παραθύρου με χρήση του framework των wxwidgets
   ```
       #include <wx/wx.h>
 
@@ -161,7 +167,7 @@
 
   <br>
 
-:heavy_check_mark:Παράδειγμα με βαθμoλoγίες φοιτητών και χρήση λίστας
+:pushpin:Παράδειγμα με βαθμoλoγίες φοιτητών και χρήση λίστας
   ```
       #include <wx/wx.h>
       #include <wx/listctrl.h>
@@ -289,7 +295,7 @@
   ```
   <br>
 
-:heavy_check_mark:Παράδειγμα διαγραφής στοιχείου από λίστα.
+:pushpin:Παράδειγμα διαγραφής στοιχείου από λίστα.
 
   ```
       #include <wx/wx.h>
