@@ -37,7 +37,6 @@
   
   .hovertext {
   position: relative;
-  border-bottom: 1px dotted black;
 }
 
 .hovertext:before {
@@ -131,12 +130,12 @@
 <span class="noselect">
 <span class="spanin">
 <span class="hovertext" data-hover="Εξαμηνο Τρίτο">
-<img style="border-radius:50%; margin-right:5%"  height="60px" width="60px" src="Read_Me(resources)/semester.jpg"/></span>
-<a href="https://chgogos.github.io/oop/"><img style="border-radius:50%; margin-right:5%"  height="60px" width="60px" src="Read_Me(resources)/website_icon.png"/></a>
+<img style="border-radius:50%; margin-right:3%;"  height="60px" width="60px" src="Read_Me(resources)/semester.jpg"/></span>
+<a href="https://chgogos.github.io/oop/"><img style="border-radius:50%; margin-right:3%;"  height="60px" width="60px" src="Read_Me(resources)/website_icon.png"/></a>
 <span class="hovertext" data-hover="NASTOS VASILEIOS-ARTA-2021">
-<img style="border-radius:50%; margin-right:5%"  height="60px" width="60px" src="Read_Me(resources)/copyright.jpg"/></span>
+<img style="border-radius:50%; margin-right:3%;"  height="60px" width="60px" src="Read_Me(resources)/copyright.jpg"/></span>
 <span class="hovertext" data-hover="Τελευταία ενημέρωση:13/01/2022">
-<img style="border-radius:50%; margin-right:5%"  height="60px" width="60px" src="Read_Me(resources)/refresh.png"/></span>
+<img style="border-radius:50%; margin-right:3%;"  height="60px" width="60px" src="Read_Me(resources)/refresh.png"/></span>
 </span>
 </span>
 </div>
