@@ -33,6 +33,7 @@
   .spanin
   {
     display:inline;
+    width:100%;
   }
   
   .hovertext {
