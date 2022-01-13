@@ -29,12 +29,6 @@
      height:100px;
      width:100px;
   }
-
-  .spanin
-  {
-    display:inline;
-    width:100%;
-  }
   
   .hovertext {
   position: relative;
@@ -127,31 +121,38 @@
 # Αντικειμενοστραφής Προγραμματισμός
 
 <center>
+<span style="display:inline; width:100%;">
 
-<span class="spanin">
 <div class="btn">
 <span class="noselect">
 <span class="hovertext" data-hover="Εξαμηνο Τρίτο">
-<img style="border-radius:50%; margin-right:3%;"  height="60px" width="60px" src="Read_Me(resources)/semester.jpg"/></span>
+<img style="border-radius:50%; margin-right:3%;"  height="60px" width="60px" src="Read_Me(resources)/semester.jpg"/>
+</span>
 </span>
 </div>
+
 <div class="btn">
 <span class="noselect">
 <a href="https://chgogos.github.io/oop/"><img style="border-radius:50%; margin-right:3%;"  height="60px" width="60px" src="Read_Me(resources)/website_icon.png"/></a>
 </span>
 </div>
+
 <div class="btn">
 <span class="noselect">
 <span class="hovertext" data-hover="NASTOS VASILEIOS-ARTA-2021">
-<img style="border-radius:50%; margin-right:3%;"  height="60px" width="60px" src="Read_Me(resources)/copyright.jpg"/></span>
+<img style="border-radius:50%; margin-right:3%;"  height="60px" width="60px" src="Read_Me(resources)/copyright.jpg"/>
+</span>
 </span>
 </div>
+
 <div class="btn">
 <span class="noselect">
 <span class="hovertext" data-hover="Τελευταία ενημέρωση:13/01/2022">
-<img style="border-radius:50%; margin-right:3%;"  height="60px" width="60px" src="Read_Me(resources)/refresh.png"/></span>
+<img style="border-radius:50%; margin-right:3%;"  height="60px" width="60px" src="Read_Me(resources)/refresh.png"/>
+</span>
 </span>
 </div>
+
 </span>
 </center>
 <br><br>
