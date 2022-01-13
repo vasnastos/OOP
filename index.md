@@ -495,6 +495,20 @@
 
   :heavy_check_mark:[lambdas1.cpp](https://github.com/vasnastos/OOP/blob/main/Lesson_8/lambda.cpp)
 
+  :heavy_check_mark:[map1.cpp](https://github.com/vasnastos/OOP/blob/main/Lesson_8/map1.cpp)
+
+  :heavy_check_mark:[map2.cpp](https://github.com/vasnastos/OOP/blob/main/Lesson_8/map2.cpp)
+   
+  :heavy_check_mark:[map3.cpp](https://github.com/vasnastos/OOP/blob/main/Lesson_8/map3.cpp)
+
+  :heavy_check_mark:[set1.cpp](https://github.com/vasnastos/OOP/blob/main/Lesson_8/set1.cpp)
+
+  :heavy_check_mark:[set2.cpp](https://github.com/vasnastos/OOP/blob/main/Lesson_8/set2.cpp)
+
+  :heavy_check_mark:[algorithm1.cpp](https://github.com/vasnastos/OOP/blob/main/Lesson_8/algorithm1.cpp)
+
+  :heavy_check_mark:[algorithm2.cpp](https://github.com/vasnastos/OOP/blob/main/Lesson_8/algorithm2.cpp)
+
 ## ΕΡΓΑΣΙΕΣ 
 
   * **Εργασία 1**
