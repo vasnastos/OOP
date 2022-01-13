@@ -64,8 +64,8 @@
 }
 
 .btn {
-  width: 80%;
-  height: 50px;
+  width: 100%;
+  height: auto;
   border: 1px solid #333;
   font-family: 'Cinzel', serif;
   font-size: 20px;
@@ -131,12 +131,12 @@
 <span class="noselect">
 <span class="spanin">
 <span class="hovertext" data-hover="Εξαμηνο Τρίτο">
-<img style="border-radius:50%; margin-right:5%"  height="60px" width="60px" src="Read_Me(resources)/semester.jpg"></img></span>
-<a href="https://chgogos.github.io/oop/"><img style="border-radius:50%; margin-right:5%"  height="60px" width="60px" src="Read_Me(resources)/website_icon.png"></img></a>
+<img style="border-radius:50%; margin-right:5%"  height="60px" width="60px" src="Read_Me(resources)/semester.jpg"/></span>
+<a href="https://chgogos.github.io/oop/"><img style="border-radius:50%; margin-right:5%"  height="60px" width="60px" src="Read_Me(resources)/website_icon.png"/></a>
 <span class="hovertext" data-hover="NASTOS VASILEIOS-ARTA-2021">
-<img style="border-radius:50%; margin-right:5%"  height="60px" width="60px" src="Read_Me(resources)/copyright.jpg"></img></span>
+<img style="border-radius:50%; margin-right:5%"  height="60px" width="60px" src="Read_Me(resources)/copyright.jpg"/></span>
 <span class="hovertext" data-hover="Τελευταία ενημέρωση:13/01/2022">
-<img style="border-radius:50%; margin-right:5%"  height="60px" width="60px" src="Read_Me(resources)/refresh.png"></img></span>
+<img style="border-radius:50%; margin-right:5%"  height="60px" width="60px" src="Read_Me(resources)/refresh.png"/></span>
 </span>
 </span>
 </div>
