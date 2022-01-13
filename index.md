@@ -64,7 +64,7 @@
 }
 
 .btn {
-  width: auto;
+  width: width:20%;
   height: auto;
   border: 1px solid #333;
   font-family: 'Cinzel', serif;
