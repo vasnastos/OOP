@@ -81,7 +81,7 @@
 
 .btn::before, .btn::after {
   position: absolute;
-  background: #eee;
+  background:transparent;
   z-index: -1;
   transition: 1s;
   content: '';
