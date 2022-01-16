@@ -1,0 +1,3 @@
+Coffee:10
+Chocolate:10
+Milk:20

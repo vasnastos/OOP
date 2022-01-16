@@ -1,0 +1,6 @@
+ONOMA:Ναστος Βασίλειος
+ΑΜ:0001
+
+ΛΕΙΤΟΥΡΓΙΚΟ ΣΥΣΤΗΜΑ:Windows
+ΜΕΤΑΓΛΩΤΤΙΣΗ:g++ vending_machine.cpp vending_machine_main.cpp -o vm
+ΕΚΤΕΛΕΣΗ:vm.exe
