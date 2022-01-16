@@ -1,6 +1,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <title>Αντικειμενοστραφής Προγραμματισμός</title>
 <style>
   table{
@@ -121,7 +122,10 @@
 # Αντικειμενοστραφής Προγραμματισμός
 
 <center>
-<span style="display:inline; width:100%;">
+<div class="pos-f-t">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <span style="display:inline; width:100%;">
 
 <span class="hovertext" data-hover="Εξαμηνο Τρίτο">
 <img style="border-radius:50%; margin-right:3%;"  height="60px" width="60px" src="Read_Me(resources)/semester.jpg"/>
@@ -140,6 +144,15 @@
 </span>
 
 </span>
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+</div>
+
 </center>
 <br><br>
 
