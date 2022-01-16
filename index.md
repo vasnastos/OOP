@@ -121,13 +121,20 @@
 }
 
 <!-- Collapsible -->
+button
+{
+  background-color:transparent;
+}
 .collapsible {
-  background-color: transparent;
+  background-color: white;
+  color:white;
   cursor: pointer;
+  border:none;
   border-radius: 50%;
   text-align: left;
   outline: none;
   font-size: 15px;
+   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
 }
 
 .active, .collapsible:hover {
@@ -166,6 +173,7 @@
 <center>
 <button class="collapsible" onclick="details()"><img src="Read_Me(resources)/cpp.jpg" width="70px" height="70px" style="border-radius: 50%;"/></button>
 <div class="content">
+  <span style="display:inline;">
   <span class="hovertext" data-hover="Εξαμηνο Τρίτο">
   <img style="border-radius:50%; margin-right:3%;"  height="60px" width="60px" src="Read_Me(resources)/semester.jpg"/>
   </span>
@@ -180,6 +188,7 @@
 
   <span class="hovertext" data-hover="Τελευταία ενημέρωση:13/01/2022">
   <img style="border-radius:50%; margin-right:3%;"  height="60px" width="60px" src="Read_Me(resources)/refresh.png"/>
+  </span>
   </span>
 </div>
 </center>
