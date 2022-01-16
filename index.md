@@ -164,7 +164,7 @@
 # Αντικειμενοστραφής Προγραμματισμός
 
 <center>
-<button class="collapsible" onclick="details()"><img src="Read_Me(resources)/cpp.jpg" width="70px" height="70px" style="border-radius: 50%;"></img></button>
+<button class="collapsible" onclick="details()"><img src="Read_Me(resources)/cpp.jpg" width="70px" height="70px" style="border-radius: 50%;"/></button>
 <div class="content">
   <span class="hovertext" data-hover="Εξαμηνο Τρίτο">
   <img style="border-radius:50%; margin-right:3%;"  height="60px" width="60px" src="Read_Me(resources)/semester.jpg"/>
