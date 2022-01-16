@@ -142,7 +142,7 @@
 }
 </style>
 <script>
-  function onbuttonclick() {
+  function details() {
   var coll = document.getElementsByClassName("collapsible");
   var i;
 
