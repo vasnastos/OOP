@@ -122,19 +122,16 @@
 
 <!-- Collapsible -->
 .collapsible {
-  background-color: #777;
-  color: white;
+  background-color: transparent;
   cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
+  border-radius: 50%;
   text-align: left;
   outline: none;
   font-size: 15px;
 }
 
 .active, .collapsible:hover {
-  background-color: #555;
+  background-color: blue;
 }
 
 .content {
@@ -167,9 +164,23 @@
 # Αντικειμενοστραφής Προγραμματισμός
 
 <center>
-<button type="button" class="collapsible" onclick="onbuttonclick()">Open Collapsible</button>
+<button class="collapsible" onclick="details()"><img src="Read_Me(resources)/cpp.jpg" width="70px" height="70px" style="border-radius: 50%;"></img></button>
 <div class="content">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <span class="hovertext" data-hover="Εξαμηνο Τρίτο">
+  <img style="border-radius:50%; margin-right:3%;"  height="60px" width="60px" src="Read_Me(resources)/semester.jpg"/>
+  </span>
+
+  <a href="https://chgogos.github.io/oop/"><img style="border-radius:50%; margin-right:3%;"  height="60px" width="60px" src="Read_Me(resources)/website_icon.png"/></a>
+
+
+  <span class="hovertext" data-hover="NASTOS VASILEIOS-ARTA-2021">
+  <img style="border-radius:50%; margin-right:3%;"  height="60px" width="60px" src="Read_Me(resources)/copyright.jpg"/>
+  </span>
+
+
+  <span class="hovertext" data-hover="Τελευταία ενημέρωση:13/01/2022">
+  <img style="border-radius:50%; margin-right:3%;"  height="60px" width="60px" src="Read_Me(resources)/refresh.png"/>
+  </span>
 </div>
 </center>
 <br><br>
