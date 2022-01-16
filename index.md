@@ -1,7 +1,12 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+
+<!-- Bootstrap CDN -->
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
   <title>Αντικειμενοστραφής Προγραμματισμός</title>
 <style>
   table{
@@ -114,46 +119,29 @@
 .btn:hover {
   background: #fff;
 }
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </style>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
 </head>
   
 # Αντικειμενοστραφής Προγραμματισμός
 
 <center>
-<div class="pos-f-t">
-  <div class="collapse" id="navbarToggleExternalContent">
-    <div class="bg-dark p-4">
-      <span style="display:inline; width:100%;">
-
-<span class="hovertext" data-hover="Εξαμηνο Τρίτο">
-<img style="border-radius:50%; margin-right:3%;"  height="60px" width="60px" src="Read_Me(resources)/semester.jpg"/>
-</span>
-
-<a href="https://chgogos.github.io/oop/"><img style="border-radius:50%; margin-right:3%;"  height="60px" width="60px" src="Read_Me(resources)/website_icon.png"/></a>
-
-
-<span class="hovertext" data-hover="NASTOS VASILEIOS-ARTA-2021">
-<img style="border-radius:50%; margin-right:3%;"  height="60px" width="60px" src="Read_Me(resources)/copyright.jpg"/>
-</span>
-
-
-<span class="hovertext" data-hover="Τελευταία ενημέρωση:13/01/2022">
-<img style="border-radius:50%; margin-right:3%;"  height="60px" width="60px" src="Read_Me(resources)/refresh.png"/>
-</span>
-
-</span>
+<div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                   OOP
+                </a>
+            </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in">
+            <div class="panel-body">
+                Anim pariatur cliche reprehenderit
+            </div>
+        </div>
     </div>
-  </div>
-  <nav class="navbar navbar-light bg-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </nav>
 </div>
-
 </center>
 <br><br>
 
