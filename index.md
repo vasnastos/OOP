@@ -126,7 +126,7 @@ button
   background-color:transparent;
 }
 .collapsible {
-  background-color: transparent;
+  background-color: white;
   color:white;
   cursor: pointer;
   border:none;
@@ -170,8 +170,7 @@ button
   
 # Αντικειμενοστραφής Προγραμματισμός
 
-<center>
-<button class="collapsible" onclick="details()"><img src="Read_Me(resources)/cpp.jpg" width="75px" height="60px" style="border-radius: 50%;"/></button>
+<button class="collapsible" onclick="details()"><img src="Read_Me(resources)/cpp.jpg" width="72px" height="60px" style="border-radius: 50%;"/></button>
 <div class="content">
   <span style="display:inline;">
   <span class="hovertext" data-hover="Εξαμηνο Τρίτο">
@@ -191,7 +190,6 @@ button
   </span>
   </span>
 </div>
-</center>
 <br><br>
 
 
