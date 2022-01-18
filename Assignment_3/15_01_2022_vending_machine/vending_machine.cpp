@@ -91,6 +91,7 @@ void Vending_Machine::payout(string product,bool has_milk)
     cout<<"Συνολικό ποσό πληρωμής:"<<this->total_check<<" ευρώ"<<endl;
     cout<<"Ποσό πληρωμής:"<<this->temporary_amount<<" ευρώ"<<endl;
     cout<<"Ρέστα:"<<this->temporary_amount-this->total_check<<" ευρώ"<<endl;
+    // this->change(); Εμφάνιση νομισμάτων που δόθηκαν ως ρέστα στον χρήστη.
     system("pause");
 }
 
