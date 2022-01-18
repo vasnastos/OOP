@@ -145,7 +145,7 @@ void VendingMachine::payout(string product,bool has_milk)
 
 void VendingMachine::refill()
 {
-
+    
 }
 
 void VendingMachine::change(double pay_amount)

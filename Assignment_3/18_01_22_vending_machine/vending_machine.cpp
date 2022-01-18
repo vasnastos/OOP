@@ -15,8 +15,8 @@ const std::string currentDateTime()
 
 map <string,string> Vending_Machine::products_in_greek{
     {"coffee","Καφές"},
-    {"chocolate","σοκολάτα"},
-    {"milk","γάλα"}
+    {"chocolate","Σοκολάτα"},
+    {"milk","Γάλα"}
 };
 
 Vending_Machine::Vending_Machine():total_check(0.0),temporary_amount(0.0)
@@ -31,8 +31,7 @@ Vending_Machine::Vending_Machine():total_check(0.0),temporary_amount(0.0)
         {"chocolate",10},
         {"milk",20}
     };
-    // std::cout<<this->quantity["coffee"]<<std::endl;
-    // std::cout<<this->quantity["hi"]<<std::endl;
+
     this->coin_buffer={
         {0.1,0},
         {0.2,0},
@@ -51,6 +50,8 @@ void Vending_Machine::payout(string product,bool has_milk)
 {
     cout<<endl;
     this->temporary_amount=0;
+    
+    // Έλεγχος ποσότητας προιόντων
     if(this->quantity[product]==0)
     {
         cout<<"Η ποσότητα του προιόντος:"<<Vending_Machine::products_in_greek[product]<<" δεν επαρκεί για την παρασκευή του"<<endl;
@@ -66,25 +67,47 @@ void Vending_Machine::payout(string product,bool has_milk)
             return;
         }
     }
+
+    // Συνολική τιμή προιόντος
     this->total_check=this->products[product];
     if(has_milk)
     {
         this->total_check+=this->products["milk"];
     }
+
+    // Αποπληρωμή προιόντος 
     bool cancel;
     while(this->temporary_amount<this->total_check)
     {
         cancel=this->coin_insert();
         if(cancel)
         {
+            stringstream ss;
+            ss<<"Ημερομηνία:"<<currentDateTime()<<endl;
+            ss<<"Προιόν:"<<Vending_Machine::products_in_greek[product]<<endl;
+            ss<<"Ποσό προιόντος:"<<this->total_check<<endl;
+            ss<<"Κατάσταση Παραγγελίας:Ακυρώθηκε"<<endl;
+            this->vending_machine_memory.push_back(ss.str());
             return;
         }
     }
+
+
     this->reduce_quantity(product);
     if(has_milk)
     {
         this->reduce_quantity("milk");
     }
+
+    // string message="Ημερομηνία:"+currentDateTime()+"\n"+"Προιόν:"+Vending_Machine::products_in_greek[product]+"\n"+"Ποσό προιόντος:"+to_string(this->total_check);
+    stringstream ss;
+    ss<<"Ημερομηνία:"<<currentDateTime()<<endl;
+    ss<<"Προιόν:"<<Vending_Machine::products_in_greek[product]<<endl;
+    ss<<"Ποσό προιόντος:"<<this->total_check<<endl;
+    ss<<"Ποσό πληρωμής Χρήστη:"<<this->temporary_amount<<endl;
+    ss<<"Ρέστα:"<<this->temporary_amount-this->total_check<<" ευρώ"<<endl;
+    this->vending_machine_memory.push_back(ss.str());
+
     cout<<endl<<"=== ΑΠΟΔΕΙΞΗ ==="<<endl;
     cout<<"Ημερομηνία:"<<currentDateTime()<<endl;
     cout<<"Προιόν:"<<Vending_Machine::products_in_greek[product]<<(has_milk?" με γάλα":"")<<endl;
@@ -107,6 +130,17 @@ bool Vending_Machine::coin_insert()
         coin_selected[count]=coin.first;
         count++;
     }
+    // coin_selected
+    // {
+        // 0,0.1
+        // 1,0.2
+        // 2,0.5
+        // 3,1.0
+        // 4,2.0
+        // 5,5.0
+        // 6,10.0
+        // coin_selected[1]-->0.2
+    // }
     cout<<"-1. Ακύρωση παραγγελίας"<<endl;
     cout<<"Επιλέξτε νόμισμα:";
     cin>>coin_selection;
@@ -125,7 +159,16 @@ bool Vending_Machine::coin_insert()
         {
             cout.precision(3);
             if(coin.second>0)
+            // 0.1,2
+            // 0.2,0
+            // 0.5,2
+            // 1.0,0
+            // 2.0,0
+            // 5.0,0
+            // 10.0,0
             cout<<"Νόμισμα:"<<coin.first<<" ευρώ\tΠοσότητα:"<<coin.second<<endl;
+            // 0.1,2
+            // 0.5,2
         }
         cout<<"Επιστροφή στον Χρήστη:"<<this->temporary_amount<<endl;
         system("pause");
@@ -143,4 +186,79 @@ bool Vending_Machine::coin_insert()
 void Vending_Machine::reduce_quantity(const string product)
 {
     this->quantity[product]--;
+}
+
+void Vending_Machine::refill()
+{
+    for(auto &product:this->quantity)
+    {
+        std::cout<<"Προιόν:"<<Vending_Machine::products_in_greek[product.first]<<"\tΠοσότητα:"<<product.second<<std::endl;
+    }
+    std::cout<<endl;
+
+    // refill
+    this->quantity["coffee"]=10;
+    this->quantity["chocolate"]=10;
+    this->quantity["milk"]=20;
+    for(auto &product:this->quantity)
+    {
+        std::cout<<"Προιόν:"<<Vending_Machine::products_in_greek[product.first]<<"\tΠοσότητα:"<<product.second<<std::endl;
+    }
+    stringstream ss;
+    ss<<"Ημερομηνία:"<<currentDateTime()<<endl;
+    ss<<"Κατάσταση:Ανατροφοδότηση αυτόματου πωλήτη"<<endl;
+    this->vending_machine_memory.push_back(ss.str());
+    std::cout<<endl;
+}
+
+ostream &operator<<(ostream &os,const Vending_Machine &vm)
+{
+    for(auto &record:vm.vending_machine_memory)
+    {
+        os<<record<<endl;
+    }
+    return os;
+}
+
+void Vending_Machine::change()
+{
+    // this->temporary_amount-->Πόσο που εισήγαγε ο χρήστης
+    // this->total_check-->Συνολικό κόστος προιόντος
+    double nchange=this->temporary_amount-this->total_check;
+    cout<<"Ρέστα:"<<nchange<<endl;
+    // 2.1-->chocolate
+    // 5 $
+    //nchange->2.9
+    // 0.1-0
+    // 0.2-2
+    // 0.5-1
+    // 1.0-0
+    // 2.0-1
+    // 5.0-0
+    // 10.0-0
+
+    // ΡΕΣΤΑ
+    // ITER 1(10)
+    // AD=2.9/10-->AD=(int)AD=0
+    //2.9-(10*AD)=2.9
+
+    // ITER 2(5)
+    // AD=2.9/5=0.58-->AD=(int)AD=0
+    //2.9-(5*AD)=2.9
+
+    // ITER 3(2)
+    // AD=2.9/2=1.45-->AD=(int)AD=1
+    // 2.9-(2*AD)=0.9
+
+    // ITER 4(1)
+    // AD=0.9/1=0.9-->AD=(int)AD=0
+    // 0.9-(2*AD)=0.0
+
+    // ITER 5(0.5)
+    // AD=0.9/0.5=1.8-->AD=(int)AD=1
+    // 0.9-(0.5*AD)=0.4
+
+    // ITER 6(0.2)
+    // AD=0.4/0.2=2-->AD=(int)AD=2
+    // 0.4-(0.2*2)=0
 }
