@@ -685,6 +685,11 @@ button
       * [vending_machine.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_3/15_01_2022_vending_machine/vending_machine.cpp)
       * [vending_machine_main.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_3/15_01_2022_vending_machine/vending_machine_main.cpp) 
       * [techical_report.docx](https://github.com/vasnastos/OOP/blob/main/Assignment_3/15_01_2022_vending_machine/ergasia_3_vending_machine_onoma.docx)
+    
+    **Τμήματα Κώδικα 18_01_22**
+      * [vending_machine.hpp](https://github.com/vasnastos/OOP/blob/main/Assignment_3/18_01_22_vending_machine/vending_machine.hpp)
+      * [vending_machine.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_3/18_01_22_vending_machine/vending_machine.cpp)
+      * [vending_machine_main.cpp](https://github.com/vasnastos/OOP/blob/main/Assignment_3/18_01_22_vending_machine/vending_machine_main.cpp) 
 
 ## ΟΔΗΓΙΕΣ ΕΓΚΑΤΑΣΤΑΣΗΣ
   - [ ] [sqlite](sqlite.md)
