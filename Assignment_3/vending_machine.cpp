@@ -145,7 +145,9 @@ void VendingMachine::payout(string product,bool has_milk)
 
 void VendingMachine::refill()
 {
-    
+    this->quantity["coffee"]=10;
+    this->quantity["chocolate"]=10;
+    this->quantity["milk"]=20;
 }
 
 void VendingMachine::change(double pay_amount)
