@@ -6,15 +6,12 @@ void fun1(int x){
     // std::cout << "Inside fun1: x=" <<  x << std::endl;
 
 }
-
 void fun2(int &x){
     x++;
 }
-
 void fun3(int *x){
     (*x)++;
 }
-
 int main(){
     int x = 5;
     std::cout << "1: x=" <<  x << std::endl;

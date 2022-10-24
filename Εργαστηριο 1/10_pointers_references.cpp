@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-     //memory dynamic allocation 
+     //memory dynamic allocat 
     int *a=new int(15);
     cout<<"Memory:"<<a<<"\tValue:"<<*a<<endl;
     delete a;
@@ -13,8 +13,6 @@ int main()
     for(int i=0;i<4;i++)
     {
         b[i]=i;
-        table_summary+=b[i];
     }
-    cout<<"Summary:"<<table_summary<<endl;
     delete[] b;
 }
