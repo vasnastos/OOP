@@ -22,7 +22,7 @@ int main()
         a[i]=i+1;
         cout<<"a["<<i<<"]:"<<a[i]<<endl;
     }
-    cout<<"B:"<<*a<<"->"<<b<<endl;
+    cout<<"B:"<<*b<<"->"<<b<<endl;
 
 
     cout<<"==== CHECKPOINT 2 ====="<<endl;    

@@ -16,11 +16,12 @@ class Book
         string title;
         string author;
         double price;
+        int copies;
     
     public:
         // Constructors
         Book():title("No title"),author("No author"),price(-1.0) {}
-        Book(string title,string author,double price):title(title),author(author),price(price) {}
+        Book(string title,string author,double price,int copies):title(title),author(author),price(price),copies(copies) {}
 
         // Destructor
         ~Book() {}
@@ -29,27 +30,59 @@ class Book
         void set_title(string new_book_title) {this->title=new_book_title;}
         void set_author(string new_book_author) {this->author=new_book_author;}
         void set_price(double new_book_price) {this->price=new_book_price;}
+        void set_copies(int new_book_copies) {this->copies=new_book_copies;}
 
         // getters
         string get_author()const {return this->author;}
         string get_title()const {return this->title;}
         double get_price()const {return this->price;}
+        int get_copies()const {return this->copies;}
 
         // Display method
         void display()
         {
             cout<<"Title:"<<this->title<<"\tAuthor:"<<this->author<<"\tPrice:"<<this->price<<endl;
         }
+
+        void read()
+        {
+            cin>>this->title>>this->author>>this->price>>this->copies;
+        }
+
+        void discount()
+        {
+            if(this->copies<=10)
+            {
+                // this->price-=(0.3*this->price);
+                this->price*=0.7;
+            }
+            else if(this->copies<=50)
+            {
+                this->price*=0.85;
+            }
+            else if(this->copies<=100)
+            {
+                this->price*=0.9;
+            }
+            else
+            {
+                this->price*=0.93;
+            }
+        }
 };
 
-Book read()
-{
-    // TODO
-}
 
 void bookstore_discount(Book *books,int number_of_books)
 {
-    // TODO
+    cout.precision(4);
+    for(int i=0;i<number_of_books; i++)
+    {
+        cout<<"===== Book information ====="<<endl;
+        books[i].display();
+        books[i].discount();
+        books[i].display();
+        cout<<endl<<endl;
+    }
 }
 
 // 48 Laws of Power - Robert Greene 
@@ -72,27 +105,24 @@ void bookstore_discount(Book *books,int number_of_books)
 int main()
 {
     Book books[]{
-        Book("48 Laws of Power","Robert Greene",45),
-        Book("Be Here Now","Ram Dass",32),
-        Book("Extreme Ownership","Jocko Willink and Leif Babin",56),
-        Book("How to Eat","Thich Nhat Hanh",89.34),
-        Book("Radical Focus","Christina Wodtke",56.78),
-        Book("ReWork","Jason Fried & David Hansson",12.456),
-        Book("Sapiens","Yuval Noah Harari",123.45),
-        Book("Shantaram","Gregory David Roberts",23.89),
-        Book("Soft Skills","John Sonmez",10.98),
-        Book("Tao of Wu","RZA",67.89),
-        Book("The Alchemist","Paulo Coelho",78.32),
-        Book("The Art of War","Sun Tzu",234.56),
-        Book("The Book of Mistakes","Skip Prichard",43.67),
-        Book("The Culture Code","Daniel Coyle",55.77),
-        Book("The Four Agreements","Daniel Coyle",77.985),
-        Book("Death on the Nile","Agatha Christie",21.4598)
+        Book("48 Laws of Power","Robert Greene",45,45),
+        Book("Be Here Now","Ram Dass",32,10),
+        Book("Extreme Ownership","Jocko Willink and Leif Babin",56,5),
+        Book("How to Eat","Thich Nhat Hanh",89.34,90),
+        Book("Radical Focus","Christina Wodtke",56.78,7),
+        Book("ReWork","Jason Fried & David Hansson",12.456,120),
+        Book("Sapiens","Yuval Noah Harari",123.45,92),
+        Book("Shantaram","Gregory David Roberts",23.89,34),
+        Book("Soft Skills","John Sonmez",10.98,78),
+        Book("Tao of Wu","RZA",67.89,5),
+        Book("The Alchemist","Paulo Coelho",78.32,23),
+        Book("The Art of War","Sun Tzu",234.56,190),
+        Book("The Book of Mistakes","Skip Prichard",43.67,74),
+        Book("The Culture Code","Daniel Coyle",55.77,23),
+        Book("The Four Agreements","Daniel Coyle",77.985,45),
+        Book("Death on the Nile","Agatha Christie",21.4598,9)
     };
 
-    for(auto &book:books)
-    {
-        book.display();
-    }
+    bookstore_discount(books,sizeof(books)/sizeof(books[0]));
     return 0;
 }

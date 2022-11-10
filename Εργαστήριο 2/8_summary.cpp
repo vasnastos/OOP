@@ -21,6 +21,16 @@ class Student
                 cout<<"You can not add another grade:Limit("<<this->number_of_grades<<")"<<endl;
                 return;
             }
-            this->grades[this->grades_added]=g;
+            this->grades[this->grades_added++]=g;
+        }
+
+        double average()
+        {
+            double avg=0.0;
+            for(int i=0;i<this->grades_added;i++)
+            {
+                avg+=this->grades[i];
+            }
+            return avg/this->grades_added;
         }
 };
