@@ -39,6 +39,7 @@ class Student:public Person
 
 int main()
 {
+    //upcasting
     Person *p=new Person("Person1",45);
     Student *st=new Student("Student1",25,7);
     Person *p1=new Student("Student2",26,8);
