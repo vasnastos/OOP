@@ -46,7 +46,12 @@ int main(int argc,char **argv)
                 min_elem=table[i][j];
             }
         }
-        cout<<"Column "<<j<<" Max element:"<<max_elem<<" Min element:"<<min_elem<<" Average:"<<double(summary)/NROWS<<endl;
+        cout<<"Column "<<j<<" Max element:"<<max_elem<<" Min element:"<<min_elem<<" Average:"<<double(summary)/size<<endl;
     }
+    for(int i=0;i<size;i++)
+    {
+        delete[] table[i];
+    }
+    delete[] table;
     return 0;
 }
