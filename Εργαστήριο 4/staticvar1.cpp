@@ -9,7 +9,8 @@ class Point
 {
     double x,y;
     public:
-        Point(double _x,double _y):x(_x),y(_y) {}
+        static int objCounter;
+        Point(double _x,double _y):x(_x),y(_y) {Point::objCounter++;}
         void display()
         {
             cout<<"("<<this->x<<","<<this->y<<")"<<endl;
@@ -19,6 +20,8 @@ class Point
             return sqrt(pow(p1.x-p2.x,2)+pow(p1.y-p2.y,2)); 
         }
 };
+
+int Point::objCounter=0;
 
 int main()
 {
@@ -45,5 +48,6 @@ int main()
             break;
         }
     }
+    cout<<"Objects created:"<<Point::objCounter<<endl;
     return 0;
 }
