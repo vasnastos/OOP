@@ -63,9 +63,6 @@ class Email:public Document
         }
 };
 
-
-
-
 int main()
 {
     Book b1("book1","1/1/2010");
